@@ -1,6 +1,8 @@
 # Project files
 *.csv
 *.json
+data
+data_processing/fetch/rym/rymscraper
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
