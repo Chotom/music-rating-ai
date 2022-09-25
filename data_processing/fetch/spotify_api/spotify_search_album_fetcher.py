@@ -10,7 +10,7 @@ from requests import Response
 from unidecode import unidecode
 
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
-from data_processing.fetch.spotify_api.spotify_search_album_model import Model, Item
+from data_processing.fetch.spotify_api.spotify_search_album_model import SearchModel, Item
 from shared_utils.utils import PROJECT_DIR
 
 
@@ -134,7 +134,7 @@ class SpotifySearchAlbumFetcher(SpotifyFetcher):
 
     def _handle_successful_response(self, resp: Response) -> SpotifyRecord:
         record = self.SpotifyRecord()
-        results = Model(**resp.json()).albums.items
+        results = SearchModel(**resp.json()).albums.items
         if len(results) == 0:
             self._logger.warning(f'Missing results for: {self._artist} - {self._album}')
             return record

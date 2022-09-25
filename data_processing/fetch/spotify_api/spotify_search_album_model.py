@@ -43,5 +43,5 @@ class Albums(BaseModel):
     total: int
 
 
-class Model(BaseModel):
+class SearchModel(BaseModel):
     albums: Albums
