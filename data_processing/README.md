@@ -58,6 +58,9 @@ Remember to install rymscraper pip packages and prepare selenium webdrivers.
 
 ---
 
-4. Search for album and artist on Genius API and save album ID.
-5. Fetch Spotify audio features data to directory by ID.
+4. Fetch Spotify audio features data to directory by ID.
+    1. Fetch Spotify tracks IDs for fetched albums in previous step.
+---
+
+5. Search for album and artist on Genius API and save album ID.
 6. Fetch song lyrics from Genius.
