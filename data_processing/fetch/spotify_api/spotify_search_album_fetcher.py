@@ -10,7 +10,7 @@ from requests import Response
 from unidecode import unidecode
 
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
-from data_processing.fetch.spotify_api.spotify_search_album_model import SearchModel, Item
+from data_processing.fetch.spotify_api.data_models.spotify_search_album_model import SearchModel, Item
 from shared_utils.utils import PROJECT_DIR
 
 

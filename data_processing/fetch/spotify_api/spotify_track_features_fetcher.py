@@ -5,9 +5,8 @@ import requests
 from typing import List, Dict
 from requests import Response
 
-from data_processing.fetch.spotify_api.spotify_album_tracks_model import AlbumInfoModel
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
-from data_processing.fetch.spotify_api.spotify_track_features_model import TrackFeatureModel
+from data_processing.fetch.spotify_api.data_models.spotify_track_features_model import TrackFeatureModel
 from shared_utils.utils import PROJECT_DIR
 
 
@@ -26,6 +25,7 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
         self._prepare_input_ids()
 
     def _prepare_input_ids(self):
+        """Prepare track IDs to fetch from spotify, based on fetched tracks."""
         df_track_ids = pd.read_csv(self.spotify_track_ids_input_filepath)
         self._track_ids: pd.Series = df_track_ids['song_id']
 
@@ -35,7 +35,8 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
         self._logger.info(f'Number of albums to fetch track ids: {len(self._track_ids)}')
 
     def fetch(self):
-        for i, track_ids in enumerate(self._ids_by_chunks()):
+        chunk_size = 100
+        for i, track_ids in enumerate(self._ids_by_chunks(chunk_size)):
             self._logger.info(f'Batch {i}/{int(len(self._track_ids) / 100)}')
             resp: Response = self._send_for_tracks_features(track_ids)
 
@@ -48,8 +49,7 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
             else:
                 self._handle_successful_response(resp, track_ids)
 
-    def _ids_by_chunks(self):
-        chunk_size = 100
+    def _ids_by_chunks(self, chunk_size):
         for i in range(0, len(self._track_ids), chunk_size):
             yield self._track_ids[i:i + chunk_size]
 

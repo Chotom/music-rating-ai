@@ -5,12 +5,12 @@ import requests
 from typing import List, Dict
 from requests import Response
 
-from data_processing.fetch.spotify_api.spotify_album_tracks_model import AlbumInfoModel
+from data_processing.fetch.spotify_api.data_models.spotify_album_tracks_model import AlbumInfoModel
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
 from shared_utils.utils import PROJECT_DIR
 
 
-class SpotifyAlbumTracksIDFetcher(SpotifyFetcher):
+class SpotifyTrackIDsFetcher(SpotifyFetcher):
     spotify_ids_cols = ['album', 'artist', 'spotify_id', 'spotify_album', 'spotify_artist', 'precision_match']
     """Column names in input file."""
 
@@ -28,6 +28,7 @@ class SpotifyAlbumTracksIDFetcher(SpotifyFetcher):
         self._prepare_input_ids()
 
     def _prepare_input_ids(self):
+        """Prepare album IDs to fetch from spotify, based on searched albums."""
         df_spotify_ids = pd.read_csv(self.spotify_ids_input_filepath)
         df_spotify_ids = df_spotify_ids[df_spotify_ids.notna()]
         df_spotify_ids = df_spotify_ids[df_spotify_ids['precision_match'] > 1]
@@ -40,8 +41,9 @@ class SpotifyAlbumTracksIDFetcher(SpotifyFetcher):
         self._logger.info(f'Number of albums to fetch track ids: {len(self._spotify_ids)}')
 
     def fetch(self):
-        for i, album_ids in enumerate(self._ids_by_chunks()):
-            print(f'Batch {i}/{int(len(self._spotify_ids) / 20)}')
+        chunk_size = 20
+        for i, album_ids in enumerate(self._ids_by_chunks(chunk_size)):
+            print(f'Batch {i}/{int(len(self._spotify_ids) / chunk_size)}')
             resp: Response = self._send_for_album_tracks(album_ids)
 
             # Handle response
@@ -53,8 +55,7 @@ class SpotifyAlbumTracksIDFetcher(SpotifyFetcher):
             else:
                 self._handle_successful_response(resp)
 
-    def _ids_by_chunks(self):
-        chunk_size = 20
+    def _ids_by_chunks(self, chunk_size):
         for i in range(0, len(self._spotify_ids), chunk_size):
             yield self._spotify_ids[i:i + chunk_size]
 
@@ -94,7 +95,7 @@ class SpotifyAlbumTracksIDFetcher(SpotifyFetcher):
 
 
 if __name__ == '__main__':
-    search_fetcher = SpotifyAlbumTracksIDFetcher(
+    search_fetcher = SpotifyTrackIDsFetcher(
         os.getenv('SPOTIFY_CLIENT_ID'),
         os.getenv('SPOTIFY_CLIENT_SECRET'),
         f'{PROJECT_DIR}/data/raw/spotify/spotify_search_album_id.csv',
