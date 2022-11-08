@@ -1,6 +1,8 @@
 import os
+import sys
 import time
 import pandas as pd
+import pyprind
 import requests
 from typing import List, Dict
 from requests import Response
@@ -20,24 +22,24 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
     ):
         super().__init__(client_id, client_secret)
 
-        self.spotify_track_ids_input_filepath = spotify_track_ids_input_filepath
-        self.spotify_track_features_output_filepath = spotify_track_features_output_filepath
+        self.input_filepath = spotify_track_ids_input_filepath
+        self.output_filepath = spotify_track_features_output_filepath
         self._prepare_input_ids()
 
     def _prepare_input_ids(self):
         """Prepare track IDs to fetch from spotify, based on fetched tracks."""
-        df_track_ids = pd.read_csv(self.spotify_track_ids_input_filepath)
+        df_track_ids = pd.read_csv(self.input_filepath)
         self._track_ids: pd.Series = df_track_ids['song_id']
 
-        if os.path.exists(self.spotify_track_features_output_filepath):
-            df_track_ids = pd.read_csv(self.spotify_track_features_output_filepath)
+        if os.path.exists(self.output_filepath):
+            df_track_ids = pd.read_csv(self.output_filepath)
             self._track_ids = self._track_ids[~self._track_ids.isin(df_track_ids['id'])]
         self._logger.info(f'Number of albums to fetch track ids: {len(self._track_ids)}')
 
     def fetch(self):
         chunk_size = 100
-        for i, track_ids in enumerate(self._ids_by_chunks(chunk_size)):
-            self._logger.info(f'Batch {i}/{int(len(self._track_ids) / 100)}')
+        progress_bar = pyprind.ProgBar(int(len(self._track_ids) / chunk_size), stream=sys.stdout)
+        for track_ids in self._ids_by_chunks(chunk_size):
             resp: Response = self._send_for_tracks_features(track_ids)
 
             # Handle response
@@ -48,6 +50,7 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
                 self._logger.warning(f'Cannot fetch ids {resp.status_code}: {resp.content}.')
             else:
                 self._handle_successful_response(resp, track_ids)
+            progress_bar.update()
 
     def _ids_by_chunks(self, chunk_size):
         for i in range(0, len(self._track_ids), chunk_size):
@@ -70,16 +73,16 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
         self._logger.error(err_msg)
         raise Exception(err_msg)
 
-    def _handle_successful_response(self, resp: Response, track_ids: pd.Series ):
+    def _handle_successful_response(self, resp: Response, track_ids: pd.Series):
         batch: List[Dict[str, str]] = []
         tracks_features = TrackFeatureModel(**resp.json()).audio_features
         for i, features in enumerate(tracks_features):
             if features is not None:
                 batch.append(features.dict())
             else:
-                self._logger.warning(f'Feature not found for {track_ids.values[i]} track.')
-        is_file_new = not os.path.exists(self.spotify_track_features_output_filepath)
-        pd.DataFrame(batch).to_csv(self.spotify_track_features_output_filepath, mode='a', index=False, header=is_file_new)
+                self._logger.debug(f'Feature not found for {track_ids.values[i]} track.')
+        is_file_new = not os.path.exists(self.output_filepath)
+        pd.DataFrame(batch).to_csv(self.output_filepath, mode='a', index=False, header=is_file_new)
 
 
 if __name__ == '__main__':

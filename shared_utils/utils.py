@@ -1,15 +1,22 @@
 import logging
 import os
+import re
 import sys
+from unidecode import unidecode
 
 # Consts
 
 PROJECT_DIR = f'{os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}'
-"""Absolute path to project directory"""
+"""Absolute path to project directory."""
 
 LOG_LEVEL = logging.DEBUG
-"""Message logging level"""
+"""Message logging level."""
 
+RYM_COLS = ['artist', 'album', 'date', 'rating', 'ratings_number', 'genres']
+"""Columns for rate your music data."""
+
+SPOTIFY_COLS = ['album', 'artist', 'spotify_album', 'spotify_artist', 'spotify_id', 'precision_match']
+"""Column names in output spotify search file."""
 
 # Functions
 
@@ -32,3 +39,110 @@ def create_logger(name: str) -> logging.Logger:
     if not len(logger.handlers):
         logger.addHandler(console_handler)
     return logger
+
+
+def _remove_additional_info_in_parenthesis(album_name: str):
+    album_name = re.sub(r"\([^()]*\)", "", album_name).strip()
+    album_name = re.sub(r"\[[^()]*\]", "", album_name).strip()
+    return album_name
+
+
+def _get_str_from_brackets(name: str) -> str:
+    """
+    Extract string from brackets ('[', '〈') from given name.
+    Each part of name separated with '/' will be extracted separately and joined in result.
+
+    Examples:
+    ---------
+    >>> _get_str_from_brackets('[name 1] / 〈name_2〉 / name3')
+    'name 1 / name_2 / name3'
+
+    >>> _get_str_from_brackets('some name [name 1]')
+    'name 1'
+
+    >>> _get_str_from_brackets('just name')
+    'just name'
+
+    :param name: names join with '/' to extract
+    :return: extracted names join with '/'
+    """
+
+    brackets = ['[', '〈']
+    regex = r'[\[〈](.+)[〉\]]'
+    if not any(x in name for x in brackets):
+        return name
+    various_names = name.split(' / ')
+
+    # Extract names between brackets to list
+    results: list[str] = []
+    for n in various_names:
+        if any(x in n for x in brackets):
+            results.append(re.search(regex, n).group(1).strip())
+        else:
+            results.append(n.strip())
+    return ' / '.join(results)
+
+
+def clear_album_name(name: str) -> str:
+    name = _remove_additional_info_in_parenthesis(name)
+    name = unidecode(name)
+    name = name.lower()
+    name = (
+        name.replace(' ', '')
+            .replace('&', '')
+            .replace('the', '')
+            .replace('and', '')
+            .replace(',', '')
+            .replace('-', '')
+            .replace('~', '')
+            .replace(';', '')
+            .replace('"', '')
+            .replace("'", '')
+            .replace(">", '')
+            .replace("<", '')
+            .replace("`", '')
+            .replace('!', '')
+            .replace('(', '')
+            .replace(')', '')
+            .replace('[', '')
+            .replace(']', '')
+            .replace('{', '')
+            .replace('}', '')
+            .replace('.', '')
+            .replace(':', '')
+            .replace('?', '')
+    )
+    return name
+
+
+def clear_artist_name(name: str) -> str:
+    name = _get_str_from_brackets(name)
+    name = unidecode(name)
+    name = name.lower()
+    name = (
+        name.replace('the ', '')
+            .replace('and ', '')
+            .replace(' ', '')
+            .replace('&', '')
+            .replace(',', '')
+            .replace('-', '')
+            .replace('+', '')
+            .replace('~', '')
+            .replace(';', '')
+            .replace('"', '')
+            .replace("'", '')
+            .replace(">", '')
+            .replace("<", '')
+            .replace("`", '')
+            .replace('!', '')
+            .replace('(', '')
+            .replace(')', '')
+            .replace('[', '')
+            .replace(']', '')
+            .replace('{', '')
+            .replace('}', '')
+            .replace('.', '')
+            .replace(':', '')
+            .replace('?', '')
+    )
+    return name

@@ -1,9 +1,12 @@
 import os
+import sys
 import time
 import pandas as pd
+import pyprind
 import requests
 from typing import List, Dict
 from requests import Response
+from tqdm import tqdm
 
 from data_processing.fetch.spotify_api.data_models.spotify_album_tracks_model import AlbumInfoModel
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
@@ -42,11 +45,10 @@ class SpotifyTrackIDsFetcher(SpotifyFetcher):
 
     def fetch(self):
         chunk_size = 20
-        for i, album_ids in enumerate(self._ids_by_chunks(chunk_size)):
-            print(f'Batch {i}/{int(len(self._spotify_ids) / chunk_size)}')
+        progress_bar = pyprind.ProgBar(int(len(self._spotify_ids) / chunk_size), stream=sys.stdout)
+        for album_ids in self._ids_by_chunks(chunk_size):
             resp: Response = self._send_for_album_tracks(album_ids)
 
-            # Handle response
             if resp.status_code == 429 or resp.status_code == 401:
                 retry_after = resp.headers.get("Retry-After", "Cannot get value")
                 self._raise_too_many_request_error(retry_after)
@@ -54,13 +56,14 @@ class SpotifyTrackIDsFetcher(SpotifyFetcher):
                 self._logger.warning(f'Cannot fetch ids {resp.status_code}: {resp.content}.')
             else:
                 self._handle_successful_response(resp)
+            progress_bar.update()
 
     def _ids_by_chunks(self, chunk_size):
         for i in range(0, len(self._spotify_ids), chunk_size):
             yield self._spotify_ids[i:i + chunk_size]
 
     def _send_for_album_tracks(self, ids: List) -> Response:
-        base_url = f'https://api.spotify.com/v1/albums?ids={",".join(ids)}&market=NA'
+        base_url = f'https://api.spotify.com/v1/albums?ids={",".join(ids)}&market=US'
         headers = {
             'Content-Type': 'application/json',
             'Authorization': f'Bearer {self._token}'
