@@ -1,6 +1,9 @@
 # Project files
 *.csv
 *.json
+*.png
+*.jpg
+*.svg
 data
 data_processing/fetch/rym/rymscraper
 
