@@ -1,10 +1,10 @@
+import os
 import pandas as pd
 
-from shared_utils.utils import PROJECT_DIR
-from shared_utils.utils import create_logger
+from rymscraper.rymscraper import RymNetwork, RymUrl
 
-# From pulled repository
-from data_processing.fetch.rym.rymscraper.rymscraper.rymscraper import RymNetwork, RymUrl
+from shared_utils.utils import PROJECT_DIR, RYM_COLS
+from shared_utils.utils import create_logger
 
 
 class RymFetcher:
@@ -12,7 +12,7 @@ class RymFetcher:
     """Maximum number of pages in rym chart"""
 
     COLS = ['Artist', 'Album', 'Date', 'RYM Rating', 'Ratings', 'Genres']
-    """Column names fetched from rym and saved to file."""
+    """Column names for data fetched from rym (must same as in rymscraper package)."""
 
     URL = 'https://rateyourmusic.com/charts/popular'
     """Url of rateyourmusic chart to fetch data from."""
@@ -35,10 +35,13 @@ class RymFetcher:
         """
         rym_url = RymUrl.RymUrl()
         rym_url.url_base = self.URL
-        rym_url.url_part_year = f'/{year}'
+        rym_url.year = year
+        rym_url.language = 'en'
 
         data = pd.DataFrame(self._get_chart_data(rym_url))[self.COLS]
-        data.to_csv(self.filepath, mode='a', header=False, index=False)
+
+        is_file_new = RYM_COLS if not os.path.exists(self.filepath) else False
+        data.to_csv(self.filepath, mode='a', header=is_file_new, index=False)
         self.logger.info(f'{year} saved to csv.')
 
     def _get_chart_data(self, rym_url: RymUrl) -> list[dict]:
