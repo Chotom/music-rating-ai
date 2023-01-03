@@ -1,107 +1,80 @@
 import datetime
-import re
 import pandas as pd
-from unidecode import unidecode
 
-from shared_utils.utils import PROJECT_DIR
+from shared_utils.utils import RYM_COLS
 
 
 class RymDataProcessor:
-    data_header = ['artist', 'album', 'date', 'rating', 'ratings_number', 'genres']
-    date_col = 'date'
+    """A class to process data fetched from RYM charts.
+
+    Attributes:
+        DATE_COL: Name of column in dataframe containing date.
+        MINIMUM_RATE_NUMBER: Minimum number of ratings required to save record.
+        _input_df: Read dataframe from input_path with fetched data.
+        _output_path: Filepath of the output CSV file to save the processed data to.
+    """
+
+    DATE_COL = 'date'
+    MINIMUM_RATE_NUMBER = 50
 
     def __init__(self, input_path: str, output_path: str):
-        self.df = pd.read_csv(input_path, names=self.data_header)
-        self.output_path = output_path
-
-    def process(self):
-        self._remove_duplicates()
-        self._date_convert()
-        self._clear_names()
-        self.df.sort_values(by=[self.date_col]).to_csv(output_path, index=False)
-
-    def _remove_duplicates(self):
-        """Remove duplicated albums from DataFrame."""
-        self.df.drop_duplicates(subset=['artist', 'album'], keep='last', inplace=True)
-
-    def _clear_names(self):
         """
-        Clean names in Dataframe. Extract names from brackets and check is name in ascii.
-        """
-        self.df['clean_artist'] = self.df['artist'].str.strip()
-        self.df['clean_artist'] = self.df['clean_artist'].apply(lambda x: self._get_str_from_brackets(x))
-        self.df['clean_artist'] = self.df['clean_artist'].apply(lambda x: unidecode(x))
-        self.df['is_artist_ascii'] = self.df['artist'].apply(lambda x: x.isascii())
-
-        # self.df['clean_album'] = self.df['album'].apply(lambda x: self._get_str_from_brackets(x))
-        self.df['clean_album'] = self.df['album'].str.strip()
-        self.df['clean_album'] = self.df['clean_album'].apply(lambda x: unidecode(x))
-        self.df['is_album_ascii'] = self.df['album'].apply(lambda x: x.isascii())
-
-    def _get_str_from_brackets(self, name: str) -> str:
-        """
-        Extract string from brackets ('[', '〈') from given name.
-        Each part of name separated with '/' will be extracted separately and joined in result.
-
-        Examples:
-        ---------
-        >>> self._get_str_from_brackets('[name 1] / 〈name_2〉 / name3')
-        'name 1 / name_2 / name3'
-
-        >>> self._get_str_from_brackets('some name [name 1]')
-        'name 1'
-
-        >>> self._get_str_from_brackets('just name')
-        'just name'
-
-        :param name: names join with '/' to extract
-        :return: extracted names join with '/'
+        Args:
+            input_path: Filepath of the input CSV file containing the fetched rym data.
+            output_path: Filepath of the output CSV file to save the processed data to.
         """
 
-        # Init
-        brackets = ['[', '〈']
-        regex = r'[\[〈](.+)[〉\]]'
-        if not any(x in name for x in brackets):
-            return name
+        self._input_df = pd.read_csv(input_path)
+        self._output_path = output_path
 
-        # Split various names to list
-        names = name.split(' / ')
+        assert (self._input_df.columns.values == RYM_COLS).all(), 'Invalid input data structure.'
 
-        # Extract names between brackets to list
-        results: list[str] = []
-        for n in names:
-            if any(x in n for x in brackets):
-                print(n)
-                results.append(re.search(regex, n).group(1).strip())
-            else:
-                results.append(n.strip())
-        return ' / '.join(results)
+    def process(self) -> None:
+        """
+        Process read data from input_path and stores in CSV at output_path.
+        1. Convert the date column to YYYY-mm-dd format.
+        2. Drop duplicates and keep the last entry for each artist and album.
+        3. Convert the ratings_number column to integer.
+        4. Sort the dataframe by date.
+        5. Save the processed dataframe to self.output_path.
+        """
 
-    def _date_convert(self):
+        df = self._date_convert(self._input_df.copy())
+        df.drop_duplicates(subset=['artist', 'album'], keep='last', inplace=True)
+        df['ratings_number'] = df['ratings_number'].str.replace(',', '').astype(int)
+        df = df.loc[df['ratings_number'] >= self.MINIMUM_RATE_NUMBER, :]
+        df.sort_values(by=[self.DATE_COL], inplace=True)
+
+        df.to_csv(self._output_path, index=False)
+
+    def _date_convert(self, df: pd.DataFrame) -> pd.DataFrame:
         """
         Convert DATE_COL column to YYYY-mm-dd format with YYYY-01-01 as default if day
         or month data is missing (e.g. from 'September 1990' to '1990-09-01').
+
+        Args:
+            df: DataFrame with literal date in DATE_COL columns to convert.
+
+        Returns:
+            DataFrame with converted DATE_COL in YYYY-mm-dd format.
         """
 
-        # Prepare columns to fill missing data
-        df_convert = self.df.copy()
-        df_convert[['year', 'month', 'day']] = self.df[self.date_col].apply(
-            lambda x: pd.Series(x.split(' ', 2)[::-1]))
-        df_convert['day'] = df_convert['day'].fillna(1).astype(str)
+        # Split the date column into year, month, and day columns.
+        df[['year', 'month', 'day']] = self._input_df[self.DATE_COL].apply(
+            lambda date_in_text: pd.Series(date_in_text.split(' ', 2)[::-1])
+        )
 
-        # Cast month to numeric value
-        df_convert['month'] = (df_convert['month']
-                               .fillna('january')
-                               .replace('', 'january')
-                               .apply(lambda x: datetime.datetime.strptime(x, '%B').strftime('%m')))
+        # Fill missing day and month data with default values.
+        df['day'] = df['day'].fillna(1).astype(str)
+        df['month'] = (
+            df['month']
+            .fillna('january')
+            .replace('', 'january')
+            .apply(lambda x: datetime.datetime.strptime(x, '%B').strftime('%m'))
+        )
 
         # Save date in YYYY-mm-dd format
-        df_convert[self.date_col] = df_convert['year'] + '-' + df_convert['month'] + '-' + df_convert['day']
-        df_convert[self.date_col] = pd.to_datetime(df_convert[self.date_col], format='%Y-%m-%d')
-        self.df = df_convert.drop(columns=['year', 'month', 'day'])
+        df[self.DATE_COL] = df['year'] + '-' + df['month'] + '-' + df['day']
+        df[self.DATE_COL] = pd.to_datetime(df[self.DATE_COL], format='%Y-%m-%d')
 
-
-if __name__ == '__main__':
-    path = f'{PROJECT_DIR}/data/raw/rym/rym_charts.csv'
-    output_path = f'{PROJECT_DIR}/data/processed/rym_charts.csv'
-    RymDataProcessor(path, output_path).process()
+        return df.drop(columns=['year', 'month', 'day'])
