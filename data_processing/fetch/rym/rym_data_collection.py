@@ -3,7 +3,7 @@ import pandas as pd
 
 from rymscraper.rymscraper import RymNetwork, RymUrl
 
-from shared_utils.utils import PROJECT_DIR, RYM_COLS
+from shared_utils.utils import RYM_COLS
 from shared_utils.utils import create_logger
 
 
