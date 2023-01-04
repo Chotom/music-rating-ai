@@ -1,6 +1,5 @@
 import os
 import sys
-import time
 import pandas as pd
 import pyprind
 import requests
@@ -63,15 +62,6 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
             'Authorization': f'Bearer {self._token}'
         }
         return requests.get(base_url, headers=headers)
-
-    def _raise_too_many_request_error(self, retry_after: str):
-        try:
-            retry_after_date = str(time.strftime('%H:%M:%S', time.gmtime(int(retry_after))))
-        except ValueError:
-            retry_after_date = retry_after
-        err_msg = f'Error during fetching tracks ids: , too many requests - try after: {retry_after_date}'
-        self._logger.error(err_msg)
-        raise Exception(err_msg)
 
     def _handle_successful_response(self, resp: Response, track_ids: pd.Series):
         batch: List[Dict[str, str]] = []

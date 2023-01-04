@@ -129,7 +129,7 @@ class SpotifySearchAlbumFetcher(SpotifyFetcher):
         # Handle response
         if resp.status_code == 429 or resp.status_code == 401:
             retry_after = resp.headers.get('Retry-After', 'Cannot get value')
-            self._raise_too_many_request_error_for_album(index, retry_after)
+            self._raise_too_many_request_error(retry_after)
         elif resp.status_code != 200:
             self._logger.warning(f'Cannot fetch album {index}: {self._album}, {resp.status_code}: {resp.content}.')
         else:
@@ -157,30 +157,6 @@ class SpotifySearchAlbumFetcher(SpotifyFetcher):
             'limit': 10
         }
         return requests.get(base_url, params=data, headers=headers)
-
-    def _raise_too_many_request_error_for_album(self, i: int, retry_after: str):
-        """
-        Handle 'too many requests' error when fetching album data from Spotify API.
-
-        Args:
-            i: Number of the album being fetched.
-            retry_after: Value of the 'Retry-After' header in the response.
-
-        Raises:
-            requests.ConnectionError: If 'too many requests' error occurs.
-        """
-
-        try:
-            # Convert number of seconds to a time string in HH:MM:SS format.
-            retry_after_date = str(time.strftime('%H:%M:%S', time.gmtime(int(retry_after))))
-        except ValueError:
-            # If the 'Retry-After' header is not a number, use the date string as it is.
-            retry_after_date = retry_after
-
-        err_msg = f'Error during fetching album {i}: {self._album}, too many requests - try after: {retry_after_date}'
-        self._logger.error(err_msg)
-        self._save_df()
-        raise requests.ConnectionError(err_msg)
 
     def _handle_successful_response(self, resp: Response) -> SpotifyRecord:
         """
