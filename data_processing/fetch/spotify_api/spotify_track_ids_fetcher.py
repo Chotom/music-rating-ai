@@ -14,8 +14,8 @@ from shared_utils.utils import SPOTIFY_COLS
 class SpotifyTrackIDsFetcher(SpotifyFetcher):
     """
     A class for fetching track data for Spotify albums, based on album ID.
-    The output file has the following Spotify data columns: 'album_id', 'track_name', 'track_number',
-    'artist', 'duration_ms', 'preview_url'.
+    The output file has the following Spotify data columns: 'album_id', 'song_id',
+    'song_name', 'song_number', 'song_artists_number'.
 
     Notice! After sending too many requests the token may expire, and You will have to wait some
     time to download data again. This class will always fetch only 'album_id' values that
