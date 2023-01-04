@@ -1,4 +1,5 @@
 import base64
+import time
 import requests as requests
 from abc import ABC, abstractmethod
 
@@ -36,3 +37,25 @@ class SpotifyFetcher(ABC):
     def fetch(self):
         """Fetch data from spotify to output file."""
         raise NotImplementedError
+
+    def _raise_too_many_request_error(self, retry_after: str):
+        """
+        Handle 'too many requests' error when fetching data from Spotify API.
+
+        Args:
+            retry_after: Value of the 'Retry-After' header in the response.
+
+        Raises:
+            requests.ConnectionError: If 'too many requests' error occurs.
+        """
+
+        try:
+            # Convert number of seconds to a time string in HH:MM:SS format.
+            retry_after_date = str(time.strftime('%H:%M:%S', time.gmtime(int(retry_after))))
+        except ValueError:
+            # If the 'Retry-After' header is not a number, use the date string as it is.
+            retry_after_date = retry_after
+
+        err_msg = f'Error during fetching spotify data: too many requests - try after: {retry_after_date}'
+        self._logger.error(err_msg)
+        raise requests.ConnectionError(err_msg)
