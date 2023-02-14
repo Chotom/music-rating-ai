@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 
+from typing import Optional
 from rymscraper.rymscraper import RymNetwork, RymUrl
 
 from shared_utils.utils import RYM_COLS
@@ -18,21 +19,29 @@ class RymFetcher:
         _logger: Logger object for logging messages.
         _network: RymNetwork object for making requests to rateyourmusic.com.
         _filepath: Filepath of the CSV file to save the fetched data to.
+        _language: Language to filter RYM charts in 2-letter code like 'en' for English etc.
     """
 
     MAX_PAGE = 25
     COLS = ['Artist', 'Album', 'Date', 'RYM Rating', 'Ratings', 'Genres']
     URL = 'https://rateyourmusic.com/charts/popular'
 
-    def __init__(self, filepath: str):
+    def __init__(self, filepath: str, append_mode: bool = False, chart_language: Optional[str] = 'en'):
         """
         Args:
             filepath: Filepath of the CSV file to save the fetched data to.
+            append_mode: If file exist at given filepath, the data will be appended to it.
+            chart_language: Language to filter RYM charts in 2-letter code like 'en' for English etc.
         """
 
         self._logger = create_logger('RymFetcher')
         self._network = RymNetwork()
         self._filepath = filepath
+        self._language = chart_language
+        if not append_mode:
+            err_msg = f'Given filepath {filepath} for output already exist. ' \
+                      f'Init class with append_mode as true or delete file.'
+            assert not os.path.exists(filepath), err_msg
 
     def fetch(self, start_year: int, end_year: int):
         """
@@ -56,7 +65,8 @@ class RymFetcher:
         rym_url = RymUrl.RymUrl()
         rym_url.url_base = self.URL
         rym_url.year = year
-        rym_url.language = 'en'
+        if self._language:
+            rym_url.language = self._language
 
         data = pd.DataFrame(self._get_chart_data(rym_url))[self.COLS]
 

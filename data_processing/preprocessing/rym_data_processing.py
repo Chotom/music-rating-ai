@@ -25,6 +25,7 @@ class RymDataProcessor:
         """
 
         self._input_df = pd.read_csv(input_path)
+        self._input_df.dropna(inplace=True)
         self._output_path = output_path
 
         assert (self._input_df.columns.values == RYM_COLS).all(), 'Invalid input data structure.'
