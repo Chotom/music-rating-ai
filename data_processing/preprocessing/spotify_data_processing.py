@@ -216,6 +216,7 @@ class SpotifyDataProcessor:
         df = df_search.copy()
         df.dropna(inplace=True)
         df.drop_duplicates(subset=['spotify_id'], inplace=True)
+        df.drop_duplicates(subset=['album', 'artist'], inplace=True)
         df.rename(columns={'spotify_id': 'album_id'}, inplace=True)
         df = df[df['precision_match'] >= 3.]
 
