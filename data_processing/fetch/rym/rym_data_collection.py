@@ -4,7 +4,7 @@ import pandas as pd
 from typing import Optional
 from rymscraper.rymscraper import RymNetwork, RymUrl
 
-from shared_utils.utils import RYM_COLS
+from shared_utils.columns import RYM_COLS
 from shared_utils.utils import create_logger
 
 

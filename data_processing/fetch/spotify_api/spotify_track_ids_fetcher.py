@@ -3,22 +3,24 @@ import sys
 import pandas as pd
 import pyprind
 import requests
+import shared_utils.columns as c
+
 from typing import List, Dict
 from requests import Response
 
 from data_processing.fetch.spotify_api.data_models.spotify_album_tracks_model import AlbumInfoModel
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
-from shared_utils.utils import SPOTIFY_COLS
+from shared_utils.columns import SPOTIFY_SEARCH_COLS
 
 
 class SpotifyTrackIDsFetcher(SpotifyFetcher):
     """
     A class for fetching track data for Spotify albums, based on album ID.
-    The output file has the following Spotify data columns: 'album_id', 'song_id',
-    'song_name', 'song_number', 'song_artists_number'.
+    The output file has the following Spotify data columns: c.ALBUM_ID, c.SONG_ID,
+    c.SONG_NAME, c.SONG_NUMBER, c.SONG_ARTISTS_NUMBER.
 
     Notice! After sending too many requests the token may expire, and You will have to wait some
-    time to download data again. This class will always fetch only 'album_id' values that
+    time to download data again. This class will always fetch only c.ALBUM_ID values that
     does not already exist in the output file.
 
     Attributes:
@@ -51,13 +53,13 @@ class SpotifyTrackIDsFetcher(SpotifyFetcher):
         """
         Prepare album IDs to fetch from Spotify, based on searched albums. Reads
         in the input file of Spotify album data - if the output file already exists,
-        removes any 'album_id' values that have already been fetched from self._spotify_ids.
+        removes any c.ALBUM_ID values that have already been fetched from self._spotify_ids.
         """
 
         self._spotify_ids = self._get_loaded_spotify_ids()
         if os.path.exists(self.spotify_tracks_ids_output_filepath):
             df_song_ids = pd.read_csv(self.spotify_tracks_ids_output_filepath)
-            fetched_ids = df_song_ids['album_id'].unique()
+            fetched_ids = df_song_ids[c.ALBUM_ID].unique()
             self._spotify_ids = self._spotify_ids[~self._spotify_ids.isin(fetched_ids)]
         self._logger.info(f'Number of albums to fetch track ids: {len(self._spotify_ids)}')
 
@@ -71,12 +73,12 @@ class SpotifyTrackIDsFetcher(SpotifyFetcher):
         """
 
         df_spotify_ids = pd.read_csv(self.spotify_ids_input_filepath)
-        assert (df_spotify_ids.columns.values == SPOTIFY_COLS).all(), 'Invalid input data structure.'
+        assert (df_spotify_ids.columns.values == SPOTIFY_SEARCH_COLS).all(), 'Invalid input data structure.'
 
         df_spotify_ids = df_spotify_ids[df_spotify_ids.notna()]
-        df_spotify_ids = df_spotify_ids[df_spotify_ids['precision_match'] > 1]
+        df_spotify_ids = df_spotify_ids[df_spotify_ids[c.PREC_MATCH] > 1]
 
-        return df_spotify_ids['spotify_id']
+        return df_spotify_ids[c.ALBUM_ID]
 
     def fetch(self):
         """
@@ -138,11 +140,11 @@ class SpotifyTrackIDsFetcher(SpotifyFetcher):
         for album in albums:
             for track in album.tracks.items:
                 record = {
-                    'album_id': album.id,
-                    'song_id': track.id,
-                    'song_name': track.name,
-                    'song_number': track.track_number,
-                    'song_artists_number': len(track.artists)
+                    c.ALBUM_ID: album.id,
+                    c.SONG_ID: track.id,
+                    c.SONG_NAME: track.name,
+                    c.SONG_NUMBER: track.track_number,
+                    c.SONG_ARTISTS_NUMBER: len(track.artists)
                 }
                 batch.append(record)
 

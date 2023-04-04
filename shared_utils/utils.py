@@ -12,40 +12,6 @@ PROJECT_DIR = f'{os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}'
 LOG_LEVEL = logging.DEBUG
 """Message logging level."""
 
-RYM_COLS = ['artist', 'album', 'date', 'rating', 'ratings_number', 'genres']
-"""Columns for rate your music data."""
-
-SPOTIFY_COLS = ['album', 'artist', 'spotify_id',
-                'spotify_album', 'spotify_artist', 'precision_match']
-"""Column names in output spotify search file."""
-
-SPOTIFY_FEATURES = [
-    'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
-    'instrumentalness', 'liveness', 'valence', 'tempo', 'duration_ms', 'time_signature'
-]
-"""Spotify features, documentation: 
-https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features"""
-
-SPOTIFY_SEARCH_COLS = [
-    'album', 'artist', 'album_id', 'spotify_album', 'spotify_artist', 'precision_match', 'num_tracks', 'num_features'
-]
-
-SPOTIFY_PROCESSED_TRACKS_COLS = [
-    'song_id', 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
-    'instrumentalness', 'liveness', 'valence', 'tempo', 'duration_ms', 'time_signature', 'album_id',
-    'song_name', 'song_number', 'song_artists_number'
-]
-
-GENIUS_STATS_COLS = [
-    'album_id', 'spotify_album', 'spotify_artist', 'number_of_fetched_lyrics'
-]
-
-DATASET_FEATURES = [
-    'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
-    'instrumentalness', 'liveness', 'valence', 'tempo', 'duration_ms', 'time_signature'
-    'song_number', 'song_artists_number'
-]
-
 
 # Functions
 

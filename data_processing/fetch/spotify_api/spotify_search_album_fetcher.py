@@ -2,13 +2,16 @@ import os
 import time
 import requests
 import pandas as pd
+import shared_utils.columns as c
+
 from dataclasses import dataclass
 from typing import Tuple, Optional
 from requests import Response
 
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
 from data_processing.fetch.spotify_api.data_models.spotify_search_album_model import SearchModel, Item
-from shared_utils.utils import SPOTIFY_COLS, clear_album_name, clear_artist_name
+from shared_utils.utils import clear_album_name, clear_artist_name
+from shared_utils.columns import SPOTIFY_SEARCH_COLS
 
 
 class SpotifySearchAlbumFetcher(SpotifyFetcher):
@@ -16,17 +19,17 @@ class SpotifySearchAlbumFetcher(SpotifyFetcher):
     Class for fetching spotify album ids, based on data from RateYourMusic.
     Create output file based on artist name and album data from rym with
     Spotify data columns filled with empty values (spotify columns:
-    'spotify_id', 'spotify_album', 'spotify_artist', 'precision_match').
-    If 'precision_match' field is empty, the search request will be sent to
+    c.SPOTIFY_ID, c.SPOTIFY_ALBUM, c.SPOTIFY_ARTIST, c.PREC_MATCH).
+    If c.PREC_MATCH field is empty, the search request will be sent to
     spotify API. Precision_match column show how accurate search was
     (max value is 4 and min is 0). Zero means that normalized name of album or
     artist was not found in spotify. Empty values means that the request wasn't
-    sent yet. Search end when all values in 'precision_match' column are filled.
+    sent yet. Search end when all values in c.PREC_MATCH column are filled.
 
     Notice! After sending too many requests the token may expire, and You will
     have to wait some time to download data again. This class will always fetch
-    only rows without 'precision_match' value in output file, so don't modify
-    this file unless everything is fetched and whole 'precision_match' column
+    only rows without c.PREC_MATCH value in output file, so don't modify
+    this file unless everything is fetched and whole c.PREC_MATCH column
     is filled (this may require to run this class few times, due to token
     expiration).
 
@@ -63,48 +66,48 @@ class SpotifySearchAlbumFetcher(SpotifyFetcher):
             self._create_output_df()
         self._df_spotify = pd.read_csv(self.spotify_output_filepath)
 
-        assert (self._df_spotify.columns.values == SPOTIFY_COLS).all(), 'Invalid data structure.'
+        assert (self._df_spotify.columns.values == SPOTIFY_SEARCH_COLS).all(), 'Invalid data structure.'
         self._logger.info(f'Output file loaded. Spotify filled data:\n{self._df_spotify.notna().sum()}.')
 
     def _create_output_df(self):
         """Create output file based on artist name and album data from rym."""
         df_rym = pd.read_csv(self.rym_input_filepath)
-        self._df_spotify = df_rym[['album', 'artist']].copy()
-        self._df_spotify['spotify_id'] = None
-        self._df_spotify['spotify_album'] = None
-        self._df_spotify['spotify_artist'] = None
-        self._df_spotify['precision_match'] = None
+        self._df_spotify = df_rym[[c.ALBUM, c.ARTIST]].copy()
+        self._df_spotify[c.ALBUM_ID] = None
+        self._df_spotify[c.SPOTIFY_ALBUM] = None
+        self._df_spotify[c.SPOTIFY_ARTIST] = None
+        self._df_spotify[c.PREC_MATCH] = None
 
-        self._logger.info(f'Prepared spotify data filled with empty values. Columns: {SPOTIFY_COLS}.')
+        self._logger.info(f'Prepared spotify data filled with empty values. Columns: {SPOTIFY_SEARCH_COLS}.')
         self._save_df()
 
     def _save_df(self):
         """Save self._df_spotify in self.spotify_output_filepath CSV file."""
-        self._df_spotify[SPOTIFY_COLS].to_csv(self.spotify_output_filepath, index=False)
+        self._df_spotify[SPOTIFY_SEARCH_COLS].to_csv(self.spotify_output_filepath, index=False)
         self._logger.info(f'Saved data to {self.spotify_output_filepath}.')
 
     def fetch(self):
         """
         Send search album request to Spotify API for every album with
-        empty 'precision_match' value in dataframe. Add Spotify data to output
-        file, including 'precision_match' value. Save output file every 100th request
+        empty precision match value in dataframe. Add Spotify data to output
+        file, including precision match value. Save output file every 100th request
         to spotify_output_filepath.
         """
 
-        self._logger.info(f"{self._df_spotify['precision_match'].isna().sum()} albums id to fetch.")
-        self._logger.info(f"{self._df_spotify['precision_match'].notna().sum()} albums already fetched.")
+        self._logger.info(f"{self._df_spotify[c.PREC_MATCH].isna().sum()} albums id to fetch.")
+        self._logger.info(f"{self._df_spotify[c.PREC_MATCH].notna().sum()} albums already fetched.")
 
-        empty_precision_mask = self._df_spotify['precision_match'].isna()
+        empty_precision_mask = self._df_spotify[c.PREC_MATCH].isna()
         for i, row in self._df_spotify[empty_precision_mask].iterrows():
             if i % 100 == 0:
                 self._logger.info(f'{i}/{self._df_spotify.shape[0]}')
                 self._save_df()
 
             record = self._get_album_data(i, row)
-            self._df_spotify.loc[i, 'spotify_id'] = record.spotify_id
-            self._df_spotify.loc[i, 'spotify_album'] = record.spotify_album
-            self._df_spotify.loc[i, 'spotify_artist'] = record.spotify_artist
-            self._df_spotify.loc[i, 'precision_match'] = record.precision_match
+            self._df_spotify.loc[i, c.ALBUM_ID] = record.spotify_id
+            self._df_spotify.loc[i, c.SPOTIFY_ALBUM] = record.spotify_album
+            self._df_spotify.loc[i, c.SPOTIFY_ARTIST] = record.spotify_artist
+            self._df_spotify.loc[i, c.PREC_MATCH] = record.precision_match
 
         self._logger.info(f'Processed finished {self._df_spotify.shape[0]}.')
         self._save_df()
@@ -115,14 +118,14 @@ class SpotifySearchAlbumFetcher(SpotifyFetcher):
 
         Args:
             index: Index of album in output dataframe.
-            row: Series object with 'album' and 'artist' data for the current album.
+            row: Series object with album and artist data for the current album.
 
         Returns:
             SpotifyRecord obj with album data from Spotify or empty obj if album was not found or an error occurred.
         """
 
-        self._album = row['album']
-        self._artist = row['artist']
+        self._album = row[c.ALBUM]
+        self._artist = row[c.ARTIST]
         record = self.SpotifyRecord()
         resp: Response = self._send_search_request_for_album()
 
@@ -152,7 +155,7 @@ class SpotifySearchAlbumFetcher(SpotifyFetcher):
         }
         data = {
             'q': f'{self._album} artist:{self._artist}',
-            'type': 'album',
+            'type': c.ALBUM,
             'market': 'US',
             'limit': 10
         }

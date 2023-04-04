@@ -3,12 +3,13 @@ import sys
 import pandas as pd
 import pyprind
 import requests
+import shared_utils.columns as c
+
 from typing import List, Dict
 from requests import Response
 
 from data_processing.fetch.spotify_api.spotify_data_collection import SpotifyFetcher
 from data_processing.fetch.spotify_api.data_models.spotify_track_features_model import TrackFeatureModel
-from shared_utils.utils import PROJECT_DIR
 
 
 class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
@@ -39,11 +40,11 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
     def _prepare_input_ids(self):
         """Prepare track IDs to fetch from spotify, based on fetched tracks."""
         df_track_ids = pd.read_csv(self.input_filepath)
-        self._track_ids: pd.Series = df_track_ids['song_id']
+        self._track_ids: pd.Series = df_track_ids[c.SONG_ID]
 
         if os.path.exists(self.output_filepath):
             df_track_ids = pd.read_csv(self.output_filepath)
-            self._track_ids = self._track_ids[~self._track_ids.isin(df_track_ids['id'])]
+            self._track_ids = self._track_ids[~self._track_ids.isin(df_track_ids[c.SONG_ID])]
         self._logger.info(f'Number of track ids to fetch features: {len(self._track_ids)}')
 
     def fetch(self):
