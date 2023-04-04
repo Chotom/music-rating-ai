@@ -51,6 +51,22 @@ SONG_ARTISTS_NUMBER = 'song_artists_number'
 SPOTIFY_TRACKS_IDS_COLS = [ALBUM_ID, SONG_ID, SONG_NAME, SONG_NUMBER, SONG_ARTISTS_NUMBER]
 """Column names in output spotify track ids file."""
 
+# SPOTIFY PROCESSED DATA ------------------------------------------------------
+NUM_TRACKS = 'num_tracks'
+NUM_FEATURES = 'num_features'
+
+SPOTIFY_ALBUM_PROCESSED_COLS = [
+    ALBUM, ARTIST, ALBUM_ID, SPOTIFY_ALBUM, SPOTIFY_ARTIST, PREC_MATCH, NUM_TRACKS, NUM_FEATURES
+]
+"""Column names in output spotify processed album file."""
+
+SPOTIFY_TRACKS_PROCESSED_COLS = [
+    SONG_ID, DANCEABILITY, ENERGY, KEY, LOUDNESS, MODE, SPEECHINESS, ACOUSTICNESS,
+    INSTRUMENTALNESS, LIVENESS, VALENCE, TEMPO, DURATION_MS, TIME_SIGNATURE,
+    ALBUM_ID, SONG_NAME, SONG_NUMBER, SONG_ARTISTS_NUMBER
+]
+"""Column names in output spotify processed tracks file."""
+
 # GENIUS STATS ----------------------------------------------------------------
 
 NUMBER_OF_LYRICS = 'number_of_fetched_lyrics'

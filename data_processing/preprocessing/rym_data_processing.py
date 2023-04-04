@@ -1,20 +1,19 @@
 import datetime
 import pandas as pd
+import shared_utils.columns as c
 
-from shared_utils.utils import RYM_COLS
+from shared_utils.columns import RYM_COLS
 
 
 class RymDataProcessor:
     """A class to process data fetched from RYM charts.
 
     Attributes:
-        DATE_COL: Name of column in dataframe containing date.
         MINIMUM_RATE_NUMBER: Minimum number of ratings required to save record.
         _input_df: Read dataframe from input_path with fetched data.
         _output_path: Filepath of the output CSV file to save the processed data to.
     """
 
-    DATE_COL = 'date'
     MINIMUM_RATE_NUMBER = 50
 
     def __init__(self, input_path: str, output_path: str):
@@ -41,27 +40,27 @@ class RymDataProcessor:
         """
 
         df = self._date_convert(self._input_df.copy())
-        df.drop_duplicates(subset=['artist', 'album'], keep='last', inplace=True)
-        df['ratings_number'] = df['ratings_number'].str.replace(',', '').astype(int)
-        df = df.loc[df['ratings_number'] >= self.MINIMUM_RATE_NUMBER, :]
-        df.sort_values(by=[self.DATE_COL], inplace=True)
+        df.drop_duplicates(subset=[c.ARTIST, c.ALBUM], keep='last', inplace=True)
+        df[c.RATING_NUMBER] = df[c.RATING_NUMBER].str.replace(',', '').astype(int)
+        df = df.loc[df[c.RATING_NUMBER] >= self.MINIMUM_RATE_NUMBER, :]
+        df.sort_values(by=[c.DATE], inplace=True)
 
         df.to_csv(self._output_path, index=False)
 
     def _date_convert(self, df: pd.DataFrame) -> pd.DataFrame:
         """
-        Convert DATE_COL column to YYYY-mm-dd format with YYYY-01-01 as default if day
+        Convert c.DATE column to YYYY-mm-dd format with YYYY-01-01 as default if day
         or month data is missing (e.g. from 'September 1990' to '1990-09-01').
 
         Args:
-            df: DataFrame with literal date in DATE_COL columns to convert.
+            df: DataFrame with literal date in c.DATE columns to convert.
 
         Returns:
-            DataFrame with converted DATE_COL in YYYY-mm-dd format.
+            DataFrame with converted c.DATE in YYYY-mm-dd format.
         """
 
         # Split the date column into year, month, and day columns.
-        df[['year', 'month', 'day']] = self._input_df[self.DATE_COL].apply(
+        df[['year', 'month', 'day']] = self._input_df[c.DATE].apply(
             lambda date_in_text: pd.Series(date_in_text.split(' ', 2)[::-1])
         )
 
@@ -75,7 +74,7 @@ class RymDataProcessor:
         )
 
         # Save date in YYYY-mm-dd format
-        df[self.DATE_COL] = df['year'] + '-' + df['month'] + '-' + df['day']
-        df[self.DATE_COL] = pd.to_datetime(df[self.DATE_COL], format='%Y-%m-%d')
+        df[c.DATE] = df['year'] + '-' + df['month'] + '-' + df['day']
+        df[c.DATE] = pd.to_datetime(df[c.DATE], format='%Y-%m-%d')
 
         return df.drop(columns=['year', 'month', 'day'])

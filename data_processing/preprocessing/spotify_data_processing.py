@@ -1,6 +1,8 @@
 import pandas as pd
+import shared_utils.columns as c
 
-from shared_utils.utils import SPOTIFY_FEATURES, create_logger, SPOTIFY_COLS
+from shared_utils.utils import create_logger
+from shared_utils.columns import SPOTIFY_SEARCH_COLS, SPOTIFY_FEATURES
 
 
 class SpotifyDataProcessor:
@@ -78,11 +80,11 @@ class SpotifyDataProcessor:
             A tuple of cleaned search results and merged track features dataframes.
         """
 
-        df_tracks = df_tracks.drop_duplicates(subset=['song_id'])
-        df_features = SpotifyDataProcessor.clear_tracks_features(df_features).rename(columns={'id': 'song_id'})
-        df_features = df_features.merge(df_tracks, on='song_id')
+        df_tracks = df_tracks.drop_duplicates(subset=[c.SONG_ID])
+        df_features = SpotifyDataProcessor.clear_tracks_features(df_features)
+        df_features = df_features.merge(df_tracks, on=c.SONG_ID)
         df_features = SpotifyDataProcessor.remove_albums_with_not_enough_features(df_features, 4)
-        df_features = SpotifyDataProcessor.select_top_n_features(df_features, 16, 'song_number')
+        df_features = SpotifyDataProcessor.select_top_n_features(df_features, 16, c.SONG_NUMBER)
         df_search = SpotifyDataProcessor.clear_search_results(df_search, df_tracks, df_features)
 
         return df_search, df_features
@@ -117,7 +119,7 @@ class SpotifyDataProcessor:
         Returns:
             Copy of input dataframe with removed null values and duplicates.
         """
-        return df.dropna().drop_duplicates(subset=['id']).round(4)
+        return df.dropna().drop_duplicates(subset=[c.SONG_ID]).round(4)
 
     @staticmethod
     def _replace_outliers(df: pd.DataFrame) -> pd.DataFrame:
@@ -130,10 +132,10 @@ class SpotifyDataProcessor:
         Returns:
             Copy of input dataframe with outlier values replaced.
         """
-        df.loc[df['tempo'] < 45, 'tempo'] = 45
-        df.loc[df['tempo'] > 220, 'tempo'] = 220
-        df.loc[df['duration_ms'] > 600000, 'duration_ms'] = 600000
-        df.loc[df['time_signature'] < 3, 'time_signature'] = 4
+        df.loc[df[c.TEMPO] < 45, c.TEMPO] = 45
+        df.loc[df[c.TEMPO] > 220, c.TEMPO] = 220
+        df.loc[df[c.DURATION_MS] > 600000, c.DURATION_MS] = 600000
+        df.loc[df[c.TIME_SIGNATURE] < 3, c.TIME_SIGNATURE] = 4
         return df
 
     @staticmethod
@@ -147,18 +149,18 @@ class SpotifyDataProcessor:
         Returns:
             Copy of input dataframe with outliers removed.
         """
-        df = df[df['danceability'].between(0, 1, inclusive='neither')]
-        df = df[df['energy'].between(0, 1)]
-        df = df[df['key'].between(0, 11)]
-        df = df[df['loudness'].between(-35, 0, inclusive='left')]
-        df = df[df['mode'].isin([0, 1])]
-        df = df[df['speechiness'].between(0, 0.66, inclusive='neither')]
-        df = df[df['acousticness'].between(0, 1)]
-        df = df[df['instrumentalness'].between(0, 1)]
-        df = df[df['liveness'].between(0, 1)]
-        df = df[df['valence'].between(0, 1)]
-        df = df[df['duration_ms'] >= 20000]
-        df = df[df['time_signature'].between(3, 7)]
+        df = df[df[c.DANCEABILITY].between(0, 1, inclusive='neither')]
+        df = df[df[c.ENERGY].between(0, 1)]
+        df = df[df[c.KEY].between(0, 11)]
+        df = df[df[c.LOUDNESS].between(-35, 0, inclusive='left')]
+        df = df[df[c.MODE].isin([0, 1])]
+        df = df[df[c.SPEECHINESS].between(0, 0.66, inclusive='neither')]
+        df = df[df[c.ACOUSTICNESS].between(0, 1)]
+        df = df[df[c.INSTRUMENTALNESS].between(0, 1)]
+        df = df[df[c.LIVENESS].between(0, 1)]
+        df = df[df[c.VALENCE].between(0, 1)]
+        df = df[df[c.DURATION_MS] >= 20000]
+        df = df[df[c.TIME_SIGNATURE].between(3, 7)]
         return df
 
     @staticmethod
@@ -176,13 +178,13 @@ class SpotifyDataProcessor:
         assert all(col in df_features.columns for col in SPOTIFY_FEATURES), 'Input is missing features columns.'
 
         # Get album count.
-        df_album_count = df_features.groupby('album_id').size().reset_index(name='count')
+        df_album_count = df_features.groupby(c.ALBUM_ID).size().reset_index(name='count')
 
         # Get album with count greater or equal to min_features.
-        df_album_id = df_album_count[df_album_count['count'] >= min_features]['album_id']
+        df_album_id = df_album_count[df_album_count['count'] >= min_features][c.ALBUM_ID]
 
         # Filter the input dataframe with album's that have at least min_features.
-        df_filtered = df_features[df_features['album_id'].isin(df_album_id)]
+        df_filtered = df_features[df_features[c.ALBUM_ID].isin(df_album_id)]
 
         return df_filtered
 
@@ -200,7 +202,7 @@ class SpotifyDataProcessor:
             A new dataframe with the top n features selected for each group.
         """
 
-        return df.groupby('album_id', group_keys=False).apply(lambda x: x.nlargest(n, criterion))
+        return df.groupby(c.ALBUM_ID, group_keys=False).apply(lambda x: x.nlargest(n, criterion))
 
     @staticmethod
     def clear_search_results(
@@ -208,24 +210,23 @@ class SpotifyDataProcessor:
             df_track_ids: pd.DataFrame,
             df_features: pd.DataFrame,
     ) -> pd.DataFrame:
-        assert all(col in df_track_ids for col in ['album_id', 'song_id']), 'Input is missing id columns.'
-        assert all(col in df_features for col in ['album_id', 'song_id']), 'Input is missing id columns.'
-        assert all(col in df_search.columns for col in SPOTIFY_COLS), 'Input is missing some columns.'
+        assert all(col in df_track_ids for col in [c.ALBUM_ID, c.SONG_ID]), 'Input is missing id columns.'
+        assert all(col in df_features for col in [c.ALBUM_ID, c.SONG_ID]), 'Input is missing id columns.'
+        assert all(col in df_search.columns for col in SPOTIFY_SEARCH_COLS), 'Input is missing some columns.'
 
         # Prepare df.
         df = df_search.copy()
         df.dropna(inplace=True)
-        df.drop_duplicates(subset=['spotify_id'], inplace=True)
-        df.drop_duplicates(subset=['album', 'artist'], inplace=True)
-        df.rename(columns={'spotify_id': 'album_id'}, inplace=True)
-        df = df[df['precision_match'] >= 3.]
+        df.drop_duplicates(subset=[c.ALBUM_ID], inplace=True)
+        df.drop_duplicates(subset=[c.ALBUM, c.ARTIST], inplace=True)
+        df = df[df[c.PREC_MATCH] >= 3.]
 
         # Number of tracks per album found in spotify.
-        df_tracks_num = df_track_ids.groupby('album_id').size().reset_index(name='num_tracks')
-        df = df.merge(df_tracks_num, how='left', on=['album_id'])
+        df_tracks_num = df_track_ids.groupby(c.ALBUM_ID).size().reset_index(name=c.NUM_TRACKS)
+        df = df.merge(df_tracks_num, how='left', on=[c.ALBUM_ID])
 
         # Number of tracks per album after processing found in spotify.
-        df_features_num = df_features.groupby('album_id').size().reset_index(name='num_features')
-        df = df.merge(df_features_num, how='left', on=['album_id'])
+        df_features_num = df_features.groupby(c.ALBUM_ID).size().reset_index(name=c.NUM_FEATURES)
+        df = df.merge(df_features_num, how='left', on=[c.ALBUM_ID])
 
         return df.dropna()
