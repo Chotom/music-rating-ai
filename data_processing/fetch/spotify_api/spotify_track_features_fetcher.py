@@ -14,7 +14,7 @@ from data_processing.fetch.spotify_api.data_models.spotify_track_features_model 
 
 class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
     """
-    Class for fetching audio features for tracks from the Spotify API.
+    Class for fetching audio processing for tracks from the Spotify API.
     """
 
     def __init__(
@@ -29,7 +29,7 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
             client_id: Spotify API client ID.
             client_secret: Spotify API client secret.
             spotify_track_ids_input_filepath: Filepath of the input CSV file containing track IDs to fetch data for.
-            spotify_track_features_output_filepath: Filepath of the output CSV file to store features.
+            spotify_track_features_output_filepath: Filepath of the output CSV file to store processing.
         """
         super().__init__(client_id, client_secret)
 
@@ -45,11 +45,11 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
         if os.path.exists(self.output_filepath):
             df_track_ids = pd.read_csv(self.output_filepath)
             self._track_ids = self._track_ids[~self._track_ids.isin(df_track_ids[c.SONG_ID])]
-        self._logger.info(f'Number of track ids to fetch features: {len(self._track_ids)}')
+        self._logger.info(f'Number of track ids to fetch processing: {len(self._track_ids)}')
 
     def fetch(self):
         """
-        Fetch track features for each track ID in self._track_ids.
+        Fetch track processing for each track ID in self._track_ids.
         Send requests to the Spotify API in chunks and store it in output file.
         """
 
@@ -75,11 +75,11 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
 
     def _send_for_tracks_features(self, ids: List) -> Response:
         """
-        Send a request to the Spotify API for track audio features for the provided track ids.
+        Send a request to the Spotify API for track audio processing for the provided track ids.
         Returns a `Response` object containing the response from the API.
 
         Args:
-            ids: A list of track ids to get audio features for.
+            ids: A list of track ids to get audio processing for.
 
         Returns:
             A `Response` object containing the response from the Spotify API.
@@ -94,7 +94,7 @@ class SpotifyTrackFeaturesFetcher(SpotifyFetcher):
 
     def _handle_successful_response(self, resp: Response, track_ids: pd.Series):
         """
-        Handle a successful response from the Spotify API for track features.
+        Handle a successful response from the Spotify API for track processing.
 
         Args:
             resp: The response from the Spotify API.

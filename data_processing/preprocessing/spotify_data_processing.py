@@ -12,9 +12,9 @@ class SpotifyDataProcessor:
     Args:
         search_result_filepath (str): The file path to the csv file containing the search results for albums.
         track_ids_filepath (str): The file path to the csv file containing the track ids and corresponding album ids.
-        track_features_filepath (str): The file path to the csv file containing the track features.
+        track_features_filepath (str): The file path to the csv file containing the track processing.
         search_result_output_filepath (str): The file path to save the processed search results.
-        track_features_output_filepath (str): The file path to save the processed track features.
+        track_features_output_filepath (str): The file path to save the processed track processing.
     """
 
     def __init__(
@@ -39,7 +39,7 @@ class SpotifyDataProcessor:
         and then saves the cleaned data to output files.
 
         1. Process input data from given filepaths in class
-        2. Save processed search result and merged tracks ids with features.
+        2. Save processed search result and merged tracks ids with processing.
         """
 
         self._logger.info(f'Features size before clean: {self._df_features.shape}')
@@ -65,19 +65,19 @@ class SpotifyDataProcessor:
             df_features: pd.DataFrame
     ) -> tuple[pd.DataFrame, pd.DataFrame]:
         """
-        1. Clean features and cut outliers.
-        2. Merge features with tracks.
+        1. Clean processing and cut outliers.
+        2. Merge processing with tracks.
         3. Clean albums search data.
-        4. Select first 16 features for each album.
-        5. Select albums with enough amount of features.
+        4. Select first 16 processing for each album.
+        5. Select albums with enough amount of processing.
 
         Args:
             df_search: The input dataframe with search results for albums.
             df_tracks: The input dataframe with track ids and corresponding album ids.
-            df_features: The input dataframe with track features.
+            df_features: The input dataframe with track processing.
 
         Returns:
-            A tuple of cleaned search results and merged track features dataframes.
+            A tuple of cleaned search results and merged track processing dataframes.
         """
 
         df_tracks = df_tracks.drop_duplicates(subset=[c.SONG_ID])
@@ -92,15 +92,15 @@ class SpotifyDataProcessor:
     @staticmethod
     def clear_tracks_features(df_features: pd.DataFrame) -> pd.DataFrame:
         """
-        Remove outliers from the track features dataframe.
+        Remove outliers from the track processing dataframe.
 
         Args:
-            df_features: The input dataframe with Spotify track features.
+            df_features: The input dataframe with Spotify track processing.
 
         Returns:
             Copy of input dataframe with removed outliers.
         """
-        assert all(col in df_features.columns for col in SPOTIFY_FEATURES), 'Input is missing features columns.'
+        assert all(col in df_features.columns for col in SPOTIFY_FEATURES), 'Input is missing processing columns.'
 
         df = SpotifyDataProcessor._prepare_df(df_features)
         df = SpotifyDataProcessor._replace_outliers(df)
@@ -114,7 +114,7 @@ class SpotifyDataProcessor:
         Prepare the input feature dataframe for outlier removal.
 
         Args:
-            df: The input dataframe with Spotify track features.
+            df: The input dataframe with Spotify track processing.
 
         Returns:
             Copy of input dataframe with removed null values and duplicates.
@@ -127,7 +127,7 @@ class SpotifyDataProcessor:
         Replace outlier values in the dataframe with certain min and max.
 
         Args:
-            df: The input dataframe with Spotify track features.
+            df: The input dataframe with Spotify track processing.
 
         Returns:
             Copy of input dataframe with outlier values replaced.
@@ -144,7 +144,7 @@ class SpotifyDataProcessor:
         Remove outliers from the dataframe based on certain min and max values.
 
         Args:
-            df: The input dataframe with Spotify track features.
+            df: The input dataframe with Spotify track processing.
 
         Returns:
             Copy of input dataframe with outliers removed.
@@ -169,13 +169,13 @@ class SpotifyDataProcessor:
         Remove album_id's with less than min_features from input dataframe.
 
         Args:
-            df_features: The input dataframe with Spotify track features.
-            min_features: Minimum number of features for an album_id.
+            df_features: The input dataframe with Spotify track processing.
+            min_features: Minimum number of processing for an album_id.
 
         Returns:
             Copy of input dataframe with removed album_id's that have less than min_features.
         """
-        assert all(col in df_features.columns for col in SPOTIFY_FEATURES), 'Input is missing features columns.'
+        assert all(col in df_features.columns for col in SPOTIFY_FEATURES), 'Input is missing processing columns.'
 
         # Get album count.
         df_album_count = df_features.groupby(c.ALBUM_ID).size().reset_index(name='count')
@@ -191,15 +191,15 @@ class SpotifyDataProcessor:
     @staticmethod
     def select_top_n_features(df: pd.DataFrame, n: int, criterion: str) -> pd.DataFrame:
         """
-        Select top n features for each group in a dataframe based on a specified criterion.
+        Select top n processing for each group in a dataframe based on a specified criterion.
 
         Args:
             df: The input dataframe.
-            n: The number of features to select for each group.
-            criterion: The name of the column to use for selecting top n features.
+            n: The number of processing to select for each group.
+            criterion: The name of the column to use for selecting top n processing.
 
         Returns:
-            A new dataframe with the top n features selected for each group.
+            A new dataframe with the top n processing selected for each group.
         """
 
         return df.groupby(c.ALBUM_ID, group_keys=False).apply(lambda x: x.nlargest(n, criterion))
