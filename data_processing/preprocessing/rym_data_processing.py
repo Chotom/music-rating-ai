@@ -1,8 +1,12 @@
 import datetime
 import pandas as pd
+import ast
+
 import shared_utils.columns as c
 
 from shared_utils.columns import RYM_COLS
+from shared_utils.utils import PROJECT_DIR
+from data_processing.preprocessing.genre_mapper import GenreMapper
 
 
 class RymDataProcessor:
@@ -38,12 +42,14 @@ class RymDataProcessor:
         4. Sort the dataframe by date.
         5. Save the processed dataframe to self.output_path.
         """
+        genre_mapper = GenreMapper(f'{PROJECT_DIR}/data/all_genre_map.json')
 
-        df = self._date_convert(self._input_df.copy())
+        df: pd.DataFrame = self._date_convert(self._input_df.copy())
         df.drop_duplicates(subset=[c.ARTIST, c.ALBUM], keep='last', inplace=True)
         df[c.RATING_NUMBER] = df[c.RATING_NUMBER].str.replace(',', '').astype(int)
         df = df.loc[df[c.RATING_NUMBER] >= self.MINIMUM_RATE_NUMBER, :]
         df.sort_values(by=[c.DATE], inplace=True)
+        df[c.GENRES] = df[c.GENRES].apply(lambda genres: genre_mapper.map_many_genres(genres.split(", ")))
 
         df.to_csv(self._output_path, index=False)
 
