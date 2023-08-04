@@ -1,8 +1,10 @@
 import pandas as pd
 import shared_utils.columns as c
 
-from shared_utils.utils import create_logger
-from shared_utils.columns import SPOTIFY_SEARCH_COLS, SPOTIFY_FEATURES
+from shared_utils.utils import create_logger, MIN_TEMPO, MAX_TEMPO, MAX_DURATION_MS, MIN_TIME_SIGNATURE, \
+    MAX_DANCEABILITY, MAX_ENERGY, MAX_KEY, MIN_LOUDNESS, VALID_MODES, MAX_SPEECHINESS, MAX_ACOUSTICNESS, \
+    MAX_INSTRUMENTALNESS, MAX_LIVENESS, MAX_VALENCE, MIN_DURATION_MS, MAX_TIME_SIGNATURE, MEDIAN_TIME_SIGNATURE
+from shared_utils.columns import SPOTIFY_SEARCH_COLS, SPOTIFY_RAW_FEATURES
 
 
 class SpotifyDataProcessor:
@@ -12,9 +14,9 @@ class SpotifyDataProcessor:
     Args:
         search_result_filepath (str): The file path to the csv file containing the search results for albums.
         track_ids_filepath (str): The file path to the csv file containing the track ids and corresponding album ids.
-        track_features_filepath (str): The file path to the csv file containing the track processing.
+        track_features_filepath (str): The file path to the csv file containing the track feature.
         search_result_output_filepath (str): The file path to save the processed search results.
-        track_features_output_filepath (str): The file path to save the processed track processing.
+        track_features_output_filepath (str): The file path to save the processed track feature.
     """
 
     def __init__(
@@ -39,7 +41,7 @@ class SpotifyDataProcessor:
         and then saves the cleaned data to output files.
 
         1. Process input data from given filepaths in class
-        2. Save processed search result and merged tracks ids with processing.
+        2. Save processed search result and merged tracks ids with feature.
         """
 
         self._logger.info(f'Features size before clean: {self._df_features.shape}')
@@ -52,8 +54,8 @@ class SpotifyDataProcessor:
             self._df_features
         )
 
-        self._logger.info(f'Album search size after processing: {self._df_search.shape}')
-        self._logger.info(f'Features size after processing: {self._df_features.shape}')
+        self._logger.info(f'Album search size after feature: {self._df_search.shape}')
+        self._logger.info(f'Features size after feature: {self._df_features.shape}')
 
         self._df_search.to_csv(self._search_result_output_filepath, index=False)
         self._df_features.to_csv(self._track_features_output_filepath, index=False)
@@ -65,19 +67,19 @@ class SpotifyDataProcessor:
             df_features: pd.DataFrame
     ) -> tuple[pd.DataFrame, pd.DataFrame]:
         """
-        1. Clean processing and cut outliers.
-        2. Merge processing with tracks.
+        1. Clean feature and cut outliers.
+        2. Merge feature with tracks.
         3. Clean albums search data.
-        4. Select first 16 processing for each album.
-        5. Select albums with enough amount of processing.
+        4. Select first 16 feature for each album.
+        5. Select albums with enough amount of feature.
 
         Args:
             df_search: The input dataframe with search results for albums.
             df_tracks: The input dataframe with track ids and corresponding album ids.
-            df_features: The input dataframe with track processing.
+            df_features: The input dataframe with track feature.
 
         Returns:
-            A tuple of cleaned search results and merged track processing dataframes.
+            A tuple of cleaned search results and merged track feature dataframes.
         """
 
         df_tracks = df_tracks.drop_duplicates(subset=[c.SONG_ID])
@@ -92,15 +94,15 @@ class SpotifyDataProcessor:
     @staticmethod
     def clear_tracks_features(df_features: pd.DataFrame) -> pd.DataFrame:
         """
-        Remove outliers from the track processing dataframe.
+        Remove outliers from the track feature dataframe.
 
         Args:
-            df_features: The input dataframe with Spotify track processing.
+            df_features: The input dataframe with Spotify track feature.
 
         Returns:
             Copy of input dataframe with removed outliers.
         """
-        assert all(col in df_features.columns for col in SPOTIFY_FEATURES), 'Input is missing processing columns.'
+        assert all(col in df_features.columns for col in SPOTIFY_RAW_FEATURES), 'Input is missing feature columns.'
 
         df = SpotifyDataProcessor._prepare_df(df_features)
         df = SpotifyDataProcessor._replace_outliers(df)
@@ -114,7 +116,7 @@ class SpotifyDataProcessor:
         Prepare the input feature dataframe for outlier removal.
 
         Args:
-            df: The input dataframe with Spotify track processing.
+            df: The input dataframe with Spotify track feature.
 
         Returns:
             Copy of input dataframe with removed null values and duplicates.
@@ -127,15 +129,15 @@ class SpotifyDataProcessor:
         Replace outlier values in the dataframe with certain min and max.
 
         Args:
-            df: The input dataframe with Spotify track processing.
+            df: The input dataframe with Spotify track feature.
 
         Returns:
             Copy of input dataframe with outlier values replaced.
         """
-        df.loc[df[c.TEMPO] < 45, c.TEMPO] = 45
-        df.loc[df[c.TEMPO] > 220, c.TEMPO] = 220
-        df.loc[df[c.DURATION_MS] > 600000, c.DURATION_MS] = 600000
-        df.loc[df[c.TIME_SIGNATURE] < 3, c.TIME_SIGNATURE] = 4
+        df.loc[df[c.TEMPO] < MIN_TEMPO, c.TEMPO] = MIN_TEMPO
+        df.loc[df[c.TEMPO] > MAX_TEMPO, c.TEMPO] = MAX_TEMPO
+        df.loc[df[c.DURATION_MS] > MAX_DURATION_MS, c.DURATION_MS] = MAX_DURATION_MS
+        df.loc[df[c.TIME_SIGNATURE] < MIN_TIME_SIGNATURE, c.TIME_SIGNATURE] = MEDIAN_TIME_SIGNATURE
         return df
 
     @staticmethod
@@ -144,23 +146,23 @@ class SpotifyDataProcessor:
         Remove outliers from the dataframe based on certain min and max values.
 
         Args:
-            df: The input dataframe with Spotify track processing.
+            df: The input dataframe with Spotify track feature.
 
         Returns:
             Copy of input dataframe with outliers removed.
         """
-        df = df[df[c.DANCEABILITY].between(0, 1, inclusive='neither')]
-        df = df[df[c.ENERGY].between(0, 1)]
-        df = df[df[c.KEY].between(0, 11)]
-        df = df[df[c.LOUDNESS].between(-35, 0, inclusive='left')]
-        df = df[df[c.MODE].isin([0, 1])]
-        df = df[df[c.SPEECHINESS].between(0, 0.66, inclusive='neither')]
-        df = df[df[c.ACOUSTICNESS].between(0, 1)]
-        df = df[df[c.INSTRUMENTALNESS].between(0, 1)]
-        df = df[df[c.LIVENESS].between(0, 1)]
-        df = df[df[c.VALENCE].between(0, 1)]
-        df = df[df[c.DURATION_MS] >= 20000]
-        df = df[df[c.TIME_SIGNATURE].between(3, 7)]
+        df = df[df[c.DANCEABILITY].between(0, MAX_DANCEABILITY, inclusive='neither')]
+        df = df[df[c.ENERGY].between(0, MAX_ENERGY)]
+        df = df[df[c.KEY].between(0, MAX_KEY)]
+        df = df[df[c.LOUDNESS].between(MIN_LOUDNESS, 0, inclusive='left')]
+        df = df[df[c.MODE].isin(VALID_MODES)]
+        df = df[df[c.SPEECHINESS].between(0, MAX_SPEECHINESS, inclusive='neither')]
+        df = df[df[c.ACOUSTICNESS].between(0, MAX_ACOUSTICNESS)]
+        df = df[df[c.INSTRUMENTALNESS].between(0, MAX_INSTRUMENTALNESS)]
+        df = df[df[c.LIVENESS].between(0, MAX_LIVENESS)]
+        df = df[df[c.VALENCE].between(0, MAX_VALENCE)]
+        df = df[df[c.DURATION_MS] >= MIN_DURATION_MS]
+        df = df[df[c.TIME_SIGNATURE].between(MIN_TIME_SIGNATURE, MAX_TIME_SIGNATURE)]
         return df
 
     @staticmethod
@@ -169,13 +171,13 @@ class SpotifyDataProcessor:
         Remove album_id's with less than min_features from input dataframe.
 
         Args:
-            df_features: The input dataframe with Spotify track processing.
-            min_features: Minimum number of processing for an album_id.
+            df_features: The input dataframe with Spotify track feature.
+            min_features: Minimum number of feature for an album_id.
 
         Returns:
             Copy of input dataframe with removed album_id's that have less than min_features.
         """
-        assert all(col in df_features.columns for col in SPOTIFY_FEATURES), 'Input is missing processing columns.'
+        assert all(col in df_features.columns for col in SPOTIFY_RAW_FEATURES), 'Input is missing feature columns.'
 
         # Get album count.
         df_album_count = df_features.groupby(c.ALBUM_ID).size().reset_index(name='count')
@@ -191,15 +193,15 @@ class SpotifyDataProcessor:
     @staticmethod
     def select_top_n_features(df: pd.DataFrame, n: int, criterion: str) -> pd.DataFrame:
         """
-        Select top n processing for each group in a dataframe based on a specified criterion.
+        Select top n feature for each group in a dataframe based on a specified criterion.
 
         Args:
             df: The input dataframe.
-            n: The number of processing to select for each group.
-            criterion: The name of the column to use for selecting top n processing.
-
+            n: The number of feature to select for each group.
+            criterion: The name of the column to use for selecting top n feature.
+s
         Returns:
-            A new dataframe with the top n processing selected for each group.
+            A new dataframe with the top n feature selected for each group.
         """
 
         return df.groupby(c.ALBUM_ID, group_keys=False).apply(lambda x: x.nlargest(n, criterion))
@@ -225,7 +227,7 @@ class SpotifyDataProcessor:
         df_tracks_num = df_track_ids.groupby(c.ALBUM_ID).size().reset_index(name=c.NUM_TRACKS)
         df = df.merge(df_tracks_num, how='left', on=[c.ALBUM_ID])
 
-        # Number of tracks per album after processing found in spotify.
+        # Number of tracks per album after feature found in spotify.
         df_features_num = df_features.groupby(c.ALBUM_ID).size().reset_index(name=c.NUM_FEATURES)
         df = df.merge(df_features_num, how='left', on=[c.ALBUM_ID])
 

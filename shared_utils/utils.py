@@ -12,6 +12,24 @@ PROJECT_DIR = f'{os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}'
 LOG_LEVEL = logging.DEBUG
 """Message logging level."""
 
+# Spotify features consts
+MIN_TEMPO = 45
+MAX_TEMPO = 220
+MAX_DURATION_MS = 600000
+MAX_DANCEABILITY = 1
+MAX_ENERGY = 1
+MAX_KEY = 11
+MIN_LOUDNESS = -35
+VALID_MODES = [0, 1]
+MAX_SPEECHINESS = 0.66
+MAX_ACOUSTICNESS = 1
+MAX_INSTRUMENTALNESS = 1
+MAX_LIVENESS = 1
+MAX_VALENCE = 1
+MIN_DURATION_MS = 20000
+MIN_TIME_SIGNATURE = 3
+MEDIAN_TIME_SIGNATURE = 4
+MAX_TIME_SIGNATURE = 7
 
 # Functions
 
