@@ -9,12 +9,6 @@ GENRES = 'genres'
 RYM_COLS = [ARTIST, ALBUM, DATE, RATING, RATING_NUMBER, GENRES]
 """Columns for rate your music data."""
 
-# RYM FEATURE SELECTION DATA --------------------------------------------------
-RATING_CLASS = 'rating_class'
-DECADE_CLASS = 'decade'
-RYM_FEATURES_COLS = [ARTIST, ALBUM, DECADE_CLASS, RATING]
-"""Column names for features in output RYM file."""
-
 # SPOTIFY RAW DATA ------------------------------------------------------------
 ALBUM_ID = 'album_id'
 SPOTIFY_ALBUM = 'spotify_album'
@@ -73,12 +67,31 @@ SPOTIFY_TRACKS_PROCESSED_COLS = [
 ]
 """Column names in output spotify processed tracks file."""
 
-# SPOTIFY EXTRACTED FEATURES --------------------------------------------------
+# FEATURE SELECTION -----------------------------------------------------------
 
-SPOTIFY_CORE_FEATURES = [ALBUM_ID] + SPOTIFY_RAW_FEATURES
+RATING_CLASS = 'rating_class'
+DECADE_CLASS = 'decade'
+FEATURE = 'feature'
 
-# GENIUS DATA -----------------------------------------------------------------
+RYM_CORE_FEATURES = [
+    DATE,
+    GENRES
+]
+"""Features for RYM."""
 
-NUMBER_OF_LYRICS = 'number_of_fetched_lyrics'
-GENIUS_STATS_COLS = [ALBUM_ID, SPOTIFY_ALBUM, SPOTIFY_ARTIST, NUMBER_OF_LYRICS]
-"""Column names in output genius fetch lyrics stats file."""
+SPOTIFY_CORE_FEATURES = [
+    DANCEABILITY,
+    ENERGY,
+    KEY,
+    LOUDNESS,
+    MODE,
+    SPEECHINESS,
+    ACOUSTICNESS,
+    INSTRUMENTALNESS,
+    LIVENESS,
+    VALENCE,
+    TEMPO,
+    DURATION_MS,
+    TIME_SIGNATURE
+]
+"""Features for Spotify."""
