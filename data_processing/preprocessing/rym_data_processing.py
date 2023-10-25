@@ -49,7 +49,13 @@ class RymDataProcessor:
         df[c.RATING_NUMBER] = df[c.RATING_NUMBER].str.replace(',', '').astype(int)
         df = df.loc[df[c.RATING_NUMBER] >= self.MINIMUM_RATE_NUMBER, :]
         df.sort_values(by=[c.DATE], inplace=True)
-        df[c.GENRES] = df[c.GENRES].apply(lambda genres: genre_mapper.map_many_genres(genres.split(", ")))
+        df[c.GENRES] = df[c.GENRES].apply(
+            lambda genres: ','.join(
+                genre_mapper.map_many_genres(
+                    genres.split(", ")
+                )
+            )
+        )
 
         df.to_csv(self._output_path, index=False)
 
