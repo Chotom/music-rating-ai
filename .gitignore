@@ -1,3 +1,17 @@
+# Project files
+*.csv
+*.env
+*.json
+*.png
+*.jpg
+*.svg
+*.xml
+data
+data_processing/fetch/rym/rymscraper
+
+# Jetbrain
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

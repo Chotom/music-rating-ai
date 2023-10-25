@@ -1,0 +1,7569 @@
+{
+    "ambient americana": [
+        "regional",
+        "ambient"
+    ],
+    "ambient noise wall": [
+        "experimental",
+        "ambient"
+    ],
+    "dark ambient": [
+        "industrial",
+        "ambient"
+    ],
+    "black ambient": [
+        "industrial",
+        "ambient"
+    ],
+    "ritual ambient": [
+        "industrial",
+        "ambient"
+    ],
+    "space ambient": [
+        "electronic",
+        "ambient"
+    ],
+    "tribal ambient": [
+        "ambient"
+    ],
+    "acoustic blues": [
+        "blues"
+    ],
+    "acoustic chicago blues": [
+        "blues"
+    ],
+    "acoustic texas blues": [
+        "regional",
+        "folk",
+        "blues"
+    ],
+    "jug band": [
+        "regional",
+        "folk",
+        "blues"
+    ],
+    "piedmont blues": [
+        "regional",
+        "folk",
+        "blues"
+    ],
+    "boogie woogie": [
+        "regional",
+        "blues"
+    ],
+    "country blues": [
+        "regional",
+        "folk",
+        "blues"
+    ],
+    "delta blues": [
+        "regional",
+        "folk",
+        "blues"
+    ],
+    "hill country blues": [
+        "regional",
+        "folk",
+        "blues"
+    ],
+    "electric blues": [
+        "blues"
+    ],
+    "british blues": [
+        "blues"
+    ],
+    "chicago blues": [
+        "blues"
+    ],
+    "electric texas blues": [
+        "blues"
+    ],
+    "swamp blues": [
+        "regional",
+        "blues"
+    ],
+    "fife and drum blues": [
+        "regional",
+        "folk",
+        "blues"
+    ],
+    "jump blues": [
+        "blues"
+    ],
+    "new orleans blues": [
+        "regional",
+        "blues"
+    ],
+    "piano blues": [
+        "blues"
+    ],
+    "soul blues": [
+        "blues"
+    ],
+    "vaudeville blues": [
+        "regional",
+        "blues"
+    ],
+    "arabic classical music": [
+        "classical",
+        "regional"
+    ],
+    "andalusian classical music": [
+        "classical",
+        "regional"
+    ],
+    "iraqi maqam": [
+        "classical",
+        "regional"
+    ],
+    "sawt": [
+        "classical",
+        "regional"
+    ],
+    "azerbaijani mugham": [
+        "classical",
+        "regional"
+    ],
+    "east asian classical music": [
+        "classical",
+        "regional"
+    ],
+    "chinese classical music": [
+        "classical",
+        "regional"
+    ],
+    "baisha xiyue": [
+        "classical",
+        "regional"
+    ],
+    "chinese opera": [
+        "classical",
+        "regional"
+    ],
+    "cantonese opera": [
+        "classical",
+        "regional"
+    ],
+    "peking opera": [
+        "classical",
+        "regional"
+    ],
+    "korean revolutionary opera": [
+        "classical",
+        "regional"
+    ],
+    "revolutionary opera": [
+        "classical",
+        "regional"
+    ],
+    "shaoxing opera": [
+        "classical",
+        "regional"
+    ],
+    "dongjing": [
+        "classical",
+        "regional"
+    ],
+    "yayue": [
+        "classical",
+        "regional"
+    ],
+    "japanese classical music": [
+        "classical",
+        "regional"
+    ],
+    "gagaku": [
+        "classical",
+        "regional"
+    ],
+    "heikyoku": [
+        "classical",
+        "folk",
+        "regional"
+    ],
+    "honkyoku": [
+        "classical",
+        "regional"
+    ],
+    "jiuta": [
+        "classical",
+        "regional"
+    ],
+    "jōruri": [
+        "classical",
+        "regional"
+    ],
+    "meiji shinkyoku": [
+        "classical",
+        "regional"
+    ],
+    "nagauta": [
+        "classical",
+        "regional"
+    ],
+    "noh": [
+        "classical",
+        "regional"
+    ],
+    "shōmyō": [
+        "classical",
+        "regional"
+    ],
+    "sōkyoku": [
+        "classical",
+        "regional"
+    ],
+    "danmono": [
+        "classical",
+        "regional"
+    ],
+    "kumiuta": [
+        "classical",
+        "regional"
+    ],
+    "korean classical music": [
+        "classical",
+        "regional"
+    ],
+    "aak": [
+        "classical",
+        "regional"
+    ],
+    "dang-ak": [
+        "classical",
+        "regional"
+    ],
+    "hyang-ak": [
+        "classical",
+        "regional"
+    ],
+    "jeong-ak": [
+        "classical",
+        "regional"
+    ],
+    "gagok": [
+        "classical",
+        "regional"
+    ],
+    "vietnamese classical music": [
+        "classical",
+        "regional"
+    ],
+    "ca trù": [
+        "classical",
+        "regional"
+    ],
+    "vietnamese opera": [
+        "classical",
+        "regional"
+    ],
+    "inkiranya": [
+        "classical",
+        "regional"
+    ],
+    "minyue": [
+        "classical",
+        "regional"
+    ],
+    "persian classical music": [
+        "classical",
+        "regional"
+    ],
+    "pìobaireachd": [
+        "classical",
+        "folk",
+        "regional"
+    ],
+    "shashmaqam": [
+        "classical",
+        "regional"
+    ],
+    "south asian classical music": [
+        "classical",
+        "regional"
+    ],
+    "carnatic classical music": [
+        "classical",
+        "regional"
+    ],
+    "hindustani classical music": [
+        "classical",
+        "regional"
+    ],
+    "dhrupad": [
+        "classical",
+        "regional"
+    ],
+    "kafi": [
+        "classical",
+        "regional"
+    ],
+    "khyal": [
+        "classical",
+        "regional"
+    ],
+    "qawwali": [
+        "classical",
+        "regional"
+    ],
+    "shabad kirtan": [
+        "classical",
+        "folk",
+        "regional"
+    ],
+    "thumri": [
+        "classical",
+        "regional"
+    ],
+    "odissi classical music": [
+        "classical",
+        "regional"
+    ],
+    "southeast asian classical music": [
+        "classical",
+        "regional"
+    ],
+    "burmese classical music": [
+        "classical",
+        "regional"
+    ],
+    "gamelan": [
+        "classical",
+        "regional"
+    ],
+    "balinese gamelan": [
+        "classical",
+        "regional"
+    ],
+    "gamelan angklung": [
+        "classical",
+        "regional"
+    ],
+    "gamelan beleganjur": [
+        "classical",
+        "regional"
+    ],
+    "gamelan gender wayang": [
+        "classical",
+        "regional"
+    ],
+    "gamelan gong gede": [
+        "classical",
+        "regional"
+    ],
+    "gamelan gong kebyar": [
+        "classical",
+        "regional"
+    ],
+    "gamelan jegog": [
+        "classical",
+        "regional"
+    ],
+    "gamelan selonding": [
+        "classical",
+        "regional"
+    ],
+    "gamelan semar pegulingan": [
+        "classical",
+        "regional"
+    ],
+    "gamelan degung": [
+        "classical",
+        "regional"
+    ],
+    "javanese gamelan": [
+        "classical",
+        "regional"
+    ],
+    "gamelan sekaten": [
+        "classical",
+        "regional"
+    ],
+    "malay gamelan": [
+        "classical",
+        "regional"
+    ],
+    "kacapi suling": [
+        "classical",
+        "regional"
+    ],
+    "kulintang": [
+        "classical",
+        "regional"
+    ],
+    "mahori": [
+        "classical",
+        "regional"
+    ],
+    "malay classical music": [
+        "classical",
+        "regional"
+    ],
+    "pinpeat": [
+        "classical",
+        "regional"
+    ],
+    "saluang klasik": [
+        "classical",
+        "regional"
+    ],
+    "talempong": [
+        "classical",
+        "regional"
+    ],
+    "tembang sunda cianjuran": [
+        "classical",
+        "regional"
+    ],
+    "thai classical music": [
+        "classical",
+        "regional"
+    ],
+    "fon leb": [
+        "classical",
+        "folk",
+        "regional"
+    ],
+    "khrueang sai": [
+        "classical",
+        "regional"
+    ],
+    "piphat": [
+        "classical",
+        "regional"
+    ],
+    "sufiana kalam": [
+        "classical",
+        "regional"
+    ],
+    "turkish classical music": [
+        "classical",
+        "regional"
+    ],
+    "turkish mevlevi music": [
+        "classical",
+        "regional"
+    ],
+    "western classical music": [
+        "classical"
+    ],
+    "art song": [
+        "classical"
+    ],
+    "elizabethan song": [
+        "classical",
+        "regional"
+    ],
+    "lied": [
+        "classical",
+        "regional"
+    ],
+    "mélodie": [
+        "classical",
+        "regional"
+    ],
+    "orchestral song": [
+        "classical"
+    ],
+    "ballet": [
+        "classical"
+    ],
+    "opéra-ballet": [
+        "classical",
+        "regional"
+    ],
+    "baroque music": [
+        "classical",
+        "regional"
+    ],
+    "tragédie en musique": [
+        "classical",
+        "regional"
+    ],
+    "baroque suite": [
+        "classical",
+        "regional"
+    ],
+    "brazilian classical music": [
+        "classical",
+        "regional"
+    ],
+    "valsa brasileira": [
+        "classical",
+        "regional"
+    ],
+    "byzantine music": [
+        "classical",
+        "regional"
+    ],
+    "byzantine chant": [
+        "classical",
+        "regional"
+    ],
+    "cantata": [
+        "classical"
+    ],
+    "chamber music": [
+        "classical"
+    ],
+    "choral": [
+        "classical"
+    ],
+    "choral concerto": [
+        "classical",
+        "regional"
+    ],
+    "choral symphony": [
+        "classical"
+    ],
+    "mass": [
+        "classical",
+        "regional"
+    ],
+    "requiem": [
+        "classical",
+        "regional"
+    ],
+    "cinematic classical": [
+        "classical"
+    ],
+    "epic music": [
+        "classical"
+    ],
+    "spaghetti western": [
+        "classical"
+    ],
+    "spy music": [
+        "jazz",
+        "classical"
+    ],
+    "classical march": [
+        "classical"
+    ],
+    "circus march": [
+        "classical"
+    ],
+    "dobrado": [
+        "classical",
+        "regional"
+    ],
+    "funeral march": [
+        "classical"
+    ],
+    "classical period": [
+        "classical",
+        "regional"
+    ],
+    "divertissement": [
+        "classical"
+    ],
+    "étude": [
+        "classical"
+    ],
+    "fantasia": [
+        "classical"
+    ],
+    "latin american classical music": [
+        "classical",
+        "regional"
+    ],
+    "madrigal": [
+        "classical",
+        "regional"
+    ],
+    "medieval classical music": [
+        "classical",
+        "regional"
+    ],
+    "ars antiqua": [
+        "classical",
+        "regional"
+    ],
+    "ars nova": [
+        "classical",
+        "regional"
+    ],
+    "ars subtilior": [
+        "classical",
+        "regional"
+    ],
+    "medieval lyric poetry": [
+        "classical",
+        "regional"
+    ],
+    "plainsong": [
+        "classical",
+        "regional"
+    ],
+    "ambrosian chant": [
+        "classical",
+        "regional"
+    ],
+    "canto beneventano": [
+        "classical",
+        "regional"
+    ],
+    "canto mozárabe": [
+        "classical",
+        "regional"
+    ],
+    "gregorian chant": [
+        "classical",
+        "regional"
+    ],
+    "old roman chant": [
+        "classical",
+        "regional"
+    ],
+    "modern classical": [
+        "classical"
+    ],
+    "expressionism": [
+        "classical"
+    ],
+    "futurism": [
+        "classical",
+        "experimental"
+    ],
+    "impressionism": [
+        "classical"
+    ],
+    "indeterminacy": [
+        "classical",
+        "experimental"
+    ],
+    "microtonal classical": [
+        "classical"
+    ],
+    "minimalism": [
+        "classical"
+    ],
+    "holy minimalism": [
+        "classical"
+    ],
+    "musique concrète instrumentale": [
+        "classical"
+    ],
+    "new complexity": [
+        "classical"
+    ],
+    "post-minimalism": [
+        "classical"
+    ],
+    "totalism": [
+        "classical"
+    ],
+    "serialism": [
+        "classical"
+    ],
+    "integral serialism": [
+        "classical"
+    ],
+    "sonorism": [
+        "classical"
+    ],
+    "spectralism": [
+        "classical"
+    ],
+    "stochastic music": [
+        "classical"
+    ],
+    "motet": [
+        "classical"
+    ],
+    "neoclassicism": [
+        "classical"
+    ],
+    "nocturne": [
+        "classical"
+    ],
+    "opera": [
+        "classical"
+    ],
+    "ballad opera": [
+        "classical",
+        "regional"
+    ],
+    "grand opéra": [
+        "classical",
+        "regional"
+    ],
+    "monodrama": [
+        "classical"
+    ],
+    "opera buffa": [
+        "classical",
+        "regional"
+    ],
+    "opéra-comique": [
+        "classical",
+        "regional"
+    ],
+    "opera semiseria": [
+        "classical",
+        "regional"
+    ],
+    "opera seria": [
+        "classical",
+        "regional"
+    ],
+    "operetta": [
+        "classical"
+    ],
+    "kalon'ny fahiny": [
+        "classical",
+        "regional"
+    ],
+    "romantische oper": [
+        "classical",
+        "regional"
+    ],
+    "singspiel": [
+        "classical",
+        "regional"
+    ],
+    "verismo": [
+        "classical",
+        "regional"
+    ],
+    "zarzuela": [
+        "classical",
+        "regional"
+    ],
+    "género chico": [
+        "classical",
+        "regional"
+    ],
+    "zarzuela grande": [
+        "classical",
+        "regional"
+    ],
+    "zeitoper": [
+        "classical",
+        "regional"
+    ],
+    "oratorio": [
+        "classical"
+    ],
+    "orchestral": [
+        "classical"
+    ],
+    "concerto": [
+        "classical"
+    ],
+    "concerto for orchestra": [
+        "classical"
+    ],
+    "concerto grosso": [
+        "classical"
+    ],
+    "sinfonia concertante": [
+        "classical"
+    ],
+    "symphony": [
+        "classical"
+    ],
+    "tone poem": [
+        "classical"
+    ],
+    "overture": [
+        "classical"
+    ],
+    "prelude": [
+        "classical"
+    ],
+    "renaissance music": [
+        "classical",
+        "regional"
+    ],
+    "ricercar": [
+        "classical"
+    ],
+    "romanticism": [
+        "classical"
+    ],
+    "serenade": [
+        "classical"
+    ],
+    "sonata": [
+        "classical"
+    ],
+    "spanish classical music": [
+        "classical",
+        "regional"
+    ],
+    "toccata": [
+        "classical"
+    ],
+    "break-in": [
+        "comedy"
+    ],
+    "dutch cabaret": [
+        "comedy",
+        "regional"
+    ],
+    "kabarett": [
+        "comedy",
+        "regional"
+    ],
+    "musical comedy": [
+        "comedy"
+    ],
+    "comedy rap": [
+        "comedy",
+        "hiphop"
+    ],
+    "comedy rock": [
+        "comedy",
+        "rock"
+    ],
+    "scrumpy and western": [
+        "comedy",
+        "folk",
+        "regional"
+    ],
+    "prank calls": [
+        "comedy"
+    ],
+    "sketch comedy": [
+        "comedy"
+    ],
+    "stand-up comedy": [
+        "comedy"
+    ],
+    "alt-country": [
+        "regional",
+        "country"
+    ],
+    "gothic country": [
+        "regional",
+        "country"
+    ],
+    "bluegrass": [
+        "regional",
+        "country"
+    ],
+    "bluegrass gospel": [
+        "folk",
+        "regional",
+        "country"
+    ],
+    "progressive bluegrass": [
+        "regional",
+        "country"
+    ],
+    "jamgrass": [
+        "rock",
+        "regional",
+        "country"
+    ],
+    "contemporary country": [
+        "regional",
+        "country"
+    ],
+    "neo-traditionalist country": [
+        "regional",
+        "country"
+    ],
+    "country & irish": [
+        "regional",
+        "country"
+    ],
+    "country pop": [
+        "regional",
+        "pop",
+        "country"
+    ],
+    "bro-country": [
+        "regional",
+        "pop",
+        "country"
+    ],
+    "countrypolitan": [
+        "regional",
+        "pop",
+        "country"
+    ],
+    "urban cowboy": [
+        "regional",
+        "pop",
+        "country"
+    ],
+    "honky tonk": [
+        "regional",
+        "country"
+    ],
+    "bakersfield sound": [
+        "regional",
+        "country"
+    ],
+    "truck driving country": [
+        "regional",
+        "country"
+    ],
+    "nashville sound": [
+        "regional",
+        "country"
+    ],
+    "progressive country": [
+        "regional",
+        "country"
+    ],
+    "outlaw country": [
+        "regional",
+        "country"
+    ],
+    "red dirt": [
+        "rock",
+        "regional",
+        "country"
+    ],
+    "traditional country": [
+        "folk",
+        "regional",
+        "country"
+    ],
+    "close harmony": [
+        "folk",
+        "regional",
+        "country"
+    ],
+    "country boogie": [
+        "folk",
+        "regional",
+        "country"
+    ],
+    "country gospel": [
+        "folk",
+        "regional",
+        "country"
+    ],
+    "country yodeling": [
+        "folk",
+        "regional",
+        "country"
+    ],
+    "trampská hudba": [
+        "regional",
+        "country"
+    ],
+    "western": [
+        "regional",
+        "country"
+    ],
+    "western swing": [
+        "regional",
+        "country"
+    ],
+    "alternative dance": [
+        "rock",
+        "dance"
+    ],
+    "grebo": [
+        "rock",
+        "dance"
+    ],
+    "new rave": [
+        "rock",
+        "dance"
+    ],
+    "dance-pop": [
+        "dance",
+        "pop"
+    ],
+    "bubblegum dance": [
+        "electronic",
+        "dance",
+        "pop"
+    ],
+    "disco polo": [
+        "dance",
+        "regional",
+        "pop"
+    ],
+    "freestyle": [
+        "electronic",
+        "dance",
+        "pop"
+    ],
+    "latin freestyle": [
+        "electronic",
+        "dance",
+        "pop"
+    ],
+    "funk melody": [
+        "dance",
+        "regional",
+        "pop"
+    ],
+    "romanian popcorn": [
+        "electronic",
+        "dance",
+        "pop"
+    ],
+    "tecnorumba": [
+        "electronic",
+        "dance",
+        "regional",
+        "pop"
+    ],
+    "township bubblegum": [
+        "dance",
+        "regional",
+        "pop"
+    ],
+    "disco": [
+        "dance"
+    ],
+    "boogie": [
+        "r&b",
+        "dance"
+    ],
+    "electro-disco": [
+        "electronic",
+        "dance"
+    ],
+    "hi-nrg": [
+        "electronic",
+        "dance"
+    ],
+    "italo-disco": [
+        "electronic",
+        "dance"
+    ],
+    "space disco": [
+        "electronic",
+        "dance"
+    ],
+    "euro-disco": [
+        "dance"
+    ],
+    "latin disco": [
+        "dance",
+        "regional"
+    ],
+    "mutant disco": [
+        "dance"
+    ],
+    "nu-disco": [
+        "electronic",
+        "dance"
+    ],
+    "electronic dance music": [
+        "electronic",
+        "dance"
+    ],
+    "artcore": [
+        "electronic",
+        "dance"
+    ],
+    "balani show": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "balearic beat": [
+        "electronic",
+        "dance"
+    ],
+    "bérite club": [
+        "electronic",
+        "dance"
+    ],
+    "breakbeat": [
+        "electronic",
+        "dance"
+    ],
+    "acid breaks": [
+        "electronic",
+        "dance"
+    ],
+    "baltimore club": [
+        "electronic",
+        "dance"
+    ],
+    "big beat": [
+        "electronic",
+        "dance"
+    ],
+    "breakbeat hardcore": [
+        "electronic",
+        "dance"
+    ],
+    "darkside": [
+        "electronic",
+        "dance"
+    ],
+    "hardcore breaks": [
+        "electronic",
+        "dance"
+    ],
+    "breakbeat kota": [
+        "electronic",
+        "dance"
+    ],
+    "jungle dutch": [
+        "electronic",
+        "dance"
+    ],
+    "florida breaks": [
+        "electronic",
+        "dance"
+    ],
+    "nu skool breaks": [
+        "electronic",
+        "dance"
+    ],
+    "progressive breaks": [
+        "electronic",
+        "dance"
+    ],
+    "west coast breaks": [
+        "electronic",
+        "dance"
+    ],
+    "broken beat": [
+        "electronic",
+        "dance"
+    ],
+    "bubblegum bass": [
+        "electronic",
+        "dance"
+    ],
+    "bubbling": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "budots": [
+        "electronic",
+        "dance"
+    ],
+    "coupé-décalé": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "cruise": [
+        "electronic",
+        "dance"
+    ],
+    "deconstructed club": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "digital cumbia": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "doskpop": [
+        "electronic",
+        "dance"
+    ],
+    "drum and bass": [
+        "electronic",
+        "dance"
+    ],
+    "atmospheric drum and bass": [
+        "electronic",
+        "dance"
+    ],
+    "dancefloor drum and bass": [
+        "electronic",
+        "dance"
+    ],
+    "darkstep": [
+        "electronic",
+        "dance"
+    ],
+    "crossbreed": [
+        "electronic",
+        "dance"
+    ],
+    "skullstep": [
+        "electronic",
+        "dance"
+    ],
+    "drumfunk": [
+        "electronic",
+        "dance"
+    ],
+    "drumstep": [
+        "electronic",
+        "dance"
+    ],
+    "dubwise drum and bass": [
+        "electronic",
+        "dance"
+    ],
+    "footwork jungle": [
+        "electronic",
+        "dance"
+    ],
+    "halftime": [
+        "electronic",
+        "dance"
+    ],
+    "hardstep": [
+        "electronic",
+        "dance"
+    ],
+    "jazzstep": [
+        "electronic",
+        "dance"
+    ],
+    "jump-up": [
+        "electronic",
+        "dance"
+    ],
+    "jungle": [
+        "electronic",
+        "dance"
+    ],
+    "ragga jungle": [
+        "electronic",
+        "dance"
+    ],
+    "liquid drum and bass": [
+        "electronic",
+        "dance"
+    ],
+    "sambass": [
+        "electronic",
+        "dance"
+    ],
+    "minimal drum and bass": [
+        "electronic",
+        "dance"
+    ],
+    "neurofunk": [
+        "electronic",
+        "dance"
+    ],
+    "techstep": [
+        "electronic",
+        "dance"
+    ],
+    "trancestep": [
+        "electronic",
+        "dance"
+    ],
+    "dubstep": [
+        "electronic",
+        "dance"
+    ],
+    "brostep": [
+        "electronic",
+        "dance"
+    ],
+    "colour bass": [
+        "electronic",
+        "dance"
+    ],
+    "deathstep": [
+        "electronic",
+        "dance"
+    ],
+    "riddim": [
+        "electronic",
+        "dance"
+    ],
+    "future riddim": [
+        "electronic",
+        "dance"
+    ],
+    "chillstep": [
+        "electronic",
+        "dance"
+    ],
+    "dungeon sound": [
+        "electronic",
+        "dance"
+    ],
+    "melodic dubstep": [
+        "electronic",
+        "dance"
+    ],
+    "purple sound": [
+        "electronic",
+        "dance"
+    ],
+    "east coast club": [
+        "electronic",
+        "dance"
+    ],
+    "jersey club": [
+        "electronic",
+        "dance"
+    ],
+    "philly club": [
+        "electronic",
+        "dance"
+    ],
+    "ebm": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "dark electro": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "aggrotech": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "futurepop": [
+        "electronic",
+        "dance",
+        "industrial",
+        "pop"
+    ],
+    "new beat": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "electro": [
+        "electronic",
+        "dance"
+    ],
+    "skweee": [
+        "electronic",
+        "dance"
+    ],
+    "electroclash": [
+        "electronic",
+        "dance"
+    ],
+    "electro latino": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "electro swing": [
+        "electronic",
+        "dance"
+    ],
+    "eurobeat": [
+        "electronic",
+        "dance"
+    ],
+    "eurodance": [
+        "electronic",
+        "dance"
+    ],
+    "italo dance": [
+        "electronic",
+        "dance"
+    ],
+    "flex dance music": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "footwork": [
+        "electronic",
+        "dance"
+    ],
+    "funkot": [
+        "electronic",
+        "dance"
+    ],
+    "future bass": [
+        "electronic",
+        "dance"
+    ],
+    "kawaii future bass": [
+        "electronic",
+        "dance"
+    ],
+    "future rave": [
+        "electronic",
+        "dance"
+    ],
+    "ghettotech": [
+        "electronic",
+        "dance"
+    ],
+    "glitch hop [edm]": [
+        "electronic",
+        "dance"
+    ],
+    "neurohop": [
+        "electronic",
+        "dance"
+    ],
+    "grime": [
+        "electronic",
+        "dance"
+    ],
+    "weightless": [
+        "electronic",
+        "dance"
+    ],
+    "hardcore [edm]": [
+        "electronic",
+        "dance"
+    ],
+    "acidcore": [
+        "electronic",
+        "dance"
+    ],
+    "belgian techno": [
+        "electronic",
+        "dance"
+    ],
+    "breakcore": [
+        "electronic",
+        "dance"
+    ],
+    "lolicore": [
+        "electronic",
+        "dance"
+    ],
+    "mashcore": [
+        "electronic",
+        "dance"
+    ],
+    "raggacore": [
+        "electronic",
+        "dance"
+    ],
+    "digital hardcore": [
+        "electronic",
+        "punk",
+        "dance"
+    ],
+    "doomcore": [
+        "electronic",
+        "dance"
+    ],
+    "freeform hardcore": [
+        "electronic",
+        "dance"
+    ],
+    "frenchcore": [
+        "electronic",
+        "dance"
+    ],
+    "gabber": [
+        "electronic",
+        "dance"
+    ],
+    "nu style gabber": [
+        "electronic",
+        "dance"
+    ],
+    "happy hardcore": [
+        "electronic",
+        "dance"
+    ],
+    "bouncy techno": [
+        "electronic",
+        "dance"
+    ],
+    "uk hardcore": [
+        "electronic",
+        "dance"
+    ],
+    "powerstomp": [
+        "electronic",
+        "dance"
+    ],
+    "hardtek": [
+        "electronic",
+        "dance"
+    ],
+    "raggatek": [
+        "electronic",
+        "dance"
+    ],
+    "industrial hardcore": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "j-core": [
+        "electronic",
+        "dance"
+    ],
+    "speedcore": [
+        "electronic",
+        "dance"
+    ],
+    "extratone": [
+        "electronic",
+        "dance"
+    ],
+    "splittercore": [
+        "electronic",
+        "dance"
+    ],
+    "terrorcore": [
+        "electronic",
+        "dance"
+    ],
+    "uptempo hardcore": [
+        "electronic",
+        "dance"
+    ],
+    "hard dance": [
+        "electronic",
+        "dance"
+    ],
+    "hardstyle": [
+        "electronic",
+        "dance"
+    ],
+    "dubstyle": [
+        "electronic",
+        "dance"
+    ],
+    "euphoric hardstyle": [
+        "electronic",
+        "dance"
+    ],
+    "psystyle": [
+        "electronic",
+        "dance"
+    ],
+    "rawstyle": [
+        "electronic",
+        "dance"
+    ],
+    "rawphoric": [
+        "electronic",
+        "dance"
+    ],
+    "hard trance": [
+        "electronic",
+        "dance"
+    ],
+    "jumpstyle": [
+        "electronic",
+        "dance"
+    ],
+    "lento violento": [
+        "electronic",
+        "dance"
+    ],
+    "nrg": [
+        "electronic",
+        "dance"
+    ],
+    "uk hard house": [
+        "electronic",
+        "dance"
+    ],
+    "scouse house": [
+        "electronic",
+        "dance"
+    ],
+    "hardbass": [
+        "electronic",
+        "dance"
+    ],
+    "speed house": [
+        "electronic",
+        "dance"
+    ],
+    "hard drum": [
+        "electronic",
+        "dance"
+    ],
+    "hardvapour": [
+        "electronic",
+        "dance"
+    ],
+    "hardwave": [
+        "electronic",
+        "dance"
+    ],
+    "house": [
+        "electronic",
+        "dance"
+    ],
+    "acid house": [
+        "electronic",
+        "dance"
+    ],
+    "afro house": [
+        "electronic",
+        "dance"
+    ],
+    "amapiano": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "afropiano": [
+        "electronic",
+        "dance",
+        "regional",
+        "pop"
+    ],
+    "ambient house": [
+        "electronic",
+        "dance"
+    ],
+    "ballroom": [
+        "electronic",
+        "dance"
+    ],
+    "bass house": [
+        "electronic",
+        "dance"
+    ],
+    "bassline": [
+        "electronic",
+        "dance"
+    ],
+    "big room house": [
+        "electronic",
+        "dance"
+    ],
+    "brazilian bass": [
+        "electronic",
+        "dance"
+    ],
+    "slap house": [
+        "electronic",
+        "dance"
+    ],
+    "bubbling house": [
+        "electronic",
+        "dance"
+    ],
+    "changa tuki": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "chicago hard house": [
+        "electronic",
+        "dance"
+    ],
+    "la hard house": [
+        "electronic",
+        "dance"
+    ],
+    "chicago house": [
+        "electronic",
+        "dance"
+    ],
+    "deep house": [
+        "electronic",
+        "dance"
+    ],
+    "lo-fi house": [
+        "electronic",
+        "dance"
+    ],
+    "diva house": [
+        "electronic",
+        "dance"
+    ],
+    "hardbag": [
+        "electronic",
+        "dance"
+    ],
+    "electro house": [
+        "electronic",
+        "dance"
+    ],
+    "complextro": [
+        "electronic",
+        "dance"
+    ],
+    "dutch house": [
+        "electronic",
+        "dance"
+    ],
+    "fidget house": [
+        "electronic",
+        "dance"
+    ],
+    "french electro": [
+        "electronic",
+        "dance"
+    ],
+    "melbourne bounce": [
+        "electronic",
+        "dance"
+    ],
+    "euro house": [
+        "electronic",
+        "dance"
+    ],
+    "festival progressive house": [
+        "electronic",
+        "dance"
+    ],
+    "french house": [
+        "electronic",
+        "dance"
+    ],
+    "funky house": [
+        "electronic",
+        "dance"
+    ],
+    "future funk": [
+        "electronic",
+        "dance"
+    ],
+    "future house": [
+        "electronic",
+        "dance"
+    ],
+    "future bounce": [
+        "electronic",
+        "dance"
+    ],
+    "garage house": [
+        "electronic",
+        "dance"
+    ],
+    "gospel house": [
+        "electronic",
+        "dance"
+    ],
+    "jersey sound": [
+        "electronic",
+        "dance"
+    ],
+    "ghetto house": [
+        "electronic",
+        "dance"
+    ],
+    "juke": [
+        "electronic",
+        "dance"
+    ],
+    "g-house": [
+        "electronic",
+        "dance"
+    ],
+    "gqom": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "hip house": [
+        "electronic",
+        "dance"
+    ],
+    "italo house": [
+        "electronic",
+        "dance"
+    ],
+    "kwaito": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "latin house": [
+        "electronic",
+        "dance"
+    ],
+    "microhouse": [
+        "electronic",
+        "dance"
+    ],
+    "organic house": [
+        "electronic",
+        "dance"
+    ],
+    "outsider house": [
+        "electronic",
+        "dance"
+    ],
+    "progressive house": [
+        "electronic",
+        "dance"
+    ],
+    "speed garage": [
+        "electronic",
+        "dance"
+    ],
+    "tech house": [
+        "electronic",
+        "dance"
+    ],
+    "deep tech": [
+        "electronic",
+        "dance"
+    ],
+    "tribal house": [
+        "electronic",
+        "dance"
+    ],
+    "guaracha [edm]": [
+        "electronic",
+        "dance"
+    ],
+    "tropical house": [
+        "electronic",
+        "dance"
+    ],
+    "uk jackin'": [
+        "electronic",
+        "dance"
+    ],
+    "vinahouse": [
+        "electronic",
+        "dance"
+    ],
+    "hyper techno": [
+        "electronic",
+        "dance"
+    ],
+    "jungle terror": [
+        "electronic",
+        "dance"
+    ],
+    "kuduro": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "batida": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "makina": [
+        "electronic",
+        "dance"
+    ],
+    "manyao": [
+        "electronic",
+        "dance"
+    ],
+    "midtempo bass": [
+        "electronic",
+        "dance"
+    ],
+    "moombahcore": [
+        "electronic",
+        "dance"
+    ],
+    "moombahton": [
+        "electronic",
+        "dance"
+    ],
+    "nerdcore techno": [
+        "electronic",
+        "dance"
+    ],
+    "shangaan electro": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "singeli": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "spacesynth": [
+        "electronic",
+        "dance"
+    ],
+    "techno": [
+        "electronic",
+        "dance"
+    ],
+    "acid techno": [
+        "electronic",
+        "dance"
+    ],
+    "ambient techno": [
+        "electronic",
+        "dance"
+    ],
+    "bleep techno": [
+        "electronic",
+        "dance"
+    ],
+    "detroit techno": [
+        "electronic",
+        "dance"
+    ],
+    "freetekno": [
+        "electronic",
+        "dance"
+    ],
+    "hardgroove techno": [
+        "electronic",
+        "dance"
+    ],
+    "hard techno": [
+        "electronic",
+        "dance"
+    ],
+    "schranz": [
+        "electronic",
+        "dance"
+    ],
+    "industrial techno": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "birmingham sound": [
+        "electronic",
+        "dance",
+        "industrial"
+    ],
+    "melodic techno": [
+        "electronic",
+        "dance"
+    ],
+    "minimal techno": [
+        "electronic",
+        "dance"
+    ],
+    "dub techno": [
+        "electronic",
+        "dance"
+    ],
+    "peak time techno": [
+        "electronic",
+        "dance"
+    ],
+    "wonky techno": [
+        "electronic",
+        "dance"
+    ],
+    "techno bass": [
+        "electronic",
+        "hiphop",
+        "dance"
+    ],
+    "trance": [
+        "electronic",
+        "dance"
+    ],
+    "acid trance": [
+        "electronic",
+        "dance"
+    ],
+    "big room trance": [
+        "electronic",
+        "dance"
+    ],
+    "dream trance": [
+        "electronic",
+        "dance"
+    ],
+    "euro-trance": [
+        "electronic",
+        "dance"
+    ],
+    "hands up": [
+        "electronic",
+        "dance"
+    ],
+    "ibiza trance": [
+        "electronic",
+        "dance"
+    ],
+    "progressive trance": [
+        "electronic",
+        "dance"
+    ],
+    "psytrance": [
+        "electronic",
+        "dance"
+    ],
+    "dark psytrance": [
+        "electronic",
+        "dance"
+    ],
+    "hi-tech psytrance": [
+        "electronic",
+        "dance"
+    ],
+    "psycore": [
+        "electronic",
+        "dance"
+    ],
+    "full-on psytrance": [
+        "electronic",
+        "dance"
+    ],
+    "goa trance": [
+        "electronic",
+        "dance"
+    ],
+    "nitzhonot": [
+        "electronic",
+        "dance"
+    ],
+    "progressive psytrance": [
+        "electronic",
+        "dance"
+    ],
+    "zenonesque": [
+        "electronic",
+        "dance"
+    ],
+    "suomisaundi": [
+        "electronic",
+        "dance"
+    ],
+    "tech trance": [
+        "electronic",
+        "dance"
+    ],
+    "uplifting trance": [
+        "electronic",
+        "dance"
+    ],
+    "vocal trance": [
+        "electronic",
+        "dance",
+        "pop"
+    ],
+    "trap [edm]": [
+        "electronic",
+        "dance"
+    ],
+    "festival trap": [
+        "electronic",
+        "dance"
+    ],
+    "hard trap": [
+        "electronic",
+        "dance"
+    ],
+    "heaven trap": [
+        "electronic",
+        "dance"
+    ],
+    "hybrid trap": [
+        "electronic",
+        "dance"
+    ],
+    "twerk": [
+        "electronic",
+        "dance"
+    ],
+    "tribal guarachero": [
+        "electronic",
+        "dance",
+        "regional"
+    ],
+    "uk bass": [
+        "electronic",
+        "dance"
+    ],
+    "uk funky": [
+        "electronic",
+        "dance"
+    ],
+    "uk garage": [
+        "electronic",
+        "dance"
+    ],
+    "2-step": [
+        "electronic",
+        "dance"
+    ],
+    "breakstep": [
+        "electronic",
+        "dance"
+    ],
+    "future garage": [
+        "electronic",
+        "dance"
+    ],
+    "wonky": [
+        "electronic",
+        "dance"
+    ],
+    "miami bass": [
+        "hiphop",
+        "dance"
+    ],
+    "atlanta bass": [
+        "hiphop",
+        "dance"
+    ],
+    "tamborzão": [
+        "hiphop",
+        "dance",
+        "regional"
+    ],
+    "algorave": [
+        "electronic"
+    ],
+    "ambient dub": [
+        "electronic"
+    ],
+    "ambient trance": [
+        "electronic"
+    ],
+    "binaural beats": [
+        "electronic",
+        "experimental"
+    ],
+    "bit music": [
+        "electronic"
+    ],
+    "chiptune": [
+        "electronic"
+    ],
+    "fm synthesis": [
+        "electronic"
+    ],
+    "midi music": [
+        "electronic"
+    ],
+    "black midi": [
+        "electronic"
+    ],
+    "sequencer & tracker": [
+        "electronic"
+    ],
+    "16-bit": [
+        "electronic"
+    ],
+    "bitpop": [
+        "electronic",
+        "pop"
+    ],
+    "celtic electronica": [
+        "electronic",
+        "regional"
+    ],
+    "digital fusion": [
+        "electronic"
+    ],
+    "downtempo": [
+        "electronic"
+    ],
+    "trip hop": [
+        "electronic"
+    ],
+    "drift phonk": [
+        "electronic"
+    ],
+    "dungeon synth": [
+        "electronic"
+    ],
+    "comfy synth": [
+        "electronic"
+    ],
+    "winter synth": [
+        "electronic"
+    ],
+    "electroacoustic": [
+        "electronic",
+        "experimental"
+    ],
+    "acousmatic music": [
+        "electronic",
+        "experimental"
+    ],
+    "eai": [
+        "electronic",
+        "experimental"
+    ],
+    "musique concrète": [
+        "electronic",
+        "experimental"
+    ],
+    "electro-industrial": [
+        "electronic",
+        "industrial"
+    ],
+    "electropop": [
+        "electronic",
+        "pop"
+    ],
+    "epic collage": [
+        "electronic",
+        "industrial",
+        "experimental"
+    ],
+    "flashcore": [
+        "electronic"
+    ],
+    "folktronica": [
+        "electronic"
+    ],
+    "funktronica": [
+        "electronic"
+    ],
+    "glitch": [
+        "electronic",
+        "experimental"
+    ],
+    "glitch hop": [
+        "electronic"
+    ],
+    "hexd": [
+        "electronic"
+    ],
+    "horror synth": [
+        "electronic"
+    ],
+    "hyperpop": [
+        "electronic",
+        "pop"
+    ],
+    "idm": [
+        "electronic"
+    ],
+    "drill and bass": [
+        "electronic"
+    ],
+    "illbient": [
+        "electronic"
+    ],
+    "indietronica": [
+        "electronic"
+    ],
+    "chillwave": [
+        "electronic"
+    ],
+    "chillsynth": [
+        "electronic"
+    ],
+    "glitch pop": [
+        "electronic",
+        "pop"
+    ],
+    "latin electronic": [
+        "electronic",
+        "regional"
+    ],
+    "electrotango": [
+        "electronic",
+        "regional"
+    ],
+    "nortec": [
+        "electronic",
+        "regional"
+    ],
+    "livetronica": [
+        "electronic",
+        "rock"
+    ],
+    "microsound": [
+        "electronic",
+        "experimental"
+    ],
+    "minatory": [
+        "electronic"
+    ],
+    "minimal wave": [
+        "electronic"
+    ],
+    "minimal synth": [
+        "electronic"
+    ],
+    "moogsploitation": [
+        "electronic"
+    ],
+    "nightcore": [
+        "electronic"
+    ],
+    "nu jazz": [
+        "electronic"
+    ],
+    "progressive electronic": [
+        "electronic"
+    ],
+    "berlin school": [
+        "electronic"
+    ],
+    "psybient": [
+        "electronic"
+    ],
+    "synthpop": [
+        "electronic",
+        "pop"
+    ],
+    "pon-chak disco": [
+        "electronic",
+        "regional",
+        "pop"
+    ],
+    "techno kayō": [
+        "electronic",
+        "pop"
+    ],
+    "synth punk": [
+        "electronic",
+        "punk"
+    ],
+    "synthwave": [
+        "electronic"
+    ],
+    "darksynth": [
+        "electronic"
+    ],
+    "tecnobrega": [
+        "electronic",
+        "regional"
+    ],
+    "tecnofunk": [
+        "electronic",
+        "regional"
+    ],
+    "vapor": [
+        "electronic"
+    ],
+    "barber beats": [
+        "electronic"
+    ],
+    "dreampunk": [
+        "electronic"
+    ],
+    "utopian virtual": [
+        "electronic"
+    ],
+    "vaportrap": [
+        "electronic"
+    ],
+    "vaporwave": [
+        "electronic"
+    ],
+    "broken transmission": [
+        "electronic"
+    ],
+    "mallsoft": [
+        "electronic"
+    ],
+    "slushwave": [
+        "electronic"
+    ],
+    "wave": [
+        "electronic"
+    ],
+    "witch house": [
+        "electronic"
+    ],
+    "asmr": [
+        "experimental"
+    ],
+    "sounds and effects": [
+        "experimental"
+    ],
+    "conducted improvisation": [
+        "experimental"
+    ],
+    "data sonification": [
+        "experimental"
+    ],
+    "drone": [
+        "experimental"
+    ],
+    "free improvisation": [
+        "experimental"
+    ],
+    "power electronics": [
+        "industrial",
+        "experimental"
+    ],
+    "death industrial": [
+        "industrial",
+        "experimental"
+    ],
+    "modern creative": [
+        "experimental"
+    ],
+    "noise": [
+        "experimental"
+    ],
+    "black noise": [
+        "rock",
+        "experimental",
+        "metal"
+    ],
+    "gorenoise": [
+        "punk",
+        "rock",
+        "experimental",
+        "metal"
+    ],
+    "harsh noise": [
+        "experimental"
+    ],
+    "harsh noise wall": [
+        "experimental"
+    ],
+    "power noise": [
+        "industrial",
+        "experimental"
+    ],
+    "plunderphonics": [
+        "experimental"
+    ],
+    "reductionism": [
+        "experimental"
+    ],
+    "lowercase": [
+        "experimental"
+    ],
+    "onkyo": [
+        "experimental"
+    ],
+    "sound art": [
+        "experimental"
+    ],
+    "sound collage": [
+        "experimental"
+    ],
+    "sound poetry": [
+        "experimental",
+        "singer-songwriter"
+    ],
+    "tape music": [
+        "experimental"
+    ],
+    "turntable music": [
+        "experimental"
+    ],
+    "neo-psychedelia": [
+        "experimental"
+    ],
+    "hypnagogic pop": [
+        "experimental"
+    ],
+    "paisley underground": [
+        "rock",
+        "experimental"
+    ],
+    "space rock revival": [
+        "rock",
+        "experimental"
+    ],
+    "psychedelic folk": [
+        "folk",
+        "experimental"
+    ],
+    "freak folk": [
+        "folk",
+        "experimental"
+    ],
+    "free folk": [
+        "folk",
+        "experimental"
+    ],
+    "psychedelic pop": [
+        "experimental",
+        "pop"
+    ],
+    "psychedelic rock": [
+        "rock",
+        "experimental"
+    ],
+    "acid rock": [
+        "rock",
+        "experimental"
+    ],
+    "heavy psych": [
+        "rock",
+        "experimental"
+    ],
+    "raga rock": [
+        "rock",
+        "experimental"
+    ],
+    "space rock": [
+        "rock",
+        "experimental"
+    ],
+    "zamrock": [
+        "rock",
+        "regional",
+        "experimental"
+    ],
+    "psychedelic soul": [
+        "r&b",
+        "experimental"
+    ],
+    "stoner rock": [
+        "rock",
+        "experimental"
+    ],
+    "tropicália": [
+        "regional",
+        "experimental"
+    ],
+    "nature recordings": [
+        "experimental"
+    ],
+    "animal sounds": [
+        "experimental"
+    ],
+    "birdsong": [
+        "experimental"
+    ],
+    "insect sounds": [
+        "experimental"
+    ],
+    "whale song": [
+        "experimental"
+    ],
+    "radio broadcast recordings": [
+        "experimental"
+    ],
+    "contemporary folk": [
+        "folk"
+    ],
+    "american primitivism": [
+        "folk",
+        "regional"
+    ],
+    "anti-folk": [
+        "folk"
+    ],
+    "avant-folk": [
+        "folk"
+    ],
+    "campus folk": [
+        "folk",
+        "regional"
+    ],
+    "chamber folk": [
+        "folk"
+    ],
+    "folk baroque": [
+        "folk"
+    ],
+    "folk pop": [
+        "folk",
+        "pop"
+    ],
+    "indie folk": [
+        "folk"
+    ],
+    "neofolk": [
+        "folk"
+    ],
+    "dark folk": [
+        "folk"
+    ],
+    "neofolklore": [
+        "folk",
+        "regional"
+    ],
+    "progressive folk": [
+        "folk"
+    ],
+    "skiffle": [
+        "folk"
+    ],
+    "xinyao": [
+        "folk",
+        "regional"
+    ],
+    "traditional folk music": [
+        "folk",
+        "regional"
+    ],
+    "african folk music": [
+        "folk",
+        "regional"
+    ],
+    "ambasse bey": [
+        "folk",
+        "regional"
+    ],
+    "apala": [
+        "folk",
+        "regional"
+    ],
+    "batuque": [
+        "folk",
+        "regional"
+    ],
+    "dagomba music": [
+        "folk",
+        "regional"
+    ],
+    "gnawa": [
+        "folk",
+        "regional"
+    ],
+    "kabye folk music": [
+        "folk",
+        "regional"
+    ],
+    "kilapanga": [
+        "folk",
+        "regional"
+    ],
+    "malagasy folk music": [
+        "folk",
+        "regional"
+    ],
+    "mbenga-mbuti music": [
+        "folk",
+        "regional"
+    ],
+    "moutya": [
+        "folk",
+        "regional"
+    ],
+    "ngoma": [
+        "folk",
+        "regional"
+    ],
+    "unyago": [
+        "folk",
+        "regional"
+    ],
+    "semba": [
+        "folk",
+        "regional"
+    ],
+    "southern african folk music": [
+        "folk",
+        "regional"
+    ],
+    "afrikaner folk music": [
+        "folk",
+        "regional"
+    ],
+    "khoisan folk music": [
+        "folk",
+        "regional"
+    ],
+    "nguni folk music": [
+        "folk",
+        "regional"
+    ],
+    "shona mbira music": [
+        "folk",
+        "regional"
+    ],
+    "sotho-tswana folk music": [
+        "folk",
+        "regional"
+    ],
+    "tchinkoumé": [
+        "folk",
+        "regional"
+    ],
+    "traditional maloya": [
+        "folk",
+        "regional"
+    ],
+    "traditional séga": [
+        "folk",
+        "regional"
+    ],
+    "zinli": [
+        "folk",
+        "regional"
+    ],
+    "american folk music": [
+        "folk",
+        "regional"
+    ],
+    "appalachian folk music": [
+        "folk",
+        "regional"
+    ],
+    "old-time": [
+        "folk",
+        "regional"
+    ],
+    "barbershop": [
+        "folk",
+        "regional"
+    ],
+    "field hollers": [
+        "folk",
+        "regional"
+    ],
+    "ring shout": [
+        "folk",
+        "regional"
+    ],
+    "sacred harp music": [
+        "folk",
+        "regional"
+    ],
+    "spirituals": [
+        "folk",
+        "regional"
+    ],
+    "talking blues": [
+        "folk",
+        "regional"
+    ],
+    "traditional black gospel": [
+        "folk",
+        "regional"
+    ],
+    "traditional cajun music": [
+        "folk",
+        "regional"
+    ],
+    "arabic folk music": [
+        "folk",
+        "regional"
+    ],
+    "aita": [
+        "folk",
+        "regional"
+    ],
+    "arabic bellydance music": [
+        "folk",
+        "regional"
+    ],
+    "australian folk music": [
+        "folk",
+        "regional"
+    ],
+    "austronesian traditional music": [
+        "folk",
+        "regional"
+    ],
+    "gondang": [
+        "folk",
+        "regional"
+    ],
+    "indigenous taiwanese music": [
+        "folk",
+        "regional"
+    ],
+    "pakacaping music": [
+        "folk",
+        "regional"
+    ],
+    "brazilian folk music": [
+        "folk",
+        "regional"
+    ],
+    "aboio": [
+        "folk",
+        "regional"
+    ],
+    "aboio cantado": [
+        "folk",
+        "regional"
+    ],
+    "banda de pífano": [
+        "folk",
+        "regional"
+    ],
+    "candomblé music": [
+        "folk",
+        "regional"
+    ],
+    "cantoria": [
+        "folk",
+        "regional"
+    ],
+    "repente": [
+        "folk",
+        "regional"
+    ],
+    "capoeira music": [
+        "folk",
+        "regional"
+    ],
+    "fandango caiçara": [
+        "folk",
+        "regional"
+    ],
+    "jongo": [
+        "folk",
+        "regional"
+    ],
+    "ponto de umbanda": [
+        "folk",
+        "regional"
+    ],
+    "lundu": [
+        "folk",
+        "regional"
+    ],
+    "maracatu": [
+        "folk",
+        "regional"
+    ],
+    "modinha": [
+        "folk",
+        "regional"
+    ],
+    "rasqueado": [
+        "folk",
+        "regional"
+    ],
+    "samba de roda": [
+        "folk",
+        "regional"
+    ],
+    "sertanejo de raiz": [
+        "folk",
+        "regional"
+    ],
+    "moda de viola": [
+        "folk",
+        "regional"
+    ],
+    "buryat folk music": [
+        "folk",
+        "regional"
+    ],
+    "canadian folk music": [
+        "folk",
+        "regional"
+    ],
+    "canadian maritime folk": [
+        "folk",
+        "regional"
+    ],
+    "cape breton folk music": [
+        "folk",
+        "regional"
+    ],
+    "cape breton fiddling": [
+        "folk",
+        "regional"
+    ],
+    "french-canadian folk music": [
+        "folk",
+        "regional"
+    ],
+    "newfoundland folk music": [
+        "folk",
+        "regional"
+    ],
+    "caribbean folk music": [
+        "folk",
+        "regional"
+    ],
+    "bele": [
+        "folk",
+        "regional"
+    ],
+    "benna": [
+        "folk",
+        "regional"
+    ],
+    "bomba": [
+        "folk",
+        "regional"
+    ],
+    "fungi": [
+        "folk",
+        "regional"
+    ],
+    "garifuna folk music": [
+        "folk",
+        "regional"
+    ],
+    "haitian vodou drumming": [
+        "folk",
+        "regional"
+    ],
+    "jibaro": [
+        "folk",
+        "regional"
+    ],
+    "kitchen dance music": [
+        "folk",
+        "regional"
+    ],
+    "mento": [
+        "folk",
+        "regional"
+    ],
+    "méringue": [
+        "folk",
+        "regional"
+    ],
+    "plena": [
+        "folk",
+        "regional"
+    ],
+    "ripsaw": [
+        "folk",
+        "regional"
+    ],
+    "trinidadian cariso": [
+        "folk",
+        "regional"
+    ],
+    "tumba": [
+        "folk",
+        "regional"
+    ],
+    "virgin islander cariso": [
+        "folk",
+        "regional"
+    ],
+    "caucasian folk music": [
+        "folk",
+        "regional"
+    ],
+    "abkhazian folk music": [
+        "folk",
+        "regional"
+    ],
+    "chechen folk music": [
+        "folk",
+        "regional"
+    ],
+    "circassian folk music": [
+        "folk",
+        "regional"
+    ],
+    "dagestani folk music": [
+        "folk",
+        "regional"
+    ],
+    "avar folk music": [
+        "folk",
+        "regional"
+    ],
+    "georgian folk music": [
+        "folk",
+        "regional"
+    ],
+    "ossetian folk music": [
+        "folk",
+        "regional"
+    ],
+    "chukchi folk music": [
+        "folk",
+        "regional"
+    ],
+    "east asian folk music": [
+        "folk",
+        "regional"
+    ],
+    "chinese folk music": [
+        "folk",
+        "regional"
+    ],
+    "han folk music": [
+        "folk",
+        "regional"
+    ],
+    "jiangnan sizhu": [
+        "folk",
+        "regional"
+    ],
+    "shan’ge": [
+        "folk",
+        "regional"
+    ],
+    "japanese folk music": [
+        "folk",
+        "regional"
+    ],
+    "amami shimauta": [
+        "folk",
+        "regional"
+    ],
+    "kagura": [
+        "folk",
+        "regional"
+    ],
+    "kouta": [
+        "folk",
+        "regional"
+    ],
+    "min'yō": [
+        "folk",
+        "regional"
+    ],
+    "ondō": [
+        "folk",
+        "regional"
+    ],
+    "rōkyoku": [
+        "folk",
+        "regional"
+    ],
+    "taiko": [
+        "folk",
+        "regional"
+    ],
+    "tsugaru shamisen": [
+        "folk",
+        "regional"
+    ],
+    "korean folk music": [
+        "folk",
+        "regional"
+    ],
+    "pansori": [
+        "folk",
+        "regional"
+    ],
+    "sanjo": [
+        "folk",
+        "regional"
+    ],
+    "sinawi": [
+        "folk",
+        "regional"
+    ],
+    "vietnamese folk music": [
+        "folk",
+        "regional"
+    ],
+    "chèo": [
+        "folk",
+        "regional"
+    ],
+    "quan họ": [
+        "folk",
+        "regional"
+    ],
+    "xẩm": [
+        "folk",
+        "regional"
+    ],
+    "european folk music": [
+        "folk",
+        "regional"
+    ],
+    "alpine folk music": [
+        "folk",
+        "regional"
+    ],
+    "narodno zabavna glasba": [
+        "folk",
+        "regional"
+    ],
+    "naturjodel": [
+        "folk",
+        "regional"
+    ],
+    "balkan folk music": [
+        "folk",
+        "regional"
+    ],
+    "albanian folk music": [
+        "folk",
+        "regional"
+    ],
+    "lab polyphony": [
+        "folk",
+        "regional"
+    ],
+    "musika popullore": [
+        "regional",
+        "folk",
+        "pop"
+    ],
+    "tosk polyphony": [
+        "folk",
+        "regional"
+    ],
+    "aromanian folk music": [
+        "folk",
+        "regional"
+    ],
+    "balkan brass band": [
+        "folk",
+        "regional"
+    ],
+    "bosnian folk music": [
+        "folk",
+        "regional"
+    ],
+    "izvorna bosanska muzika": [
+        "folk",
+        "regional"
+    ],
+    "sevdalinka": [
+        "folk",
+        "regional"
+    ],
+    "bulgarian folk music": [
+        "folk",
+        "regional"
+    ],
+    "croatian folk music": [
+        "folk",
+        "regional"
+    ],
+    "klapa": [
+        "folk",
+        "regional"
+    ],
+    "csango folk music": [
+        "folk",
+        "regional"
+    ],
+    "gagauz folk music": [
+        "folk",
+        "regional"
+    ],
+    "ganga": [
+        "folk",
+        "regional"
+    ],
+    "greek folk music": [
+        "folk",
+        "regional"
+    ],
+    "aegean islands folk music": [
+        "folk",
+        "regional"
+    ],
+    "cretan folk music": [
+        "folk",
+        "regional"
+    ],
+    "rizitika": [
+        "folk",
+        "regional"
+    ],
+    "dimotika": [
+        "folk",
+        "regional"
+    ],
+    "ionian islands folk music": [
+        "folk",
+        "regional"
+    ],
+    "rembetika": [
+        "folk",
+        "regional"
+    ],
+    "macedonian folk music": [
+        "folk",
+        "regional"
+    ],
+    "čalgija": [
+        "folk",
+        "regional"
+    ],
+    "montenegrin folk music": [
+        "folk",
+        "regional"
+    ],
+    "muzică lăutărească": [
+        "folk",
+        "regional"
+    ],
+    "serbian folk music": [
+        "folk",
+        "regional"
+    ],
+    "starogradska muzika": [
+        "folk",
+        "regional"
+    ],
+    "baltic folk music": [
+        "folk",
+        "regional"
+    ],
+    "latvian folk music": [
+        "folk",
+        "regional"
+    ],
+    "lithuanian folk music": [
+        "folk",
+        "regional"
+    ],
+    "sutartinės": [
+        "folk",
+        "regional"
+    ],
+    "balto-finnic folk music": [
+        "folk",
+        "regional"
+    ],
+    "estonian folk music": [
+        "folk",
+        "regional"
+    ],
+    "seto leelo": [
+        "folk",
+        "regional"
+    ],
+    "finnish folk music": [
+        "folk",
+        "regional"
+    ],
+    "karelian folk music": [
+        "folk",
+        "regional"
+    ],
+    "livonian folk music": [
+        "folk",
+        "regional"
+    ],
+    "rune singing": [
+        "folk",
+        "regional"
+    ],
+    "basque folk music": [
+        "folk",
+        "regional"
+    ],
+    "catalan folk music": [
+        "folk",
+        "regional"
+    ],
+    "sardana": [
+        "folk",
+        "regional"
+    ],
+    "celtic folk music": [
+        "folk",
+        "regional"
+    ],
+    "asturian folk music": [
+        "folk",
+        "regional"
+    ],
+    "breton celtic folk music": [
+        "folk",
+        "regional"
+    ],
+    "bagad": [
+        "folk",
+        "regional"
+    ],
+    "cornish folk music": [
+        "folk",
+        "regional"
+    ],
+    "galician folk music": [
+        "folk",
+        "regional"
+    ],
+    "irish folk music": [
+        "folk",
+        "regional"
+    ],
+    "sean-nós": [
+        "folk",
+        "regional"
+    ],
+    "manx folk music": [
+        "folk",
+        "regional"
+    ],
+    "scottish folk music": [
+        "folk",
+        "regional"
+    ],
+    "òrain ghàidhlig": [
+        "folk",
+        "regional"
+    ],
+    "òrain luaidh": [
+        "folk",
+        "regional"
+    ],
+    "seinn nan salm": [
+        "folk",
+        "regional"
+    ],
+    "pipe band": [
+        "folk",
+        "regional"
+    ],
+    "scots song": [
+        "folk",
+        "regional"
+    ],
+    "shetland & orkney folk music": [
+        "folk",
+        "regional"
+    ],
+    "trás-os-montes folk music": [
+        "folk",
+        "regional"
+    ],
+    "welsh folk music": [
+        "folk",
+        "regional"
+    ],
+    "dutch folk music": [
+        "folk",
+        "regional"
+    ],
+    "english folk music": [
+        "folk",
+        "regional"
+    ],
+    "northumbrian folk music": [
+        "folk",
+        "regional"
+    ],
+    "flemish folk music": [
+        "folk",
+        "regional"
+    ],
+    "french folk music": [
+        "folk",
+        "regional"
+    ],
+    "alsatian folk music": [
+        "folk",
+        "regional"
+    ],
+    "breton folk music": [
+        "folk",
+        "regional"
+    ],
+    "corsican folk music": [
+        "folk",
+        "regional"
+    ],
+    "musette": [
+        "folk",
+        "regional"
+    ],
+    "swing musette": [
+        "folk",
+        "regional"
+    ],
+    "occitan folk music": [
+        "folk",
+        "regional"
+    ],
+    "auvergnat folk music": [
+        "folk",
+        "regional"
+    ],
+    "gascon folk music": [
+        "folk",
+        "regional"
+    ],
+    "german folk music": [
+        "folk",
+        "regional"
+    ],
+    "għana": [
+        "folk",
+        "regional"
+    ],
+    "hungarian folk music": [
+        "folk",
+        "regional"
+    ],
+    "csárdás": [
+        "folk",
+        "regional"
+    ],
+    "istrian folk music": [
+        "folk",
+        "regional"
+    ],
+    "italian folk music": [
+        "folk",
+        "regional"
+    ],
+    "canzone napoletana": [
+        "folk",
+        "regional"
+    ],
+    "liscio": [
+        "folk",
+        "regional"
+    ],
+    "stornello": [
+        "folk",
+        "regional"
+    ],
+    "tarantella": [
+        "folk",
+        "regional"
+    ],
+    "pizzica": [
+        "folk",
+        "regional"
+    ],
+    "tammurriata": [
+        "folk",
+        "regional"
+    ],
+    "trallalero": [
+        "folk",
+        "regional"
+    ],
+    "neo-medieval folk": [
+        "folk",
+        "regional"
+    ],
+    "neo-pagan folk": [
+        "folk",
+        "regional"
+    ],
+    "nordic folk music": [
+        "folk",
+        "regional"
+    ],
+    "danish folk music": [
+        "folk",
+        "regional"
+    ],
+    "faroese folk music": [
+        "folk",
+        "regional"
+    ],
+    "icelandic folk music": [
+        "folk",
+        "regional"
+    ],
+    "joik": [
+        "folk",
+        "regional"
+    ],
+    "nordic old time dance music": [
+        "folk",
+        "regional"
+    ],
+    "polska": [
+        "folk",
+        "regional"
+    ],
+    "hambo": [
+        "folk",
+        "regional"
+    ],
+    "norwegian folk music": [
+        "folk",
+        "regional"
+    ],
+    "swedish folk music": [
+        "folk",
+        "regional"
+    ],
+    "polka": [
+        "folk",
+        "regional"
+    ],
+    "portuguese folk music": [
+        "folk",
+        "regional"
+    ],
+    "cante alentejano": [
+        "folk",
+        "regional"
+    ],
+    "chamarrita açoriana": [
+        "folk",
+        "regional"
+    ],
+    "fado": [
+        "folk",
+        "regional"
+    ],
+    "fado de coimbra": [
+        "folk",
+        "regional"
+    ],
+    "romanian folk music": [
+        "folk",
+        "regional"
+    ],
+    "bocet": [
+        "folk",
+        "regional"
+    ],
+    "colinde": [
+        "folk",
+        "regional"
+    ],
+    "doină": [
+        "folk",
+        "regional"
+    ],
+    "sardinian folk music": [
+        "folk",
+        "regional"
+    ],
+    "cantu a chiterra": [
+        "folk",
+        "regional"
+    ],
+    "cantu a tenore": [
+        "folk",
+        "regional"
+    ],
+    "slavic folk music": [
+        "folk",
+        "regional"
+    ],
+    "belarusian folk music": [
+        "folk",
+        "regional"
+    ],
+    "czech folk music": [
+        "folk",
+        "regional"
+    ],
+    "goral music": [
+        "folk",
+        "regional"
+    ],
+    "polish goral music": [
+        "folk",
+        "regional"
+    ],
+    "moravian folk music": [
+        "folk",
+        "regional"
+    ],
+    "polish folk music": [
+        "folk",
+        "regional"
+    ],
+    "folklor miejski": [
+        "folk",
+        "regional"
+    ],
+    "warsaw city folk": [
+        "folk",
+        "regional"
+    ],
+    "kashubian folk music": [
+        "folk",
+        "regional"
+    ],
+    "krakowiak": [
+        "folk",
+        "regional"
+    ],
+    "kujawiak": [
+        "folk",
+        "regional"
+    ],
+    "kurpian folk music": [
+        "folk",
+        "regional"
+    ],
+    "oberek": [
+        "folk",
+        "regional"
+    ],
+    "russian folk music": [
+        "folk",
+        "regional"
+    ],
+    "slovak folk music": [
+        "folk",
+        "regional"
+    ],
+    "slovenian folk music": [
+        "folk",
+        "regional"
+    ],
+    "ukrainian folk music": [
+        "folk",
+        "regional"
+    ],
+    "duma": [
+        "folk",
+        "regional"
+    ],
+    "hutsul folk music": [
+        "folk",
+        "regional"
+    ],
+    "spanish folk music": [
+        "folk",
+        "regional"
+    ],
+    "andalusian folk music": [
+        "folk",
+        "regional"
+    ],
+    "saeta": [
+        "folk",
+        "regional"
+    ],
+    "sevillanas": [
+        "folk",
+        "regional"
+    ],
+    "aragonese folk music": [
+        "folk",
+        "regional"
+    ],
+    "canarian folk music": [
+        "folk",
+        "regional"
+    ],
+    "chotis madrileño": [
+        "folk",
+        "regional"
+    ],
+    "copla": [
+        "folk",
+        "regional"
+    ],
+    "cuplé": [
+        "folk",
+        "regional"
+    ],
+    "pasodoble": [
+        "folk",
+        "regional"
+    ],
+    "volga-ural folk music": [
+        "folk",
+        "regional"
+    ],
+    "bashkir folk music": [
+        "folk",
+        "regional"
+    ],
+    "chuvash folk music": [
+        "folk",
+        "regional"
+    ],
+    "komi folk music": [
+        "folk",
+        "regional"
+    ],
+    "mari folk music": [
+        "folk",
+        "regional"
+    ],
+    "mordvin folk music": [
+        "folk",
+        "regional"
+    ],
+    "udmurt folk music": [
+        "folk",
+        "regional"
+    ],
+    "volga tatar folk music": [
+        "folk",
+        "regional"
+    ],
+    "walloon folk music": [
+        "folk",
+        "regional"
+    ],
+    "white voice": [
+        "folk",
+        "regional"
+    ],
+    "yiddish folksong": [
+        "folk",
+        "regional"
+    ],
+    "hazara folk music": [
+        "folk",
+        "regional"
+    ],
+    "hispanic american folk music": [
+        "folk",
+        "regional"
+    ],
+    "bambuco": [
+        "folk",
+        "regional"
+    ],
+    "candombe": [
+        "folk",
+        "regional"
+    ],
+    "canto a lo poeta": [
+        "folk",
+        "regional"
+    ],
+    "carranga": [
+        "folk",
+        "regional"
+    ],
+    "chacarera": [
+        "folk",
+        "regional"
+    ],
+    "chamarrita rioplatense": [
+        "folk",
+        "regional"
+    ],
+    "cueca": [
+        "folk",
+        "regional"
+    ],
+    "huayno": [
+        "folk",
+        "regional"
+    ],
+    "bolivian huayño": [
+        "folk",
+        "regional"
+    ],
+    "carnavalito": [
+        "folk",
+        "regional"
+    ],
+    "joropo": [
+        "folk",
+        "regional"
+    ],
+    "malagueña venezolana": [
+        "folk",
+        "regional"
+    ],
+    "mexican folk music": [
+        "folk",
+        "regional"
+    ],
+    "canto cardenche": [
+        "folk",
+        "regional"
+    ],
+    "son calentano": [
+        "folk",
+        "regional"
+    ],
+    "son huasteco": [
+        "folk",
+        "regional"
+    ],
+    "son istmeño": [
+        "folk",
+        "regional"
+    ],
+    "son jarocho": [
+        "folk",
+        "regional"
+    ],
+    "trova yucateca": [
+        "folk",
+        "regional"
+    ],
+    "milonga": [
+        "folk",
+        "regional"
+    ],
+    "muliza": [
+        "folk",
+        "regional"
+    ],
+    "música criolla peruana": [
+        "folk",
+        "regional"
+    ],
+    "marinera": [
+        "folk",
+        "regional"
+    ],
+    "tondero": [
+        "folk",
+        "regional"
+    ],
+    "vals criollo": [
+        "folk",
+        "regional"
+    ],
+    "saya": [
+        "folk",
+        "regional"
+    ],
+    "tamborito": [
+        "folk",
+        "regional"
+    ],
+    "taquirari": [
+        "folk",
+        "regional"
+    ],
+    "tonada chilena": [
+        "folk",
+        "regional"
+    ],
+    "yaraví": [
+        "folk",
+        "regional"
+    ],
+    "zamacueca": [
+        "folk",
+        "regional"
+    ],
+    "zamba": [
+        "folk",
+        "regional"
+    ],
+    "indigenous american traditional music": [
+        "folk",
+        "regional"
+    ],
+    "athabaskan fiddling": [
+        "folk",
+        "regional"
+    ],
+    "inuit vocal games": [
+        "folk",
+        "regional"
+    ],
+    "james bay fiddling": [
+        "folk",
+        "regional"
+    ],
+    "mapuche folk music": [
+        "folk",
+        "regional"
+    ],
+    "powwow music": [
+        "folk",
+        "regional"
+    ],
+    "tonada potosina": [
+        "folk",
+        "regional"
+    ],
+    "ladino folksong": [
+        "folk",
+        "regional"
+    ],
+    "ob-ugric folk music": [
+        "folk",
+        "regional"
+    ],
+    "payada": [
+        "folk",
+        "regional"
+    ],
+    "romani folk music": [
+        "folk",
+        "regional"
+    ],
+    "samoyedic folk music": [
+        "folk",
+        "regional"
+    ],
+    "south asian folk music": [
+        "folk",
+        "regional"
+    ],
+    "assamese folk music": [
+        "folk",
+        "regional"
+    ],
+    "bengali folk music": [
+        "folk",
+        "regional"
+    ],
+    "baul gaan": [
+        "folk",
+        "regional"
+    ],
+    "bhojpuri folk music": [
+        "folk",
+        "regional"
+    ],
+    "biraha": [
+        "folk",
+        "regional"
+    ],
+    "boduberu": [
+        "folk",
+        "regional"
+    ],
+    "burushaski folk music": [
+        "folk",
+        "regional"
+    ],
+    "gujarati folk music": [
+        "folk",
+        "regional"
+    ],
+    "kannada folk music": [
+        "folk",
+        "regional"
+    ],
+    "kirtan": [
+        "folk",
+        "regional"
+    ],
+    "malayali folk music": [
+        "folk",
+        "regional"
+    ],
+    "marathi folk music": [
+        "folk",
+        "regional"
+    ],
+    "newa folk music": [
+        "folk",
+        "regional"
+    ],
+    "odia folk music": [
+        "folk",
+        "regional"
+    ],
+    "pashto folk music": [
+        "folk",
+        "regional"
+    ],
+    "punjabi folk music": [
+        "folk",
+        "regional"
+    ],
+    "rajasthani folk music": [
+        "folk",
+        "regional"
+    ],
+    "sinhalese folk music": [
+        "folk",
+        "regional"
+    ],
+    "sarala gee": [
+        "folk",
+        "regional"
+    ],
+    "tamil folk music": [
+        "folk",
+        "regional"
+    ],
+    "urumi melam": [
+        "folk",
+        "regional"
+    ],
+    "telugu folk music": [
+        "folk",
+        "regional"
+    ],
+    "southeast asian folk music": [
+        "folk",
+        "regional"
+    ],
+    "balitaw": [
+        "folk",
+        "regional"
+    ],
+    "bamar folk music": [
+        "folk",
+        "regional"
+    ],
+    "hill tribe music": [
+        "folk",
+        "regional"
+    ],
+    "hmong folk music": [
+        "folk",
+        "regional"
+    ],
+    "khmer folk music": [
+        "folk",
+        "regional"
+    ],
+    "kuda kepang": [
+        "folk",
+        "regional"
+    ],
+    "kundiman": [
+        "folk",
+        "regional"
+    ],
+    "lao folk music": [
+        "folk",
+        "regional"
+    ],
+    "malay folk music": [
+        "folk",
+        "regional"
+    ],
+    "thai folk music": [
+        "folk",
+        "regional"
+    ],
+    "west asian folk music": [
+        "folk",
+        "regional"
+    ],
+    "alevi folk music": [
+        "folk",
+        "regional"
+    ],
+    "armenian folk music": [
+        "folk",
+        "regional"
+    ],
+    "kef music": [
+        "folk",
+        "regional"
+    ],
+    "assyrian folk music": [
+        "folk",
+        "regional"
+    ],
+    "israeli folk music": [
+        "folk",
+        "regional"
+    ],
+    "kurdish folk music": [
+        "folk",
+        "regional"
+    ],
+    "luri folk music": [
+        "folk",
+        "regional"
+    ],
+    "meyxana": [
+        "folk",
+        "regional"
+    ],
+    "persian folk music": [
+        "folk",
+        "regional"
+    ],
+    "turkish folk music": [
+        "folk",
+        "regional"
+    ],
+    "turkish black sea region folk music": [
+        "folk",
+        "regional"
+    ],
+    "uzun hava": [
+        "folk",
+        "regional"
+    ],
+    "zeybek": [
+        "folk",
+        "regional"
+    ],
+    "work songs": [
+        "folk",
+        "regional"
+    ],
+    "sea shanty": [
+        "folk",
+        "regional"
+    ],
+    "yodeling": [
+        "folk",
+        "regional"
+    ],
+    "abstract hip hop": [
+        "hiphop"
+    ],
+    "afroswing": [
+        "hiphop"
+    ],
+    "afro trap": [
+        "hiphop"
+    ],
+    "arabesque rap": [
+        "hiphop"
+    ],
+    "bongo flava": [
+        "hiphop",
+        "regional"
+    ],
+    "boom bap": [
+        "hiphop"
+    ],
+    "bounce": [
+        "hiphop"
+    ],
+    "chipmunk soul": [
+        "hiphop"
+    ],
+    "chopped and screwed": [
+        "hiphop"
+    ],
+    "christian hip hop": [
+        "hiphop"
+    ],
+    "cloud rap": [
+        "hiphop"
+    ],
+    "conscious hip hop": [
+        "hiphop"
+    ],
+    "country rap": [
+        "hiphop"
+    ],
+    "crunk": [
+        "hiphop"
+    ],
+    "crunkcore": [
+        "hiphop"
+    ],
+    "digicore": [
+        "hiphop"
+    ],
+    "dirty south": [
+        "hiphop"
+    ],
+    "disco rap": [
+        "hiphop"
+    ],
+    "drumless": [
+        "hiphop"
+    ],
+    "east coast hip hop": [
+        "hiphop"
+    ],
+    "emo rap": [
+        "hiphop"
+    ],
+    "experimental hip hop": [
+        "hiphop"
+    ],
+    "industrial hip hop": [
+        "hiphop",
+        "industrial"
+    ],
+    "french hip hop": [
+        "hiphop"
+    ],
+    "genge": [
+        "hiphop",
+        "regional"
+    ],
+    "g-funk": [
+        "hiphop"
+    ],
+    "hardcore hip hop": [
+        "hiphop"
+    ],
+    "britcore": [
+        "hiphop"
+    ],
+    "gangsta rap": [
+        "hiphop"
+    ],
+    "chicano rap": [
+        "hiphop"
+    ],
+    "horrorcore": [
+        "hiphop"
+    ],
+    "memphis rap": [
+        "hiphop"
+    ],
+    "dungeon rap": [
+        "hiphop"
+    ],
+    "mid-school hip hop": [
+        "hiphop"
+    ],
+    "trap metal": [
+        "hiphop"
+    ],
+    "hiplife": [
+        "hiphop",
+        "regional"
+    ],
+    "hyphy": [
+        "hiphop"
+    ],
+    "jerk rap": [
+        "hiphop"
+    ],
+    "instrumental hip hop": [
+        "hiphop"
+    ],
+    "rare phonk": [
+        "hiphop"
+    ],
+    "japanese hip hop": [
+        "hiphop"
+    ],
+    "jazz rap": [
+        "hiphop"
+    ],
+    "jigg": [
+        "hiphop"
+    ],
+    "jook": [
+        "hiphop"
+    ],
+    "latin rap": [
+        "hiphop"
+    ],
+    "lo-fi hip hop": [
+        "hiphop"
+    ],
+    "mobb music": [
+        "hiphop"
+    ],
+    "nerdcore hip hop": [
+        "hiphop"
+    ],
+    "nervous music": [
+        "hiphop"
+    ],
+    "political hip hop": [
+        "hiphop"
+    ],
+    "pop rap": [
+        "hiphop"
+    ],
+    "bop": [
+        "hiphop"
+    ],
+    "futuristic swag": [
+        "hiphop"
+    ],
+    "ratchet music": [
+        "hiphop"
+    ],
+    "snap": [
+        "hiphop"
+    ],
+    "southern hip hop": [
+        "hiphop"
+    ],
+    "trap": [
+        "hiphop"
+    ],
+    "detroit trap": [
+        "hiphop"
+    ],
+    "drill": [
+        "hiphop"
+    ],
+    "chicago drill": [
+        "hiphop"
+    ],
+    "jersey drill": [
+        "hiphop"
+    ],
+    "sample drill": [
+        "hiphop"
+    ],
+    "uk drill": [
+        "hiphop"
+    ],
+    "no melody": [
+        "hiphop"
+    ],
+    "plugg": [
+        "hiphop"
+    ],
+    "dark plugg": [
+        "hiphop"
+    ],
+    "pluggnb": [
+        "hiphop"
+    ],
+    "rage": [
+        "hiphop"
+    ],
+    "sigilkore": [
+        "hiphop"
+    ],
+    "trap latino": [
+        "hiphop"
+    ],
+    "trap shaabi": [
+        "hiphop",
+        "regional"
+    ],
+    "trap soul": [
+        "r&b",
+        "hiphop"
+    ],
+    "tread": [
+        "hiphop"
+    ],
+    "turntablism": [
+        "hiphop"
+    ],
+    "uk hip hop": [
+        "hiphop"
+    ],
+    "west coast hip hop": [
+        "hiphop"
+    ],
+    "post-industrial": [
+        "industrial"
+    ],
+    "industrial metal": [
+        "rock",
+        "industrial",
+        "metal"
+    ],
+    "cyber metal": [
+        "rock",
+        "industrial",
+        "metal"
+    ],
+    "neue deutsche härte": [
+        "rock",
+        "industrial",
+        "metal"
+    ],
+    "industrial rock": [
+        "rock",
+        "industrial"
+    ],
+    "martial industrial": [
+        "industrial"
+    ],
+    "afro-jazz": [
+        "jazz",
+        "regional"
+    ],
+    "arabic jazz": [
+        "jazz",
+        "regional"
+    ],
+    "avant-garde jazz": [
+        "jazz"
+    ],
+    "experimental big band": [
+        "jazz"
+    ],
+    "free jazz": [
+        "jazz"
+    ],
+    "european free jazz": [
+        "jazz"
+    ],
+    "yass": [
+        "jazz"
+    ],
+    "bebop": [
+        "jazz"
+    ],
+    "big band": [
+        "jazz"
+    ],
+    "progressive big band": [
+        "jazz"
+    ],
+    "british dance band": [
+        "jazz",
+        "regional",
+        "pop"
+    ],
+    "bulawayo jazz": [
+        "jazz",
+        "regional"
+    ],
+    "cape jazz": [
+        "jazz",
+        "regional"
+    ],
+    "cartoon music": [
+        "jazz"
+    ],
+    "chamber jazz": [
+        "jazz"
+    ],
+    "cool jazz": [
+        "jazz"
+    ],
+    "crime jazz": [
+        "jazz"
+    ],
+    "dark jazz": [
+        "jazz"
+    ],
+    "dixieland": [
+        "jazz"
+    ],
+    "ecm style jazz": [
+        "jazz"
+    ],
+    "ethio-jazz": [
+        "jazz",
+        "regional"
+    ],
+    "flamenco jazz": [
+        "jazz",
+        "regional"
+    ],
+    "hard bop": [
+        "jazz"
+    ],
+    "indo jazz": [
+        "jazz",
+        "regional"
+    ],
+    "jazz-funk": [
+        "jazz",
+        "r&b"
+    ],
+    "jazz fusion": [
+        "jazz"
+    ],
+    "jazz manouche": [
+        "jazz"
+    ],
+    "jazz poetry": [
+        "jazz",
+        "singer-songwriter"
+    ],
+    "latin jazz": [
+        "jazz",
+        "regional"
+    ],
+    "afro-cuban jazz": [
+        "jazz",
+        "regional"
+    ],
+    "marabi": [
+        "jazz",
+        "regional"
+    ],
+    "kwela": [
+        "jazz",
+        "regional"
+    ],
+    "mbaqanga": [
+        "jazz",
+        "regional"
+    ],
+    "modal jazz": [
+        "jazz"
+    ],
+    "post-bop": [
+        "jazz"
+    ],
+    "samba-jazz": [
+        "jazz",
+        "regional"
+    ],
+    "smooth jazz": [
+        "jazz"
+    ],
+    "soul jazz": [
+        "jazz"
+    ],
+    "spiritual jazz": [
+        "jazz"
+    ],
+    "stride": [
+        "jazz",
+        "regional"
+    ],
+    "swing": [
+        "jazz"
+    ],
+    "swing revival": [
+        "jazz"
+    ],
+    "third stream": [
+        "jazz"
+    ],
+    "vocal jazz": [
+        "jazz"
+    ],
+    "alternative metal": [
+        "rock",
+        "metal"
+    ],
+    "funk metal": [
+        "rock",
+        "metal"
+    ],
+    "nu metal": [
+        "rock",
+        "metal"
+    ],
+    "rap metal": [
+        "rock",
+        "metal"
+    ],
+    "avant-garde metal": [
+        "rock",
+        "metal"
+    ],
+    "black metal": [
+        "rock",
+        "metal"
+    ],
+    "atmospheric black metal": [
+        "rock",
+        "metal"
+    ],
+    "blackgaze": [
+        "rock",
+        "metal"
+    ],
+    "black 'n' roll": [
+        "rock",
+        "metal"
+    ],
+    "depressive black metal": [
+        "rock",
+        "metal"
+    ],
+    "melodic black metal": [
+        "rock",
+        "metal"
+    ],
+    "pagan black metal": [
+        "rock",
+        "metal"
+    ],
+    "symphonic black metal": [
+        "rock",
+        "metal"
+    ],
+    "war metal": [
+        "rock",
+        "metal"
+    ],
+    "death metal": [
+        "rock",
+        "metal"
+    ],
+    "brutal death metal": [
+        "rock",
+        "metal"
+    ],
+    "slam death metal": [
+        "rock",
+        "metal"
+    ],
+    "death 'n' roll": [
+        "rock",
+        "metal"
+    ],
+    "deathgrind": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "melodic death metal": [
+        "rock",
+        "metal"
+    ],
+    "technical death metal": [
+        "rock",
+        "metal"
+    ],
+    "dissonant death metal": [
+        "rock",
+        "metal"
+    ],
+    "doom metal": [
+        "rock",
+        "metal"
+    ],
+    "death doom metal": [
+        "rock",
+        "metal"
+    ],
+    "funeral doom metal": [
+        "rock",
+        "metal"
+    ],
+    "traditional doom metal": [
+        "rock",
+        "metal"
+    ],
+    "epic doom metal": [
+        "rock",
+        "metal"
+    ],
+    "drone metal": [
+        "rock",
+        "metal"
+    ],
+    "folk metal": [
+        "rock",
+        "metal"
+    ],
+    "celtic metal": [
+        "rock",
+        "regional",
+        "metal"
+    ],
+    "mittelalter-metal": [
+        "rock",
+        "regional",
+        "metal"
+    ],
+    "gothic metal": [
+        "rock",
+        "metal"
+    ],
+    "grindcore": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "cybergrind": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "goregrind": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "pornogrind": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "mincecore": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "groove metal": [
+        "rock",
+        "metal"
+    ],
+    "heavy metal": [
+        "rock",
+        "metal"
+    ],
+    "nwobhm": [
+        "rock",
+        "metal"
+    ],
+    "speed metal": [
+        "rock",
+        "metal"
+    ],
+    "us power metal": [
+        "rock",
+        "metal"
+    ],
+    "metalcore": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "deathcore": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "mathcore": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "melodic metalcore": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "neoclassical metal": [
+        "rock",
+        "metal"
+    ],
+    "post-metal": [
+        "rock",
+        "metal"
+    ],
+    "atmospheric sludge metal": [
+        "rock",
+        "metal"
+    ],
+    "power metal": [
+        "rock",
+        "metal"
+    ],
+    "progressive metal": [
+        "rock",
+        "metal"
+    ],
+    "djent": [
+        "rock",
+        "metal"
+    ],
+    "sludge metal": [
+        "rock",
+        "metal"
+    ],
+    "southern metal": [
+        "rock",
+        "metal"
+    ],
+    "stenchcore": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "stoner metal": [
+        "rock",
+        "metal"
+    ],
+    "symphonic metal": [
+        "rock",
+        "metal"
+    ],
+    "thrash metal": [
+        "rock",
+        "metal"
+    ],
+    "crossover thrash": [
+        "punk",
+        "rock",
+        "metal"
+    ],
+    "technical thrash metal": [
+        "rock",
+        "metal"
+    ],
+    "trance metal": [
+        "rock",
+        "metal"
+    ],
+    "viking metal": [
+        "rock",
+        "metal"
+    ],
+    "adult contemporary": [
+        "pop"
+    ],
+    "afrobeats": [
+        "pop"
+    ],
+    "alt-pop": [
+        "pop"
+    ],
+    "ambient pop": [
+        "pop"
+    ],
+    "arabic pop": [
+        "regional",
+        "pop"
+    ],
+    "al jeel": [
+        "regional",
+        "pop"
+    ],
+    "art pop": [
+        "pop"
+    ],
+    "balkan pop-folk": [
+        "regional",
+        "pop"
+    ],
+    "chalga": [
+        "regional",
+        "pop"
+    ],
+    "manele": [
+        "regional",
+        "pop"
+    ],
+    "modern laika": [
+        "regional",
+        "pop"
+    ],
+    "muzică de mahala": [
+        "regional",
+        "pop"
+    ],
+    "skiladika": [
+        "regional",
+        "pop"
+    ],
+    "tallava": [
+        "regional",
+        "pop"
+    ],
+    "turbo-folk": [
+        "regional",
+        "pop"
+    ],
+    "baroque pop": [
+        "pop"
+    ],
+    "blue-eyed soul": [
+        "r&b",
+        "pop"
+    ],
+    "boy band": [
+        "pop"
+    ],
+    "brega calypso": [
+        "regional",
+        "pop"
+    ],
+    "brill building": [
+        "pop"
+    ],
+    "bubblegum": [
+        "pop"
+    ],
+    "cambodian pop": [
+        "regional",
+        "pop"
+    ],
+    "rom kbach": [
+        "regional",
+        "pop"
+    ],
+    "canción melódica": [
+        "regional",
+        "pop"
+    ],
+    "bolero-beat": [
+        "regional",
+        "pop"
+    ],
+    "música cebolla": [
+        "regional",
+        "pop"
+    ],
+    "ccm": [
+        "pop"
+    ],
+    "praise & worship": [
+        "pop"
+    ],
+    "city pop": [
+        "pop"
+    ],
+    "classical crossover": [
+        "pop"
+    ],
+    "c-pop": [
+        "pop"
+    ],
+    "cantopop": [
+        "pop"
+    ],
+    "mandopop": [
+        "pop"
+    ],
+    "zhongguo feng": [
+        "regional",
+        "pop"
+    ],
+    "dangdut": [
+        "regional",
+        "pop"
+    ],
+    "dangdut koplo": [
+        "regional",
+        "pop"
+    ],
+    "dansbandsmusik": [
+        "regional",
+        "pop"
+    ],
+    "dansktop": [
+        "regional",
+        "pop"
+    ],
+    "denpa": [
+        "pop"
+    ],
+    "easy listening": [
+        "pop"
+    ],
+    "cocktail nation": [
+        "pop"
+    ],
+    "exotica": [
+        "pop"
+    ],
+    "light music": [
+        "pop"
+    ],
+    "lounge": [
+        "pop"
+    ],
+    "pops orchestra": [
+        "pop"
+    ],
+    "space age pop": [
+        "pop"
+    ],
+    "europop": [
+        "pop"
+    ],
+    "flamenco pop": [
+        "regional",
+        "pop"
+    ],
+    "french pop": [
+        "pop"
+    ],
+    "girl group": [
+        "pop"
+    ],
+    "indian pop": [
+        "regional",
+        "pop"
+    ],
+    "indie pop": [
+        "pop"
+    ],
+    "bedroom pop": [
+        "pop"
+    ],
+    "c86": [
+        "rock",
+        "pop"
+    ],
+    "chamber pop": [
+        "pop"
+    ],
+    "neo-acoustic": [
+        "rock",
+        "pop"
+    ],
+    "sonido donosti": [
+        "rock",
+        "pop"
+    ],
+    "twee pop": [
+        "rock",
+        "pop"
+    ],
+    "irish showband": [
+        "regional",
+        "pop"
+    ],
+    "italo pop": [
+        "pop"
+    ],
+    "canzone neomelodica": [
+        "pop"
+    ],
+    "jazz pop": [
+        "pop"
+    ],
+    "j-pop": [
+        "pop"
+    ],
+    "akishibu-kei": [
+        "pop"
+    ],
+    "kayōkyoku": [
+        "pop"
+    ],
+    "idol kayō": [
+        "pop"
+    ],
+    "mood kayō": [
+        "pop"
+    ],
+    "korean ballad": [
+        "pop"
+    ],
+    "oriental ballad": [
+        "regional",
+        "pop"
+    ],
+    "k-pop": [
+        "pop"
+    ],
+    "semi-trot": [
+        "regional",
+        "pop"
+    ],
+    "latin pop": [
+        "regional",
+        "pop"
+    ],
+    "cumbia pop": [
+        "regional",
+        "pop"
+    ],
+    "tropipop": [
+        "regional",
+        "pop"
+    ],
+    "lokal musik": [
+        "regional",
+        "pop"
+    ],
+    "mulatós": [
+        "regional",
+        "pop"
+    ],
+    "nederpop": [
+        "pop"
+    ],
+    "new music": [
+        "pop"
+    ],
+    "new romantic": [
+        "rock",
+        "pop"
+    ],
+    "opm": [
+        "pop"
+    ],
+    "orthodox pop": [
+        "regional",
+        "pop"
+    ],
+    "palingsound": [
+        "pop"
+    ],
+    "persian pop": [
+        "regional",
+        "pop"
+    ],
+    "pop batak": [
+        "regional",
+        "pop"
+    ],
+    "pop ghazal": [
+        "regional",
+        "pop"
+    ],
+    "pop minang": [
+        "regional",
+        "pop"
+    ],
+    "pop raï": [
+        "regional",
+        "pop"
+    ],
+    "pop reggae": [
+        "regional",
+        "pop"
+    ],
+    "pop rock": [
+        "rock",
+        "pop"
+    ],
+    "beat music": [
+        "rock",
+        "pop"
+    ],
+    "freakbeat": [
+        "rock",
+        "pop"
+    ],
+    "group sounds": [
+        "rock",
+        "pop"
+    ],
+    "jovem guarda": [
+        "rock",
+        "pop"
+    ],
+    "merseybeat": [
+        "rock",
+        "pop"
+    ],
+    "nederbeat": [
+        "rock",
+        "pop"
+    ],
+    "big music": [
+        "rock",
+        "pop"
+    ],
+    "britpop": [
+        "rock",
+        "pop"
+    ],
+    "jangle pop": [
+        "rock",
+        "pop"
+    ],
+    "manila sound": [
+        "rock",
+        "pop"
+    ],
+    "piano rock": [
+        "rock",
+        "pop"
+    ],
+    "post-britpop": [
+        "rock",
+        "pop"
+    ],
+    "power pop": [
+        "rock",
+        "pop"
+    ],
+    "soft rock": [
+        "rock",
+        "pop"
+    ],
+    "tropical rock": [
+        "rock",
+        "pop"
+    ],
+    "yacht rock": [
+        "rock",
+        "pop"
+    ],
+    "stereo": [
+        "rock",
+        "regional",
+        "pop"
+    ],
+    "vocal surf": [
+        "rock",
+        "pop"
+    ],
+    "pop soul": [
+        "r&b",
+        "pop"
+    ],
+    "motown sound": [
+        "r&b",
+        "pop"
+    ],
+    "pop sunda": [
+        "regional",
+        "pop"
+    ],
+    "progressive pop": [
+        "pop"
+    ],
+    "rabiz": [
+        "regional",
+        "pop"
+    ],
+    "rigsar": [
+        "regional",
+        "pop"
+    ],
+    "rumba catalana": [
+        "regional",
+        "pop"
+    ],
+    "russian chanson": [
+        "regional",
+        "pop"
+    ],
+    "schlager": [
+        "regional",
+        "pop"
+    ],
+    "humppa": [
+        "regional",
+        "pop"
+    ],
+    "levenslied": [
+        "regional",
+        "pop"
+    ],
+    "volkstümliche musik": [
+        "regional",
+        "pop"
+    ],
+    "sertanejo romântico": [
+        "regional",
+        "pop"
+    ],
+    "sertanejo universitário": [
+        "regional",
+        "pop"
+    ],
+    "arrocha sertanejo": [
+        "regional",
+        "pop"
+    ],
+    "funknejo": [
+        "regional",
+        "pop"
+    ],
+    "shibuya-kei": [
+        "pop"
+    ],
+    "picopop": [
+        "pop"
+    ],
+    "sophisti-pop": [
+        "pop"
+    ],
+    "soviet estrada": [
+        "pop"
+    ],
+    "sunshine pop": [
+        "pop"
+    ],
+    "teen pop": [
+        "pop"
+    ],
+    "traditional pop": [
+        "pop"
+    ],
+    "romanţe": [
+        "regional",
+        "pop"
+    ],
+    "standards": [
+        "pop"
+    ],
+    "tin pan alley": [
+        "regional",
+        "pop"
+    ],
+    "turkish pop": [
+        "regional",
+        "pop"
+    ],
+    "v-pop": [
+        "pop"
+    ],
+    "yé-yé": [
+        "pop"
+    ],
+    "art punk": [
+        "punk",
+        "rock"
+    ],
+    "cowpunk": [
+        "punk",
+        "rock"
+    ],
+    "emo": [
+        "punk",
+        "rock"
+    ],
+    "emocore": [
+        "punk",
+        "rock"
+    ],
+    "emo-pop": [
+        "punk",
+        "rock"
+    ],
+    "midwest emo": [
+        "punk",
+        "rock"
+    ],
+    "screamo": [
+        "punk",
+        "rock"
+    ],
+    "emoviolence": [
+        "punk",
+        "rock"
+    ],
+    "folk punk": [
+        "punk"
+    ],
+    "celtic punk": [
+        "punk",
+        "rock"
+    ],
+    "gypsy punk": [
+        "punk"
+    ],
+    "hardcore [punk]": [
+        "punk",
+        "rock"
+    ],
+    "easycore": [
+        "punk",
+        "rock"
+    ],
+    "hardcore punk": [
+        "punk",
+        "rock"
+    ],
+    "beatdown hardcore": [
+        "punk",
+        "rock"
+    ],
+    "burning spirits": [
+        "punk",
+        "rock"
+    ],
+    "crust punk": [
+        "punk",
+        "rock"
+    ],
+    "blackened crust": [
+        "punk",
+        "rock"
+    ],
+    "neocrust": [
+        "punk",
+        "rock"
+    ],
+    "d-beat": [
+        "punk",
+        "rock"
+    ],
+    "japanese hardcore": [
+        "punk",
+        "rock"
+    ],
+    "melodic hardcore": [
+        "punk",
+        "rock"
+    ],
+    "new york hardcore": [
+        "punk",
+        "rock"
+    ],
+    "powerviolence": [
+        "punk",
+        "rock"
+    ],
+    "skacore": [
+        "punk",
+        "ska",
+        "rock"
+    ],
+    "crack rock steady": [
+        "punk",
+        "ska",
+        "rock"
+    ],
+    "street punk": [
+        "punk",
+        "rock"
+    ],
+    "thrashcore": [
+        "punk",
+        "rock"
+    ],
+    "uk82": [
+        "punk",
+        "rock"
+    ],
+    "nintendocore": [
+        "punk",
+        "rock"
+    ],
+    "noisecore": [
+        "punk",
+        "rock"
+    ],
+    "post-hardcore": [
+        "punk",
+        "rock"
+    ],
+    "swancore": [
+        "punk",
+        "rock"
+    ],
+    "sasscore": [
+        "punk",
+        "rock"
+    ],
+    "trancecore": [
+        "punk",
+        "rock"
+    ],
+    "mod revival": [
+        "punk",
+        "rock"
+    ],
+    "post-punk": [
+        "punk",
+        "rock"
+    ],
+    "coldwave": [
+        "punk",
+        "rock"
+    ],
+    "dance-punk": [
+        "punk",
+        "rock"
+    ],
+    "gothic rock": [
+        "punk",
+        "rock"
+    ],
+    "deathrock": [
+        "punk",
+        "rock"
+    ],
+    "no wave": [
+        "punk",
+        "rock"
+    ],
+    "post-punk revival": [
+        "punk",
+        "rock"
+    ],
+    "proto-punk": [
+        "punk",
+        "rock"
+    ],
+    "punk blues": [
+        "punk",
+        "rock"
+    ],
+    "punk rock": [
+        "punk",
+        "rock"
+    ],
+    "anarcho-punk": [
+        "punk",
+        "rock"
+    ],
+    "deutschpunk": [
+        "punk",
+        "rock"
+    ],
+    "garage punk": [
+        "punk",
+        "rock"
+    ],
+    "glam punk": [
+        "punk",
+        "rock"
+    ],
+    "horror punk": [
+        "punk",
+        "rock"
+    ],
+    "könsrock": [
+        "punk",
+        "rock"
+    ],
+    "oi!": [
+        "punk",
+        "rock"
+    ],
+    "pop punk": [
+        "punk",
+        "rock"
+    ],
+    "psychobilly": [
+        "punk",
+        "rock"
+    ],
+    "queercore": [
+        "punk",
+        "rock"
+    ],
+    "riot grrrl": [
+        "punk",
+        "rock"
+    ],
+    "ska punk": [
+        "punk",
+        "ska",
+        "rock"
+    ],
+    "skate punk": [
+        "punk",
+        "rock"
+    ],
+    "surf punk": [
+        "punk",
+        "rock"
+    ],
+    "vikingarock": [
+        "punk",
+        "rock"
+    ],
+    "contemporary r&b": [
+        "r&b"
+    ],
+    "alternative r&b": [
+        "r&b"
+    ],
+    "hip hop soul": [
+        "r&b"
+    ],
+    "new jack swing": [
+        "r&b"
+    ],
+    "uk street soul": [
+        "r&b"
+    ],
+    "doo-wop": [
+        "r&b"
+    ],
+    "funk": [
+        "r&b"
+    ],
+    "acid jazz": [
+        "r&b"
+    ],
+    "afro-funk": [
+        "r&b",
+        "regional"
+    ],
+    "britfunk": [
+        "r&b"
+    ],
+    "deep funk": [
+        "r&b"
+    ],
+    "go-go": [
+        "r&b"
+    ],
+    "latin funk": [
+        "r&b",
+        "regional"
+    ],
+    "p-funk": [
+        "r&b"
+    ],
+    "porn groove": [
+        "r&b"
+    ],
+    "synth funk": [
+        "r&b"
+    ],
+    "minneapolis sound": [
+        "r&b"
+    ],
+    "new orleans r&b": [
+        "r&b",
+        "regional"
+    ],
+    "rhythm & blues": [
+        "r&b"
+    ],
+    "british rhythm & blues": [
+        "r&b",
+        "rock"
+    ],
+    "swamp pop": [
+        "r&b",
+        "regional"
+    ],
+    "twist": [
+        "r&b",
+        "rock"
+    ],
+    "soul": [
+        "r&b"
+    ],
+    "chicago soul": [
+        "r&b"
+    ],
+    "country soul": [
+        "r&b"
+    ],
+    "deep soul": [
+        "r&b"
+    ],
+    "latin soul": [
+        "r&b",
+        "regional"
+    ],
+    "neo-soul": [
+        "r&b"
+    ],
+    "northern soul": [
+        "r&b"
+    ],
+    "philly soul": [
+        "r&b"
+    ],
+    "smooth soul": [
+        "r&b"
+    ],
+    "southern soul": [
+        "r&b"
+    ],
+    "african music": [
+        "regional"
+    ],
+    "cape verdean music": [
+        "regional"
+    ],
+    "coladeira": [
+        "regional"
+    ],
+    "funaná": [
+        "regional"
+    ],
+    "morna": [
+        "regional"
+    ],
+    "central african music": [
+        "regional"
+    ],
+    "assiko": [
+        "regional"
+    ],
+    "banda music": [
+        "regional"
+    ],
+    "bend-skin": [
+        "regional"
+    ],
+    "bikutsi": [
+        "regional"
+    ],
+    "congolese rumba": [
+        "regional"
+    ],
+    "kalindula": [
+        "regional"
+    ],
+    "kizomba": [
+        "regional"
+    ],
+    "tarraxinha": [
+        "regional"
+    ],
+    "makossa": [
+        "regional"
+    ],
+    "soukous": [
+        "regional"
+    ],
+    "kwassa kwassa": [
+        "regional"
+    ],
+    "tradi-modern": [
+        "regional"
+    ],
+    "east african music": [
+        "regional"
+    ],
+    "benga": [
+        "regional"
+    ],
+    "comorian music": [
+        "regional"
+    ],
+    "gogo music": [
+        "regional"
+    ],
+    "kadongo kamu": [
+        "regional"
+    ],
+    "kapuka": [
+        "regional"
+    ],
+    "kidandali": [
+        "regional"
+    ],
+    "kidumbak": [
+        "regional"
+    ],
+    "marrabenta": [
+        "regional"
+    ],
+    "mchiriku": [
+        "regional"
+    ],
+    "muziki wa dansi": [
+        "regional"
+    ],
+    "omutibo": [
+        "regional"
+    ],
+    "taarab": [
+        "regional"
+    ],
+    "timbila": [
+        "regional"
+    ],
+    "malagasy music": [
+        "regional"
+    ],
+    "salegy": [
+        "regional"
+    ],
+    "tsapiky": [
+        "regional"
+    ],
+    "north african music": [
+        "regional"
+    ],
+    "algerian chaabi": [
+        "regional"
+    ],
+    "amazigh music": [
+        "regional"
+    ],
+    "ahwash": [
+        "regional"
+    ],
+    "izlan": [
+        "regional"
+    ],
+    "kabyle music": [
+        "regional"
+    ],
+    "sahrawi music": [
+        "regional"
+    ],
+    "tuareg music": [
+        "regional"
+    ],
+    "takamba": [
+        "regional"
+    ],
+    "tishoumaren": [
+        "regional"
+    ],
+    "ancient egyptian music": [
+        "regional"
+    ],
+    "coptic music": [
+        "regional"
+    ],
+    "malhun": [
+        "regional"
+    ],
+    "moorish music": [
+        "regional"
+    ],
+    "moroccan chaabi": [
+        "regional"
+    ],
+    "raï": [
+        "regional"
+    ],
+    "traditional raï": [
+        "regional"
+    ],
+    "shaabi": [
+        "regional"
+    ],
+    "mahraganat": [
+        "regional"
+    ],
+    "northeastern african music": [
+        "regional"
+    ],
+    "ethiopic music": [
+        "regional"
+    ],
+    "azmari": [
+        "regional"
+    ],
+    "ethiopian church music": [
+        "regional"
+    ],
+    "manzuma": [
+        "regional"
+    ],
+    "tigrinya music": [
+        "regional"
+    ],
+    "tizita": [
+        "regional"
+    ],
+    "nubian music": [
+        "regional"
+    ],
+    "oromo music": [
+        "regional"
+    ],
+    "somali music": [
+        "regional"
+    ],
+    "dhaanto": [
+        "regional"
+    ],
+    "qaraami": [
+        "regional"
+    ],
+    "seychelles & mascarene islands music": [
+        "regional"
+    ],
+    "maloya": [
+        "regional"
+    ],
+    "maloya élektrik": [
+        "regional"
+    ],
+    "santé engagé": [
+        "regional"
+    ],
+    "séga": [
+        "regional"
+    ],
+    "seggae": [
+        "regional"
+    ],
+    "southern african music": [
+        "regional"
+    ],
+    "chimurenga": [
+        "regional"
+    ],
+    "famo": [
+        "regional"
+    ],
+    "isicathamiya": [
+        "regional"
+    ],
+    "jit": [
+        "regional"
+    ],
+    "maskandi": [
+        "regional"
+    ],
+    "mbube": [
+        "regional"
+    ],
+    "sungura": [
+        "regional"
+    ],
+    "township jive": [
+        "regional"
+    ],
+    "tsonga disco": [
+        "regional"
+    ],
+    "west african music": [
+        "regional"
+    ],
+    "afrobeat": [
+        "regional"
+    ],
+    "afro-rock": [
+        "rock",
+        "regional"
+    ],
+    "akan music": [
+        "regional"
+    ],
+    "zoblazo": [
+        "regional"
+    ],
+    "ewe music": [
+        "regional"
+    ],
+    "agbadza": [
+        "regional"
+    ],
+    "agbekor": [
+        "regional"
+    ],
+    "fon music": [
+        "regional"
+    ],
+    "tchink system": [
+        "regional"
+    ],
+    "fula music": [
+        "regional"
+    ],
+    "griot music": [
+        "regional"
+    ],
+    "gumbe": [
+        "regional"
+    ],
+    "hausa music": [
+        "regional"
+    ],
+    "highlife": [
+        "regional"
+    ],
+    "burger-highlife": [
+        "regional"
+    ],
+    "igbo music": [
+        "regional"
+    ],
+    "kru music": [
+        "regional"
+    ],
+    "alloukou": [
+        "regional"
+    ],
+    "palm wine music": [
+        "regional"
+    ],
+    "ziglibithy": [
+        "regional"
+    ],
+    "mande music": [
+        "regional"
+    ],
+    "songhai music": [
+        "regional"
+    ],
+    "wassoulou": [
+        "regional"
+    ],
+    "wolof music": [
+        "regional"
+    ],
+    "mbalax": [
+        "regional"
+    ],
+    "tassu": [
+        "regional"
+    ],
+    "yoruba music": [
+        "regional"
+    ],
+    "fuji": [
+        "regional"
+    ],
+    "jùjú": [
+        "regional"
+    ],
+    "santería music": [
+        "regional"
+    ],
+    "waka": [
+        "regional"
+    ],
+    "zouglou": [
+        "regional"
+    ],
+    "ancient music": [
+        "regional"
+    ],
+    "ancient chinese music": [
+        "regional"
+    ],
+    "ancient greek music": [
+        "regional"
+    ],
+    "ancient levitical music": [
+        "regional"
+    ],
+    "ancient roman music": [
+        "regional"
+    ],
+    "mesopotamian music": [
+        "regional"
+    ],
+    "arabic music": [
+        "regional"
+    ],
+    "dabke": [
+        "regional"
+    ],
+    "orkes gambus": [
+        "regional"
+    ],
+    "traditional arabic pop": [
+        "regional"
+    ],
+    "asian music": [
+        "regional"
+    ],
+    "central asian music": [
+        "regional"
+    ],
+    "altai traditional music": [
+        "regional"
+    ],
+    "balochi music": [
+        "regional"
+    ],
+    "central asian throat singing": [
+        "regional"
+    ],
+    "mongolian throat singing": [
+        "regional"
+    ],
+    "tuvan throat singing": [
+        "regional"
+    ],
+    "karakalpak traditional music": [
+        "regional"
+    ],
+    "kazakh music": [
+        "regional"
+    ],
+    "khakas traditional music": [
+        "regional"
+    ],
+    "kyrgyz traditional music": [
+        "regional"
+    ],
+    "mongolian music": [
+        "regional"
+    ],
+    "bogino duu": [
+        "regional"
+    ],
+    "kalmyk music": [
+        "regional"
+    ],
+    "urtiin duu": [
+        "regional"
+    ],
+    "zohioliin duu": [
+        "regional"
+    ],
+    "pamiri music": [
+        "regional"
+    ],
+    "tajik music": [
+        "regional"
+    ],
+    "tibetan music": [
+        "regional"
+    ],
+    "zhabdro gorgom": [
+        "regional"
+    ],
+    "turkmen music": [
+        "regional"
+    ],
+    "uyghur music": [
+        "regional"
+    ],
+    "uzbek music": [
+        "regional"
+    ],
+    "east asian music": [
+        "regional"
+    ],
+    "ainu music": [
+        "regional"
+    ],
+    "upopo": [
+        "regional"
+    ],
+    "yukar": [
+        "regional"
+    ],
+    "chinese music": [
+        "regional"
+    ],
+    "quyi": [
+        "regional"
+    ],
+    "shidaiqu": [
+        "regional"
+    ],
+    "japanese music": [
+        "regional"
+    ],
+    "enka": [
+        "regional"
+    ],
+    "ryūkōka": [
+        "regional"
+    ],
+    "korean music": [
+        "regional"
+    ],
+    "trot": [
+        "regional"
+    ],
+    "vietnamese music": [
+        "regional"
+    ],
+    "cải lương": [
+        "regional"
+    ],
+    "nhạc đỏ": [
+        "regional"
+    ],
+    "nhạc vàng": [
+        "regional"
+    ],
+    "vietnamese bolero": [
+        "regional"
+    ],
+    "ghazal": [
+        "regional"
+    ],
+    "north asian music": [
+        "regional"
+    ],
+    "nivkh music": [
+        "regional"
+    ],
+    "sakha traditional music": [
+        "regional"
+    ],
+    "south asian music": [
+        "regional"
+    ],
+    "adhunik geet": [
+        "regional"
+    ],
+    "baila": [
+        "regional"
+    ],
+    "bhangra": [
+        "regional"
+    ],
+    "folkhop": [
+        "regional"
+    ],
+    "filmi": [
+        "regional"
+    ],
+    "garba": [
+        "regional"
+    ],
+    "ginan": [
+        "regional"
+    ],
+    "sufi rock": [
+        "rock",
+        "regional"
+    ],
+    "southeast asian music": [
+        "regional"
+    ],
+    "bamar music": [
+        "regional"
+    ],
+    "mono": [
+        "regional"
+    ],
+    "hmong pop": [
+        "regional"
+    ],
+    "indonesian music": [
+        "regional"
+    ],
+    "balinese music": [
+        "regional"
+    ],
+    "kecak": [
+        "regional"
+    ],
+    "gambang kromong": [
+        "regional"
+    ],
+    "javanese music": [
+        "regional"
+    ],
+    "campursari": [
+        "regional"
+    ],
+    "langgam jawa": [
+        "regional"
+    ],
+    "keroncong": [
+        "regional"
+    ],
+    "cilokaq": [
+        "regional"
+    ],
+    "minangkabau music": [
+        "regional"
+    ],
+    "qasidah modern": [
+        "regional"
+    ],
+    "rapai dabõih": [
+        "regional"
+    ],
+    "sundanese music": [
+        "regional"
+    ],
+    "jaipongan": [
+        "regional"
+    ],
+    "ketuk tilu": [
+        "regional"
+    ],
+    "kliningan": [
+        "regional"
+    ],
+    "tanjidor": [
+        "regional"
+    ],
+    "khmer music": [
+        "regional"
+    ],
+    "malay music": [
+        "regional"
+    ],
+    "molam": [
+        "regional"
+    ],
+    "molam sing": [
+        "regional"
+    ],
+    "philippine music": [
+        "regional"
+    ],
+    "pinoy folk rock": [
+        "rock",
+        "regional"
+    ],
+    "thai music": [
+        "regional"
+    ],
+    "luk krung": [
+        "regional"
+    ],
+    "lilat": [
+        "regional"
+    ],
+    "luk thung": [
+        "regional"
+    ],
+    "phleng phuea chiwit": [
+        "rock",
+        "regional"
+    ],
+    "wong shadow": [
+        "rock",
+        "regional"
+    ],
+    "west asian music": [
+        "regional"
+    ],
+    "armenian music": [
+        "regional"
+    ],
+    "armenian church music": [
+        "regional"
+    ],
+    "azerbaijani music": [
+        "regional"
+    ],
+    "caucasian music": [
+        "regional"
+    ],
+    "maftirim": [
+        "regional"
+    ],
+    "muzika mizrahit": [
+        "regional"
+    ],
+    "persian music": [
+        "regional"
+    ],
+    "bandari": [
+        "regional"
+    ],
+    "turkish music": [
+        "regional"
+    ],
+    "anatolian rock": [
+        "rock",
+        "regional"
+    ],
+    "arabesk": [
+        "regional"
+    ],
+    "fantezi": [
+        "regional"
+    ],
+    "kanto": [
+        "regional"
+    ],
+    "ottoman military music": [
+        "regional"
+    ],
+    "özgün müzik": [
+        "regional"
+    ],
+    "caribbean music": [
+        "regional"
+    ],
+    "bachata": [
+        "regional"
+    ],
+    "bullerengue": [
+        "regional"
+    ],
+    "calypso": [
+        "regional"
+    ],
+    "calipso venezolano": [
+        "regional"
+    ],
+    "spouge": [
+        "ska",
+        "regional"
+    ],
+    "champeta": [
+        "regional"
+    ],
+    "cuban music": [
+        "regional"
+    ],
+    "chachachá": [
+        "regional"
+    ],
+    "changüí": [
+        "regional"
+    ],
+    "conga": [
+        "regional"
+    ],
+    "cuban charanga": [
+        "regional"
+    ],
+    "cubaton": [
+        "regional"
+    ],
+    "danzón": [
+        "regional"
+    ],
+    "descarga": [
+        "regional"
+    ],
+    "filin": [
+        "regional"
+    ],
+    "guajira": [
+        "regional"
+    ],
+    "guaracha": [
+        "regional"
+    ],
+    "habanera": [
+        "regional"
+    ],
+    "mambo": [
+        "regional"
+    ],
+    "mozambique": [
+        "regional"
+    ],
+    "pachanga": [
+        "regional"
+    ],
+    "pilón": [
+        "regional"
+    ],
+    "rumba cubana": [
+        "regional"
+    ],
+    "guaguancó": [
+        "regional"
+    ],
+    "son cubano": [
+        "regional"
+    ],
+    "bolero son": [
+        "regional"
+    ],
+    "songo": [
+        "regional"
+    ],
+    "timba": [
+        "regional"
+    ],
+    "trova": [
+        "regional"
+    ],
+    "nueva trova": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "tumba francesa": [
+        "regional"
+    ],
+    "dembow": [
+        "regional"
+    ],
+    "french caribbean music": [
+        "regional"
+    ],
+    "biguine": [
+        "regional"
+    ],
+    "bouyon": [
+        "regional"
+    ],
+    "cadence lypso": [
+        "regional"
+    ],
+    "dennery segment": [
+        "regional"
+    ],
+    "gwo ka": [
+        "regional"
+    ],
+    "haitian music": [
+        "regional"
+    ],
+    "cadence rampa": [
+        "regional"
+    ],
+    "compas": [
+        "regional"
+    ],
+    "rabòday": [
+        "regional"
+    ],
+    "rara": [
+        "regional"
+    ],
+    "rasin": [
+        "regional"
+    ],
+    "tumbélé": [
+        "regional"
+    ],
+    "zouk": [
+        "regional"
+    ],
+    "cabo-zouk": [
+        "regional"
+    ],
+    "zouk love": [
+        "regional"
+    ],
+    "goombay": [
+        "regional"
+    ],
+    "indo-caribbean music": [
+        "regional"
+    ],
+    "baithak gana": [
+        "regional"
+    ],
+    "chutney": [
+        "regional"
+    ],
+    "chutney soca": [
+        "regional"
+    ],
+    "jamaican music": [
+        "regional"
+    ],
+    "dancehall": [
+        "regional"
+    ],
+    "digital dancehall": [
+        "regional"
+    ],
+    "ragga": [
+        "regional"
+    ],
+    "shatta": [
+        "regional"
+    ],
+    "jamaican ska": [
+        "ska",
+        "regional"
+    ],
+    "nyahbinghi": [
+        "regional"
+    ],
+    "reggae": [
+        "regional"
+    ],
+    "deejay": [
+        "regional"
+    ],
+    "dub": [
+        "regional"
+    ],
+    "novo dub": [
+        "regional"
+    ],
+    "lovers rock": [
+        "regional"
+    ],
+    "pacific reggae": [
+        "regional"
+    ],
+    "roots reggae": [
+        "regional"
+    ],
+    "dub poetry": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "skinhead reggae": [
+        "regional"
+    ],
+    "rocksteady": [
+        "regional"
+    ],
+    "junkanoo": [
+        "regional"
+    ],
+    "kaseko": [
+        "regional"
+    ],
+    "merengue": [
+        "regional"
+    ],
+    "mambo urbano": [
+        "regional"
+    ],
+    "merecumbé": [
+        "regional"
+    ],
+    "merengue típico": [
+        "regional"
+    ],
+    "merenhouse": [
+        "regional"
+    ],
+    "tecnomerengue": [
+        "regional"
+    ],
+    "parang": [
+        "regional"
+    ],
+    "porro": [
+        "regional"
+    ],
+    "punta": [
+        "regional"
+    ],
+    "soca": [
+        "regional"
+    ],
+    "power soca": [
+        "regional"
+    ],
+    "rapso": [
+        "regional"
+    ],
+    "tropicanibalismo": [
+        "regional"
+    ],
+    "vallenato": [
+        "regional"
+    ],
+    "christian liturgical music": [
+        "regional"
+    ],
+    "anglican chant": [
+        "regional"
+    ],
+    "kyivan chant": [
+        "regional"
+    ],
+    "russian orthodox liturgical music": [
+        "regional"
+    ],
+    "znamenny chant": [
+        "regional"
+    ],
+    "syriac chant": [
+        "regional"
+    ],
+    "european music": [
+        "regional"
+    ],
+    "alpenrock": [
+        "rock",
+        "regional"
+    ],
+    "ashkenazi music": [
+        "regional"
+    ],
+    "klezmer": [
+        "regional"
+    ],
+    "balkan music": [
+        "regional"
+    ],
+    "entechna": [
+        "regional"
+    ],
+    "entechna laika": [
+        "regional"
+    ],
+    "neo kyma": [
+        "regional"
+    ],
+    "laika": [
+        "regional"
+    ],
+    "yu-mex": [
+        "regional"
+    ],
+    "british music": [
+        "regional"
+    ],
+    "british brass band": [
+        "regional"
+    ],
+    "british folk rock": [
+        "rock",
+        "regional"
+    ],
+    "music hall": [
+        "regional"
+    ],
+    "celtic new age": [
+        "regional"
+    ],
+    "celtic rock": [
+        "rock",
+        "regional"
+    ],
+    "chanson": [
+        "regional"
+    ],
+    "chanson alternative": [
+        "regional"
+    ],
+    "chanson à texte": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "chanson réaliste": [
+        "regional"
+    ],
+    "nouvelle chanson française": [
+        "regional"
+    ],
+    "crimean tatar music": [
+        "regional"
+    ],
+    "euskal kantagintza berria": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "fanfare": [
+        "regional"
+    ],
+    "finnish tango": [
+        "regional"
+    ],
+    "german music": [
+        "regional"
+    ],
+    "liedermacher": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "greek music": [
+        "regional"
+    ],
+    "italian music": [
+        "regional"
+    ],
+    "canzone d'autore": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "kleinkunst": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "mittelalter-rock": [
+        "rock",
+        "regional"
+    ],
+    "nordic folk rock": [
+        "rock",
+        "regional"
+    ],
+    "nova cançó": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "nòva cançon": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "polish music": [
+        "regional"
+    ],
+    "mazur": [
+        "regional"
+    ],
+    "mazurka": [
+        "regional"
+    ],
+    "miejski folk": [
+        "rock",
+        "regional"
+    ],
+    "poezja śpiewana": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "polonaise": [
+        "regional"
+    ],
+    "portuguese music": [
+        "regional"
+    ],
+    "música de intervenção": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "pimba": [
+        "regional"
+    ],
+    "romanian music": [
+        "regional"
+    ],
+    "romanian etno music": [
+        "regional"
+    ],
+    "russian music": [
+        "regional"
+    ],
+    "avtorskaya pesnya": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "bard rock": [
+        "rock",
+        "regional",
+        "singer-songwriter"
+    ],
+    "russian romance": [
+        "regional"
+    ],
+    "spanish music": [
+        "regional"
+    ],
+    "bolero español": [
+        "regional"
+    ],
+    "flamenco": [
+        "regional"
+    ],
+    "bulería": [
+        "regional"
+    ],
+    "flamenco nuevo": [
+        "regional"
+    ],
+    "rumba flamenca": [
+        "regional"
+    ],
+    "nueva canción española": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "rock andaluz": [
+        "rock",
+        "regional"
+    ],
+    "visa": [
+        "regional"
+    ],
+    "waltz": [
+        "regional"
+    ],
+    "gospel": [
+        "regional"
+    ],
+    "sacred steel": [
+        "regional"
+    ],
+    "southern gospel": [
+        "regional"
+    ],
+    "hispanic music": [
+        "regional"
+    ],
+    "hispanic american music": [
+        "regional"
+    ],
+    "bolero": [
+        "regional"
+    ],
+    "boogaloo": [
+        "regional"
+    ],
+    "candombe beat": [
+        "rock",
+        "regional"
+    ],
+    "carnaval cruceño": [
+        "regional"
+    ],
+    "chamamé": [
+        "regional"
+    ],
+    "conjunto andino": [
+        "regional"
+    ],
+    "cuarteto": [
+        "regional"
+    ],
+    "cumbia": [
+        "regional"
+    ],
+    "cumbia argentina": [
+        "regional"
+    ],
+    "cumbia santafesina": [
+        "regional"
+    ],
+    "cumbia turra": [
+        "regional"
+    ],
+    "cumbia villera": [
+        "regional"
+    ],
+    "cumbia colombiana": [
+        "regional"
+    ],
+    "cumbia mexicana": [
+        "regional"
+    ],
+    "cumbia sonidera": [
+        "regional"
+    ],
+    "cumbia peruana": [
+        "regional"
+    ],
+    "nueva cumbia chilena": [
+        "regional"
+    ],
+    "currulao": [
+        "regional"
+    ],
+    "gaita zuliana": [
+        "regional"
+    ],
+    "guarania": [
+        "regional"
+    ],
+    "latin alternative": [
+        "regional"
+    ],
+    "latin rock": [
+        "rock",
+        "regional"
+    ],
+    "mambo chileno": [
+        "regional"
+    ],
+    "mexican music": [
+        "regional"
+    ],
+    "bandas de viento de méxico": [
+        "regional"
+    ],
+    "banda sinaloense": [
+        "regional"
+    ],
+    "movimiento alterado": [
+        "regional"
+    ],
+    "tecnobanda": [
+        "regional"
+    ],
+    "chilena": [
+        "regional"
+    ],
+    "corrido": [
+        "regional"
+    ],
+    "cumbiatón": [
+        "regional"
+    ],
+    "mariachi": [
+        "regional"
+    ],
+    "norteño": [
+        "regional"
+    ],
+    "cumbia norteña mexicana": [
+        "regional"
+    ],
+    "duranguense": [
+        "regional"
+    ],
+    "sierreño": [
+        "regional"
+    ],
+    "corrido tumbado": [
+        "regional"
+    ],
+    "ranchera": [
+        "regional"
+    ],
+    "tejano music": [
+        "regional"
+    ],
+    "murga uruguaya": [
+        "regional"
+    ],
+    "nueva canción latinoamericana": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "nueva canción chilena": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "nuevo cancionero": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "onda nueva": [
+        "regional"
+    ],
+    "pasillo": [
+        "regional"
+    ],
+    "polka paraguaya": [
+        "regional"
+    ],
+    "reggaetón": [
+        "regional"
+    ],
+    "bachatón": [
+        "regional"
+    ],
+    "neoperreo": [
+        "regional"
+    ],
+    "rkt": [
+        "regional"
+    ],
+    "rhumba": [
+        "regional"
+    ],
+    "rock andino": [
+        "rock",
+        "regional"
+    ],
+    "salsa": [
+        "regional"
+    ],
+    "salsa choke": [
+        "regional"
+    ],
+    "salsa dura": [
+        "regional"
+    ],
+    "salsa romántica": [
+        "regional"
+    ],
+    "tamborera": [
+        "regional"
+    ],
+    "tango": [
+        "regional"
+    ],
+    "tango nuevo": [
+        "regional"
+    ],
+    "xuc": [
+        "regional"
+    ],
+    "murga": [
+        "regional"
+    ],
+    "nueva canción": [
+        "regional",
+        "singer-songwriter"
+    ],
+    "indigenous american music": [
+        "regional"
+    ],
+    "indigenous andean music": [
+        "regional"
+    ],
+    "harawi": [
+        "regional"
+    ],
+    "indigenous north american music": [
+        "regional"
+    ],
+    "inuit music": [
+        "regional"
+    ],
+    "mesoamerican music": [
+        "regional"
+    ],
+    "islamic modal music": [
+        "regional"
+    ],
+    "islamic religious music & recitation": [
+        "regional"
+    ],
+    "maddahi": [
+        "regional"
+    ],
+    "nasheed": [
+        "regional"
+    ],
+    "jewish music": [
+        "regional"
+    ],
+    "hasidic music": [
+        "regional"
+    ],
+    "nigun": [
+        "regional"
+    ],
+    "jewish liturgical music": [
+        "regional"
+    ],
+    "chazzanut": [
+        "regional"
+    ],
+    "kriyat hatorah": [
+        "regional"
+    ],
+    "piyyut": [
+        "regional"
+    ],
+    "oriental jewish music": [
+        "regional"
+    ],
+    "sephardic music": [
+        "regional"
+    ],
+    "marching band": [
+        "regional"
+    ],
+    "drumline": [
+        "regional"
+    ],
+    "fife and drum corps": [
+        "regional"
+    ],
+    "pep band": [
+        "regional"
+    ],
+    "northern american music": [
+        "regional"
+    ],
+    "americana": [
+        "regional"
+    ],
+    "coon song": [
+        "regional"
+    ],
+    "country rock": [
+        "rock",
+        "regional"
+    ],
+    "louisiana music": [
+        "regional"
+    ],
+    "cajun music": [
+        "regional"
+    ],
+    "new orleans brass band": [
+        "regional"
+    ],
+    "zydeco": [
+        "regional"
+    ],
+    "nouveau zydeco": [
+        "regional"
+    ],
+    "minstrelsy": [
+        "regional"
+    ],
+    "ragtime": [
+        "regional"
+    ],
+    "cakewalk": [
+        "regional"
+    ],
+    "honky-tonk piano": [
+        "regional"
+    ],
+    "novelty piano": [
+        "regional"
+    ],
+    "roots rock": [
+        "rock",
+        "regional"
+    ],
+    "swamp rock": [
+        "rock",
+        "regional"
+    ],
+    "tex-mex": [
+        "rock",
+        "regional"
+    ],
+    "vaudeville": [
+        "regional"
+    ],
+    "oceanian music": [
+        "regional"
+    ],
+    "indigenous australian traditional music": [
+        "regional"
+    ],
+    "djanba": [
+        "regional"
+    ],
+    "melanesian music": [
+        "regional"
+    ],
+    "fijian music": [
+        "regional"
+    ],
+    "vude": [
+        "regional"
+    ],
+    "kaneka": [
+        "regional"
+    ],
+    "papuan folk music": [
+        "regional"
+    ],
+    "tolai rock": [
+        "rock",
+        "regional"
+    ],
+    "micronesian music": [
+        "regional"
+    ],
+    "kantan chamorrita": [
+        "regional"
+    ],
+    "polynesian music": [
+        "regional"
+    ],
+    "hawaiian music": [
+        "regional"
+    ],
+    "slack-key guitar": [
+        "regional"
+    ],
+    "himene tarava": [
+        "regional"
+    ],
+    "māori music": [
+        "regional"
+    ],
+    "samoan music": [
+        "regional"
+    ],
+    "tahitian music": [
+        "regional"
+    ],
+    "polyphonic chant": [
+        "regional"
+    ],
+    "prehistoric music": [
+        "regional"
+    ],
+    "south american music": [
+        "regional"
+    ],
+    "brazilian music": [
+        "regional"
+    ],
+    "bandinha": [
+        "regional"
+    ],
+    "bossa nova": [
+        "regional"
+    ],
+    "brega": [
+        "regional"
+    ],
+    "arrocha": [
+        "regional"
+    ],
+    "arrochadeira": [
+        "regional"
+    ],
+    "bregadeira": [
+        "regional"
+    ],
+    "brega funk": [
+        "regional"
+    ],
+    "batidão romântico": [
+        "regional"
+    ],
+    "choro": [
+        "regional"
+    ],
+    "samba-choro": [
+        "regional"
+    ],
+    "funk brasileiro": [
+        "regional"
+    ],
+    "arrocha funk": [
+        "regional"
+    ],
+    "funk 150 bpm": [
+        "regional"
+    ],
+    "funk de bh": [
+        "regional"
+    ],
+    "funk mandelão": [
+        "regional"
+    ],
+    "beat bruxaria": [
+        "regional"
+    ],
+    "funk ostentação": [
+        "regional"
+    ],
+    "funk proibidão": [
+        "regional"
+    ],
+    "rasteirinha": [
+        "regional"
+    ],
+    "maxixe": [
+        "regional"
+    ],
+    "mpb": [
+        "regional"
+    ],
+    "música gaúcha": [
+        "regional"
+    ],
+    "vanera": [
+        "regional"
+    ],
+    "northeastern brazilian music": [
+        "regional"
+    ],
+    "afoxé": [
+        "regional"
+    ],
+    "axé": [
+        "regional"
+    ],
+    "pagodão": [
+        "regional"
+    ],
+    "samba-reggae": [
+        "regional"
+    ],
+    "baião": [
+        "regional"
+    ],
+    "coco": [
+        "regional"
+    ],
+    "ciranda": [
+        "regional"
+    ],
+    "embolada": [
+        "regional"
+    ],
+    "forró": [
+        "regional"
+    ],
+    "forró eletrônico": [
+        "regional"
+    ],
+    "piseiro": [
+        "regional"
+    ],
+    "forró universitário": [
+        "regional"
+    ],
+    "frevo": [
+        "regional"
+    ],
+    "manguebeat": [
+        "rock",
+        "regional"
+    ],
+    "northern brazilian music": [
+        "regional"
+    ],
+    "carimbó": [
+        "regional"
+    ],
+    "lambada": [
+        "regional"
+    ],
+    "guitarrada": [
+        "regional"
+    ],
+    "samba": [
+        "regional"
+    ],
+    "batucada": [
+        "regional"
+    ],
+    "marchinha": [
+        "regional"
+    ],
+    "pagode": [
+        "regional"
+    ],
+    "pagode romântico": [
+        "regional"
+    ],
+    "partido alto": [
+        "regional"
+    ],
+    "samba-canção": [
+        "regional"
+    ],
+    "samba de breque": [
+        "regional"
+    ],
+    "samba de gafieira": [
+        "regional"
+    ],
+    "samba de terreiro": [
+        "regional"
+    ],
+    "samba-enredo": [
+        "regional"
+    ],
+    "samba-exaltação": [
+        "regional"
+    ],
+    "samba-joia": [
+        "regional"
+    ],
+    "sambalanço": [
+        "regional"
+    ],
+    "samba-rock": [
+        "regional"
+    ],
+    "samba soul": [
+        "regional"
+    ],
+    "sertanejo": [
+        "regional"
+    ],
+    "vanguarda paulista": [
+        "regional"
+    ],
+    "xote": [
+        "regional"
+    ],
+    "chilean music": [
+        "regional"
+    ],
+    "chilote music": [
+        "regional"
+    ],
+    "sufi music": [
+        "regional"
+    ],
+    "turkic-mongolic traditional music": [
+        "regional"
+    ],
+    "acoustic rock": [
+        "rock"
+    ],
+    "alternative rock": [
+        "rock"
+    ],
+    "baggy": [
+        "rock"
+    ],
+    "dream pop": [
+        "rock"
+    ],
+    "geek rock": [
+        "rock"
+    ],
+    "grunge": [
+        "rock"
+    ],
+    "indie rock": [
+        "rock"
+    ],
+    "dunedin sound": [
+        "rock"
+    ],
+    "garage rock revival": [
+        "rock"
+    ],
+    "hamburger schule": [
+        "rock"
+    ],
+    "indie surf": [
+        "rock"
+    ],
+    "math pop": [
+        "rock"
+    ],
+    "noise pop": [
+        "rock"
+    ],
+    "slacker rock": [
+        "rock"
+    ],
+    "slowcore": [
+        "rock"
+    ],
+    "j-rock": [
+        "rock"
+    ],
+    "yakousei": [
+        "rock"
+    ],
+    "post-grunge": [
+        "rock"
+    ],
+    "shoegaze": [
+        "rock"
+    ],
+    "aor": [
+        "rock"
+    ],
+    "art rock": [
+        "rock"
+    ],
+    "blues rock": [
+        "rock"
+    ],
+    "boogie rock": [
+        "rock"
+    ],
+    "christian rock": [
+        "rock"
+    ],
+    "dark cabaret": [
+        "rock"
+    ],
+    "deutschrock": [
+        "rock"
+    ],
+    "experimental rock": [
+        "rock"
+    ],
+    "avant-prog": [
+        "rock"
+    ],
+    "rock in opposition": [
+        "rock"
+    ],
+    "zeuhl": [
+        "rock"
+    ],
+    "brutal prog": [
+        "rock"
+    ],
+    "krautrock": [
+        "rock"
+    ],
+    "folk rock": [
+        "rock"
+    ],
+    "funk rock": [
+        "rock"
+    ],
+    "garage rock": [
+        "rock"
+    ],
+    "glam rock": [
+        "rock"
+    ],
+    "hard rock": [
+        "rock"
+    ],
+    "glam metal": [
+        "rock"
+    ],
+    "heartland rock": [
+        "rock"
+    ],
+    "jam band": [
+        "rock"
+    ],
+    "jazz-rock": [
+        "rock"
+    ],
+    "math rock": [
+        "rock"
+    ],
+    "mod": [
+        "rock"
+    ],
+    "new wave": [
+        "rock"
+    ],
+    "neue deutsche welle": [
+        "rock"
+    ],
+    "noise rock": [
+        "rock"
+    ],
+    "post-rock": [
+        "rock"
+    ],
+    "progressive rock": [
+        "rock"
+    ],
+    "canterbury scene": [
+        "rock"
+    ],
+    "neo-prog": [
+        "rock"
+    ],
+    "symphonic prog": [
+        "rock"
+    ],
+    "pub rock": [
+        "rock"
+    ],
+    "rap rock": [
+        "rock"
+    ],
+    "rock & roll": [
+        "rock"
+    ],
+    "indorock": [
+        "rock"
+    ],
+    "rockabilly": [
+        "rock"
+    ],
+    "rock musical": [
+        "rock"
+    ],
+    "rock opera": [
+        "rock"
+    ],
+    "rock urbano español": [
+        "rock"
+    ],
+    "southern rock": [
+        "rock"
+    ],
+    "surf music": [
+        "rock"
+    ],
+    "surf rock": [
+        "rock"
+    ],
+    "eleki": [
+        "rock"
+    ],
+    "rautalanka": [
+        "rock"
+    ],
+    "symphonic rock": [
+        "rock"
+    ],
+    "visual kei": [
+        "rock"
+    ],
+    "zolo": [
+        "rock"
+    ],
+    "fairy tales": [
+        "singer-songwriter"
+    ],
+    "folktales": [
+        "singer-songwriter"
+    ],
+    "guided meditation": [
+        "singer-songwriter"
+    ],
+    "interview": [
+        "singer-songwriter"
+    ],
+    "lectures": [
+        "singer-songwriter"
+    ],
+    "poetry": [
+        "singer-songwriter"
+    ],
+    "beat poetry": [
+        "singer-songwriter"
+    ],
+    "slam poetry": [
+        "singer-songwriter"
+    ],
+    "radio drama": [
+        "singer-songwriter"
+    ],
+    "speeches": [
+        "singer-songwriter"
+    ],
+    "spoken word": [
+        "singer-songwriter"
+    ],
+    "2 tone": [
+        "ska"
+    ],
+    "third wave ska": [
+        "ska",
+        "rock"
+    ]
+}
